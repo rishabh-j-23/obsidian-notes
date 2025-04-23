@@ -1,0 +1,5 @@
+- Creating a generic EntityContainer to handle multiple
+	- Resources
+	- Warnings
+	- Errors
+	- Success and failure

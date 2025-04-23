@@ -1,0 +1,2 @@
+- Similar to Repository Layer
+- Uses [[Repository]] => hibernate or JPA
