@@ -4,24 +4,53 @@
     "type": "split",
     "children": [
       {
-        "id": "bc623ff818e0b30e",
+        "id": "0c232b384d32f67a",
         "type": "tabs",
         "children": [
           {
-            "id": "eabf3b622fcbb36b",
+            "id": "4547428c4d0fe273",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer science/Backend stuffs/APIS/Springboot/Java/Static classes.md",
+                "file": "Computer science/OS/Mutex.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Static classes"
+              "title": "Mutex"
+            }
+          },
+          {
+            "id": "a259ec5888169232",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer science/OS/Operating system.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Operating system"
+            }
+          },
+          {
+            "id": "d86fbcefc26adb4b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer science/OS/Operating system.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Operating system"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -142,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer science/Backend stuffs/APIS/Springboot/Java/Static classes.md",
+                "file": "Computer science/Backend stuffs/APIS/Springboot/libs/jackson libs.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Static classes"
+              "title": "Outline of jackson libs"
             }
           },
           {
@@ -179,38 +208,42 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "eabf3b622fcbb36b",
+  "active": "b62e2734c6c4e201",
   "lastOpenFiles": [
-    "Computer science/Backend stuffs/APIS/Springboot/Annotations/RestController.md",
-    "Computer science/Backend stuffs/APIS/Springboot/Java/Static classes.md",
-    "Computer science/Backend stuffs/APIS/Springboot/Java",
+    "Computer science/OS/Mutex.md",
     "Computer science/Backend stuffs/APIS/EntityContainer.md",
+    "Computer science/Backend stuffs/APIS/Springboot/Folder Structure.md",
+    "Computer science/OS/Operating system.md",
+    "Computer science/Backend stuffs/Percentile Latency.md",
+    "Computer science/Backend stuffs/APM.md",
+    "Computer science/Backend stuffs/APIS/Types of APIS/REST API.md",
+    "Computer science/Backend stuffs/APIS/Types of APIS/GraphQL.md",
+    "Computer science/Backend stuffs/APIS/Springboot/i18n/ResourceBundle.md",
+    "Computer science/Backend stuffs/APIS/Springboot/Layers/Service Layer.md",
+    "Computer science/Backend stuffs/APIS/Springboot/Layers/Facade Layer.md",
+    "Computer science/Backend stuffs/APIS/Springboot/Layers/DAO Layer.md",
+    "Computer science/Backend stuffs/APIS/Springboot/Layers/Controller Layer.md",
+    "Computer science/Backend stuffs/APIS/Springboot/libs/jackson libs.md",
+    "README.md",
+    "Computer science/Backend stuffs/APIS/Springboot/Java/Untitled.md",
+    "Computer science/Backend stuffs/APIS/Types of APIS",
+    "Computer science/Backend stuffs/APIS/Untitled.md",
+    "Computer science/Backend stuffs/APIS/Springboot/Java/Static classes.md",
+    "Computer science/Backend stuffs/APIS/Springboot/libs",
+    "Computer science/Backend stuffs/APIS/Springboot/Annotations/RestController.md",
+    "Computer science/Backend stuffs/APIS/Springboot/Java",
     "Computer science/Backend stuffs/Untitled.md",
     "Computer science/Backend stuffs/APIS/Springboot/Annotations",
     "Computer science/Backend stuffs/APIS/Springboot/Untitled.md",
-    "Computer science/Backend stuffs/APIS/Springboot/Layers/Controller Layer.md",
-    "Computer science/Backend stuffs/APIS/Springboot/Layers/DAO Layer.md",
     "Computer science/Backend stuffs/APIS/Springboot/i18n",
     "Computer science/OS/Semaphore.md",
-    "Computer science/OS/Mutex.md",
-    "Computer science/Backend stuffs/APIS/Springboot/Folder Structure.md",
-    "Computer science/Backend stuffs/APIS/Untitled.md",
-    "Computer science/Backend stuffs/APIS/Springboot/Layers/Facade Layer.md",
-    "Computer science/Backend stuffs/APIS/Springboot/Layers/Service Layer.md",
     "Computer science/Backend stuffs/APIS/Springboot/Layers",
-    "Computer science/Backend stuffs/APIS/Springboot/i18n/ResourceBundle.md",
     "Computer science/Backend stuffs/APIS/Springboot",
     "Computer science/Backend stuffs/APIS",
-    "Computer science/Backend stuffs/APM.md",
-    "Computer science/Backend stuffs/Percentile Latency.md",
     "Computer science/Backend stuffs",
     "Computer science/OS/Race condition.md",
-    "Computer science/OS/Operating system.md",
     "Welcome.md",
-    "README.md",
     "2025-04-23.md",
-    "Computer science/OS",
-    "Computer science",
-    "Untitled 1"
+    "Computer science/OS"
   ]
 }
