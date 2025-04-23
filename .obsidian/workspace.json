@@ -4,53 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "0c232b384d32f67a",
+        "id": "9f8d2c27ea85a744",
         "type": "tabs",
         "children": [
           {
-            "id": "4547428c4d0fe273",
+            "id": "ec53d00c203fdd93",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer science/OS/Mutex.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Mutex"
-            }
-          },
-          {
-            "id": "a259ec5888169232",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer science/OS/Operating system.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Operating system"
-            }
-          },
-          {
-            "id": "d86fbcefc26adb4b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer science/OS/Operating system.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Operating system"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -70,7 +37,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -208,12 +175,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b62e2734c6c4e201",
+  "active": "ec53d00c203fdd93",
   "lastOpenFiles": [
-    "Computer science/OS/Mutex.md",
+    "Computer science/OS/data-stuctures/Mutex.md",
+    "README.md",
+    "Computer science/OS/data-stuctures/Semaphore.md",
+    "Computer science/OS/Race condition.md",
+    "Computer science/OS/Operating system.md",
+    "Computer science/OS/data-stuctures",
     "Computer science/Backend stuffs/APIS/EntityContainer.md",
     "Computer science/Backend stuffs/APIS/Springboot/Folder Structure.md",
-    "Computer science/OS/Operating system.md",
     "Computer science/Backend stuffs/Percentile Latency.md",
     "Computer science/Backend stuffs/APM.md",
     "Computer science/Backend stuffs/APIS/Types of APIS/REST API.md",
@@ -224,7 +195,6 @@
     "Computer science/Backend stuffs/APIS/Springboot/Layers/DAO Layer.md",
     "Computer science/Backend stuffs/APIS/Springboot/Layers/Controller Layer.md",
     "Computer science/Backend stuffs/APIS/Springboot/libs/jackson libs.md",
-    "README.md",
     "Computer science/Backend stuffs/APIS/Springboot/Java/Untitled.md",
     "Computer science/Backend stuffs/APIS/Types of APIS",
     "Computer science/Backend stuffs/APIS/Untitled.md",
@@ -236,14 +206,11 @@
     "Computer science/Backend stuffs/APIS/Springboot/Annotations",
     "Computer science/Backend stuffs/APIS/Springboot/Untitled.md",
     "Computer science/Backend stuffs/APIS/Springboot/i18n",
-    "Computer science/OS/Semaphore.md",
     "Computer science/Backend stuffs/APIS/Springboot/Layers",
     "Computer science/Backend stuffs/APIS/Springboot",
     "Computer science/Backend stuffs/APIS",
     "Computer science/Backend stuffs",
-    "Computer science/OS/Race condition.md",
     "Welcome.md",
-    "2025-04-23.md",
-    "Computer science/OS"
+    "2025-04-23.md"
   ]
 }
