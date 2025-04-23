@@ -1,0 +1,3 @@
+- Annotates a class as a REST API call receiver
+- Adds the class into the [[Controller Layer]]
+- 
