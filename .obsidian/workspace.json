@@ -11,10 +11,10 @@
             "id": "ec53d00c203fdd93",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -109,12 +109,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Welcome.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Welcome"
+              "title": "Outgoing links"
             }
           },
           {
@@ -138,13 +137,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer science/Backend stuffs/APIS/Springboot/libs/jackson libs.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of jackson libs"
+              "title": "Outline"
             }
           },
           {
@@ -172,11 +170,17 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "ec53d00c203fdd93",
+  "active": "805bda8c232cb522",
   "lastOpenFiles": [
+    "Computer science/Basic Concepts/Floating number.md",
+    "Computer science/Backend stuffs/APIS/Springboot/Java/inbuilt packages/DecimalFormat.md",
+    "Computer science/Basic Concepts",
+    "Computer science/Backend stuffs/APIS/Springboot/Java/inbuilt packages",
+    "Computer science/Backend stuffs/APIS/Springboot/libs/jackson libs.md",
     "Computer science/OS/data-stuctures/Mutex.md",
     "README.md",
     "Computer science/OS/data-stuctures/Semaphore.md",
@@ -194,7 +198,6 @@
     "Computer science/Backend stuffs/APIS/Springboot/Layers/Facade Layer.md",
     "Computer science/Backend stuffs/APIS/Springboot/Layers/DAO Layer.md",
     "Computer science/Backend stuffs/APIS/Springboot/Layers/Controller Layer.md",
-    "Computer science/Backend stuffs/APIS/Springboot/libs/jackson libs.md",
     "Computer science/Backend stuffs/APIS/Springboot/Java/Untitled.md",
     "Computer science/Backend stuffs/APIS/Types of APIS",
     "Computer science/Backend stuffs/APIS/Untitled.md",
@@ -208,9 +211,6 @@
     "Computer science/Backend stuffs/APIS/Springboot/i18n",
     "Computer science/Backend stuffs/APIS/Springboot/Layers",
     "Computer science/Backend stuffs/APIS/Springboot",
-    "Computer science/Backend stuffs/APIS",
-    "Computer science/Backend stuffs",
-    "Welcome.md",
-    "2025-04-23.md"
+    "Welcome.md"
   ]
 }
