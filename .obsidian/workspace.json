@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "9f8d2c27ea85a744",
+        "id": "61bfd8bca1cd07c7",
         "type": "tabs",
         "children": [
           {
-            "id": "ec53d00c203fdd93",
+            "id": "68e27edde5d6095c",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Computer science/OS/data-stuctures/Mutex.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Mutex"
             }
           }
         ]
@@ -170,20 +174,21 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-git:Open Git source control": false,
-      "workspaces:Manage workspace layouts": false
+      "workspaces:Manage workspace layouts": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "805bda8c232cb522",
+  "active": "b62e2734c6c4e201",
   "lastOpenFiles": [
+    "Computer science/Backend stuffs/APIS/Springboot/Java/Static classes.md",
+    "Computer science/OS/data-stuctures/Semaphore.md",
+    "Computer science/OS/data-stuctures/Mutex.md",
     "Computer science/Basic Concepts/Floating number.md",
     "Computer science/Backend stuffs/APIS/Springboot/Java/inbuilt packages/DecimalFormat.md",
     "Computer science/Basic Concepts",
     "Computer science/Backend stuffs/APIS/Springboot/Java/inbuilt packages",
     "Computer science/Backend stuffs/APIS/Springboot/libs/jackson libs.md",
-    "Computer science/OS/data-stuctures/Mutex.md",
     "README.md",
-    "Computer science/OS/data-stuctures/Semaphore.md",
     "Computer science/OS/Race condition.md",
     "Computer science/OS/Operating system.md",
     "Computer science/OS/data-stuctures",
@@ -201,7 +206,6 @@
     "Computer science/Backend stuffs/APIS/Springboot/Java/Untitled.md",
     "Computer science/Backend stuffs/APIS/Types of APIS",
     "Computer science/Backend stuffs/APIS/Untitled.md",
-    "Computer science/Backend stuffs/APIS/Springboot/Java/Static classes.md",
     "Computer science/Backend stuffs/APIS/Springboot/libs",
     "Computer science/Backend stuffs/APIS/Springboot/Annotations/RestController.md",
     "Computer science/Backend stuffs/APIS/Springboot/Java",
