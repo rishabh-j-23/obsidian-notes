@@ -1,0 +1,2 @@
+- It is based on the assumption that the server uses a distributed [[Cache]] like [[Redis]]
+- RedisMutex essentially uses the binary [[Mutex]] 

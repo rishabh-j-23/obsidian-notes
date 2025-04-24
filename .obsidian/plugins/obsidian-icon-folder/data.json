@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiLock",
+      "LiBinary",
+      "LiLightbulb",
       "LiPackage",
-      "LiOmega",
-      "🐧",
-      "LiFile",
-      "LiAtSign"
+      "LiOmega"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -54,11 +54,13 @@
   "Computer science/Backend stuffs/Percentile Latency.md": "LiFile",
   "Computer science/Backend stuffs/APIS/Springboot/Folder Structure.md": "LiFile",
   "Computer science/Backend stuffs/APIS/EntityContainer.md": "LiFile",
-  "Computer science/OS/data-stuctures/Mutex.md": "LiFile",
+  "Computer science/OS/data-stuctures/Mutex.md": "LiBinary",
   "Computer science/OS/data-stuctures/Semaphore.md": "LiFile",
   "Computer science/OS/Operating system.md": "LiFile",
   "Computer science/OS/Race condition.md": "LiFile",
   "README.md": "LiFile",
   "Computer science/Backend stuffs/APIS/Springboot/Java/inbuilt packages": "LiPackage",
-  "Computer science/Backend stuffs/APIS/Springboot/Java/inbuilt packages/DecimalFormat.md": "LiFile"
+  "Computer science/Backend stuffs/APIS/Springboot/Java/inbuilt packages/DecimalFormat.md": "LiFile",
+  "Computer science/Backend stuffs/APIS/Springboot/Self Implementaions": "LiLightbulb",
+  "Computer science/Backend stuffs/APIS/Springboot/Self Implementaions/RedisMutex.md": "LiLock"
 }
