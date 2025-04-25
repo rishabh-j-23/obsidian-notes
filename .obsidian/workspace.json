@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "c14b0a5d628303b7",
@@ -179,7 +180,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "805bda8c232cb522",
+  "active": "68e27edde5d6095c",
   "lastOpenFiles": [
     "Computer science/OS/data-stuctures/Mutex.md",
     "Computer science/Backend stuffs/APIS/Springboot/Self Implementaions/RedisMutex.md",
