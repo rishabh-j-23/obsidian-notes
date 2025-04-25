@@ -182,8 +182,10 @@
   },
   "active": "68e27edde5d6095c",
   "lastOpenFiles": [
-    "Computer science/OS/data-stuctures/Mutex.md",
+    "Redis.md",
     "Computer science/Backend stuffs/APIS/Springboot/Self Implementaions/RedisMutex.md",
+    "Cache.md",
+    "Computer science/OS/data-stuctures/Mutex.md",
     "Computer science/Backend stuffs/APIS/Springboot/Self Implementaions",
     "Computer science/Backend stuffs/APIS/Springboot/Java/Static classes.md",
     "Computer science/OS/data-stuctures/Semaphore.md",
@@ -213,9 +215,7 @@
     "Computer science/Backend stuffs/APIS/Springboot/libs",
     "Computer science/Backend stuffs/APIS/Springboot/Annotations/RestController.md",
     "Computer science/Backend stuffs/APIS/Springboot/Java",
-    "Computer science/Backend stuffs/Untitled.md",
     "Computer science/Backend stuffs/APIS/Springboot/Annotations",
-    "Computer science/Backend stuffs/APIS/Springboot/Untitled.md",
     "Computer science/Backend stuffs/APIS/Springboot/i18n",
     "Computer science/Backend stuffs/APIS/Springboot/Layers"
   ]

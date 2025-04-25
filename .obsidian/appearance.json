@@ -1,7 +1,7 @@
 {
   "interfaceFontFamily": "",
   "textFontFamily": "FiraCode Nerd Font Mono,Adwaita Mono",
-  "cssTheme": "Kanagawa",
+  "cssTheme": "",
   "accentColor": "#9147c2",
   "showViewHeader": true,
   "showRibbon": true
