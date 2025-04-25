@@ -1,11 +1,11 @@
 {
-  "workspace:previous-tab": [
+  "workspace:goto-tab-6": [],
+  "app:go-back": [
     {
       "modifiers": [
         "Mod"
       ],
       "key": "6"
     }
-  ],
-  "workspace:goto-tab-6": []
+  ]
 }

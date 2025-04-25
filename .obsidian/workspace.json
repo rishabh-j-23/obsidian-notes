@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "61bfd8bca1cd07c7",
+        "id": "284daff99d09181e",
         "type": "tabs",
         "children": [
           {
-            "id": "68e27edde5d6095c",
+            "id": "f33b95560e0f0e82",
             "type": "leaf",
             "state": {
               "type": "split-diff-view",
               "state": {
-                "aFile": "Excalidraw/Drawing 2025-04-25 09.24.20.excalidraw.md",
-                "bFile": "Excalidraw/Drawing 2025-04-25 09.24.20.excalidraw.md",
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
                 "aRef": ""
               },
               "icon": "diff",
-              "title": "Diff: Drawing 2025-04-25 09.24.20.excalidraw"
+              "title": "Diff: workspace.json"
             }
           }
         ]
@@ -40,7 +40,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical",
+                "sortOrder": "byModifiedTime",
                 "autoReveal": true
               },
               "icon": "lucide-folder-closed",
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "c14b0a5d628303b7",
@@ -180,13 +181,14 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "68e27edde5d6095c",
+  "active": "f33b95560e0f0e82",
   "lastOpenFiles": [
+    "Computer science/Backend stuffs/APIS/Springboot/Self Implementaions/RedisMutex.md",
     "Computer science/OS/data-stuctures/Mutex.md",
+    "Excalidraw/Drawing 2025-04-25 09.27.06.excalidraw.md",
     "Computer science/Techs",
     "Excalidraw/Drawing 2025-04-25 09.24.20.excalidraw.md",
     "Excalidraw",
-    "Computer science/Backend stuffs/APIS/Springboot/Self Implementaions/RedisMutex.md",
     "Computer science/Techs/Redis.md",
     "Computer science/Basic Concepts/Cache.md",
     "Computer science/Backend stuffs/APIS/Springboot/Self Implementaions",
