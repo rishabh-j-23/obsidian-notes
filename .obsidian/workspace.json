@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "284daff99d09181e",
+        "id": "fd30e600ca2d1f51",
         "type": "tabs",
         "children": [
           {
-            "id": "f33b95560e0f0e82",
+            "id": "8f17d5e36be195cb",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: workspace.json"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -181,8 +177,9 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "f33b95560e0f0e82",
+  "active": "8f17d5e36be195cb",
   "lastOpenFiles": [
+    "Computer science/Backend stuffs/APIS/Springboot/Java/Static classes.md",
     "Computer science/Backend stuffs/APIS/Springboot/Self Implementaions/RedisMutex.md",
     "Computer science/OS/data-stuctures/Mutex.md",
     "Excalidraw/Drawing 2025-04-25 09.27.06.excalidraw.md",
@@ -192,7 +189,6 @@
     "Computer science/Techs/Redis.md",
     "Computer science/Basic Concepts/Cache.md",
     "Computer science/Backend stuffs/APIS/Springboot/Self Implementaions",
-    "Computer science/Backend stuffs/APIS/Springboot/Java/Static classes.md",
     "Computer science/OS/data-stuctures/Semaphore.md",
     "Computer science/Basic Concepts/Floating number.md",
     "Computer science/Backend stuffs/APIS/Springboot/Java/inbuilt packages/DecimalFormat.md",
