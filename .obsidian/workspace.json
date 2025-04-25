@@ -11,14 +11,14 @@
             "id": "68e27edde5d6095c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "Computer science/Backend stuffs/APIS/Springboot/Self Implementaions/RedisMutex.md",
-                "mode": "source",
-                "source": false
+                "aFile": "Excalidraw/Drawing 2025-04-25 09.24.20.excalidraw.md",
+                "bFile": "Excalidraw/Drawing 2025-04-25 09.24.20.excalidraw.md",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "RedisMutex"
+              "icon": "diff",
+              "title": "Diff: Drawing 2025-04-25 09.24.20.excalidraw"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "c14b0a5d628303b7",
@@ -177,15 +176,19 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "workspaces:Manage workspace layouts": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
   "active": "68e27edde5d6095c",
   "lastOpenFiles": [
-    "Redis.md",
-    "Computer science/Backend stuffs/APIS/Springboot/Self Implementaions/RedisMutex.md",
-    "Cache.md",
     "Computer science/OS/data-stuctures/Mutex.md",
+    "Computer science/Techs",
+    "Excalidraw/Drawing 2025-04-25 09.24.20.excalidraw.md",
+    "Excalidraw",
+    "Computer science/Backend stuffs/APIS/Springboot/Self Implementaions/RedisMutex.md",
+    "Computer science/Techs/Redis.md",
+    "Computer science/Basic Concepts/Cache.md",
     "Computer science/Backend stuffs/APIS/Springboot/Self Implementaions",
     "Computer science/Backend stuffs/APIS/Springboot/Java/Static classes.md",
     "Computer science/OS/data-stuctures/Semaphore.md",
@@ -211,12 +214,8 @@
     "Computer science/Backend stuffs/APIS/Springboot/Layers/Controller Layer.md",
     "Computer science/Backend stuffs/APIS/Springboot/Java/Untitled.md",
     "Computer science/Backend stuffs/APIS/Types of APIS",
-    "Computer science/Backend stuffs/APIS/Untitled.md",
     "Computer science/Backend stuffs/APIS/Springboot/libs",
-    "Computer science/Backend stuffs/APIS/Springboot/Annotations/RestController.md",
     "Computer science/Backend stuffs/APIS/Springboot/Java",
-    "Computer science/Backend stuffs/APIS/Springboot/Annotations",
-    "Computer science/Backend stuffs/APIS/Springboot/i18n",
-    "Computer science/Backend stuffs/APIS/Springboot/Layers"
+    "Computer science/Backend stuffs/APIS/Springboot/Annotations"
   ]
 }

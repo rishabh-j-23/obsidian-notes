@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "⚙",
       "LiLock",
       "LiBinary",
       "LiLightbulb",
-      "LiPackage",
-      "LiOmega"
+      "LiPackage"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -62,5 +62,6 @@
   "Computer science/Backend stuffs/APIS/Springboot/Java/inbuilt packages": "LiPackage",
   "Computer science/Backend stuffs/APIS/Springboot/Java/inbuilt packages/DecimalFormat.md": "LiFile",
   "Computer science/Backend stuffs/APIS/Springboot/Self Implementaions": "LiLightbulb",
-  "Computer science/Backend stuffs/APIS/Springboot/Self Implementaions/RedisMutex.md": "LiLock"
+  "Computer science/Backend stuffs/APIS/Springboot/Self Implementaions/RedisMutex.md": "LiLock",
+  "Computer science/Techs": "⚙"
 }
