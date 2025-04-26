@@ -1,8 +1,11 @@
 {
   "interfaceFontFamily": "",
-  "textFontFamily": "FiraCode Nerd Font Mono,Adwaita Mono",
-  "cssTheme": "Nightfox",
-  "accentColor": "#9147c2",
+  "textFontFamily": "FiraCode Nerd Font,Adwaita Mono",
+  "cssTheme": "",
+  "accentColor": "#9149c1",
   "showViewHeader": true,
-  "showRibbon": true
+  "showRibbon": true,
+  "baseFontSize": 15,
+  "monospaceFontFamily": "FiraCode Nerd Font Mono",
+  "theme": "obsidian"
 }
