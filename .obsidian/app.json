@@ -3,5 +3,6 @@
   "showLineNumber": true,
   "readableLineLength": false,
   "showInlineTitle": true,
-  "rightToLeft": false
+  "rightToLeft": false,
+  "alwaysUpdateLinks": true
 }
