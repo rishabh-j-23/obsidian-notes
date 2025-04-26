@@ -17,6 +17,8 @@
 
 ###### To Fix:
 1. Email verification emails not being sent
+2. Login issues
+	- CSRF token verification failed
 
 ###### Read More about:
 1. Conditions used during auto assignment and triggers
@@ -26,3 +28,4 @@
 - Groups were not being assigned to a role
 	- After few tries groups were assigned
 		- Reason: unknown
+- Cannot see the tickets on agent after changing groups

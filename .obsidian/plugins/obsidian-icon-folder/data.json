@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiFileJson",
+      "LiLogs",
       "⚙",
       "LiLock",
-      "LiBinary",
-      "LiLightbulb",
-      "LiPackage"
+      "LiBinary"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -35,13 +35,11 @@
     "useInternalPlugins": false
   },
   "Computer science/Backend stuffs/APIS/Springboot": "LiCode",
-  "Computer science/Backend stuffs/APIS/Springboot/Java": "LiCoffee",
   "Computer science/Backend stuffs/APIS/Springboot/Layers": "LiLayers",
   "Computer science/Backend stuffs/APIS/Springboot/libs": "LiLibrary",
   "Computer science/Backend stuffs/APIS/Types of APIS": "LiServer",
   "Computer science/Backend stuffs/APIS/Springboot/Annotations": "LiAtSign",
-  "Computer science/Backend stuffs/APIS/Springboot/libs/jackson libs.md": "LiFile",
-  "Computer science/Backend stuffs/APIS/Springboot/Java/Static classes.md": "LiFile",
+  "Computer science/Backend stuffs/APIS/Springboot/libs/jackson libs.md": "LiFileJson",
   "Computer science/Backend stuffs/APIS/Springboot/Annotations/RestController.md": "LiFile",
   "Computer science/Backend stuffs/APIS/Springboot/Layers/Controller Layer.md": "LiFile",
   "Computer science/Backend stuffs/APIS/Springboot/Layers/DAO Layer.md": "LiFile",
@@ -52,16 +50,19 @@
   "Computer science/Backend stuffs/APIS/Types of APIS/REST API.md": "LiFile",
   "Computer science/Backend stuffs/APM.md": "LiFile",
   "Computer science/Backend stuffs/Percentile Latency.md": "LiFile",
-  "Computer science/Backend stuffs/APIS/Springboot/Folder Structure.md": "LiFile",
   "Computer science/Backend stuffs/APIS/EntityContainer.md": "LiFile",
   "Computer science/OS/data-stuctures/Mutex.md": "LiBinary",
   "Computer science/OS/data-stuctures/Semaphore.md": "LiFile",
   "Computer science/OS/Operating system.md": "LiFile",
   "Computer science/OS/Race condition.md": "LiFile",
   "README.md": "LiFile",
-  "Computer science/Backend stuffs/APIS/Springboot/Java/inbuilt packages": "LiPackage",
-  "Computer science/Backend stuffs/APIS/Springboot/Java/inbuilt packages/DecimalFormat.md": "LiFile",
   "Computer science/Backend stuffs/APIS/Springboot/Self Implementaions": "LiLightbulb",
   "Computer science/Backend stuffs/APIS/Springboot/Self Implementaions/RedisMutex.md": "LiLock",
-  "Computer science/Techs": "⚙"
+  "Computer science/Techs": "⚙",
+  "Computer science/Java": "LiCoffee",
+  "Computer science/Java/inbuilt packages": "LiPackage",
+  "Computer science/Java/Static classes.md": "LiFile",
+  "Computer science/Java/inbuilt packages/DecimalFormat.md": "LiFile",
+  "Computer science/Backend stuffs/APIS/Springboot/libs/slf4j": "LiLogs",
+  "Computer science/Backend stuffs/APIS/Springboot/Spring boot Project Folder Structure.md": "LiFile"
 }

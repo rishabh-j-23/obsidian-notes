@@ -1,7 +1,7 @@
 {
   "interfaceFontFamily": "",
   "textFontFamily": "FiraCode Nerd Font Mono,Adwaita Mono",
-  "cssTheme": "",
+  "cssTheme": "Nightfox",
   "accentColor": "#9147c2",
   "showViewHeader": true,
   "showRibbon": true
