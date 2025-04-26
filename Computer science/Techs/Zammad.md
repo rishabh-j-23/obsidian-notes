@@ -9,6 +9,8 @@
 2. Give agent role permission to access a group
 	- Roles -> Agent -> Group permissions
 3. Create Trigger to auto assign a ticket to user group
+4. Select a group on which tickets are auto assigned
+	- Admin -> Channels -> Web -> Group selection for Ticket creation
 
 ###### To Find:
 1. How to disable group selection on customer side during ticket creation in case of multiple groups
