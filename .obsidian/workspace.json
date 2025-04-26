@@ -4,67 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "be15f120898fa3e7",
+        "id": "d1220735d1a6b18e",
         "type": "tabs",
         "children": [
           {
-            "id": "c32fc1f956d07945",
+            "id": "abbf9db139f26896",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer science/Techs/Zammad Helpdesk Portal.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Zammad Helpdesk Portal"
-            }
-          },
-          {
-            "id": "baee690dfa59adc0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer science/Techs/Zammad Helpdesk Portal.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Zammad Helpdesk Portal"
-            }
-          },
-          {
-            "id": "2dd55c69dc537ee6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Subnet.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Subnet"
-            }
-          },
-          {
-            "id": "47822c2dccde8b08",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Network Gateways or Routers.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Network Gateways or Routers"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -83,7 +36,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byModifiedTime",
+                "sortOrder": "alphabetical",
                 "autoReveal": true
               },
               "icon": "lucide-folder-closed",
@@ -96,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "a",
+                "query": "multiple",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -138,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer science/Backend stuffs/APIS/Springboot/Self Implementaions/RedisMutex.md",
+                "file": "Welcome.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +101,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for RedisMutex"
+              "title": "Backlinks for Welcome"
             }
           },
           {
@@ -185,13 +138,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer science/Backend stuffs/APIS/Springboot/Self Implementaions/RedisMutex.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of RedisMutex"
+              "title": "Outline"
             }
           },
           {
@@ -213,58 +165,58 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-excalidraw-plugin:New drawing": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "workspaces:Manage workspace layouts": false,
       "obsidian-git:Open Git source control": false,
-      "obsidian-excalidraw-plugin:New drawing": false
+      "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "47822c2dccde8b08",
+  "active": "abbf9db139f26896",
   "lastOpenFiles": [
-    "Network Gateways or Routers.md",
-    "Subnet.md",
-    "Computer science/Techs/Zammad Helpdesk Portal.md",
-    "Network Gateways/Routers.md",
-    "Network Gateways",
-    "Gateways.md",
-    "Pasted image 20250426162444.png",
-    "ARP (Address Resolution Protocol).md",
-    "MAC Address.md",
-    "IPv4.md",
-    "Pasted image 20250426161556.png",
-    "Pasted image 20250426161241.png",
-    "Host Bits.md",
-    "IP Address.md",
-    "Data Links.md",
-    "Pasted image 20250426160408.png",
+    "System Design Trade-offs.md",
+    "System Design/Consistency.md",
+    "System Design",
+    "Database/Normalization.md",
+    "Database",
+    "Routing Table.md",
+    "Database Normalization.md",
+    "System Design.md",
+    "BGP.md",
+    "OSPF.md",
+    "Network Protocols.md",
     "Network Routing.md",
-    "Computer science/Backend stuffs/APIS/Springboot/Spring boot Project Folder Structure.md",
-    "Computer science/Java/XMS and XMX.md",
-    "Computer science/Backend stuffs/APIS/Springboot/libs/slf4j/ThreadContext.md",
-    "Computer science/Backend stuffs/APIS/Springboot/libs/slf4j/slf4j.md",
+    "IP forwarding.md",
+    "Network Gateways or Routers.md",
+    "ARP poisoning.md",
+    "Network Gateways/Routers.md",
+    "ARP (Address Resolution Protocol).md",
+    "Network Switches.md",
+    "IPv4.md",
+    "network-jumping.png",
+    "subnet-types.png",
+    "MAC Address.md",
+    "Subnet.md",
+    "Pasted image 20250426161241.png",
+    "Pasted image 20250426160408.png",
+    "Network Gateways",
+    "IP Address.md",
+    "Host Bits.md",
+    "Gateways.md",
     "Excalidraw/Drawing 2025-04-26 09.23.45.excalidraw.md",
-    "Computer science/Backend stuffs/APM.md",
-    "Computer science/Backend stuffs/APIS/Springboot/libs/slf4j/MDC RequestId.md",
-    "Computer science/Backend stuffs/APIS/Springboot/libs/slf4j",
-    "Computer science/Java/ThreadContextMap.md",
-    "Debigging.md",
-    "Computer science/Java/Static classes.md",
-    "Computer science/Backend stuffs/APIS/Springboot/Self Implementaions/RedisMutex.md",
-    "Computer science/OS/data-stuctures/Mutex.md",
-    "Excalidraw/Drawing 2025-04-25 09.27.06.excalidraw.md",
-    "Computer science/Techs",
-    "Excalidraw/Drawing 2025-04-25 09.24.20.excalidraw.md",
     "Excalidraw",
-    "Computer science/Backend stuffs/APIS/Springboot/Self Implementaions",
-    "Computer science/Basic Concepts",
+    "Data Links.md",
+    "Computer science/Techs/Zammad Helpdesk Portal.md",
+    "Computer science/Techs/Redis.md",
+    "Computer science/Techs",
     "Computer science/Java/inbuilt packages",
-    "Computer science/OS/data-stuctures",
-    "Computer science/Backend stuffs/APIS/Types of APIS",
-    "Computer science/Backend stuffs/APIS/Springboot/libs"
+    "Computer science/Java",
+    "Computer science/Backend stuffs/APIS/Springboot/libs/slf4j",
+    "Computer science/Backend stuffs/APIS/Springboot/Self Implementaions",
+    "Computer science/Basic Concepts"
   ]
 }
