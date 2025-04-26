@@ -28,7 +28,10 @@
 2. Groups perms to a role and user
 
 ###### Issues Faced:
-- Groups were not being assigned to a role
-	- After few tries groups were assigned
-		- Reason: unknown
-- Cannot see the tickets on agent after changing groups
+- ~~Groups were not being assigned to a role~~
+	- ~~After few tries groups were assigned~~
+		- ~~Reason: unknown~~
+	- Solved -> skill issue, need to click add button to add the new setting
+- ~~Cannot see the tickets on agent after changing groups~~
+	- had to change default ticket assignment group [Basic-Setup](#Basic Setup) -> 4th point
+	
