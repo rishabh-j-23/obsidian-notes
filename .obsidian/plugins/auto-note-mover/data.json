@@ -37,6 +37,16 @@
       "folder": "Computer science/Basic Concepts",
       "tag": "#cs-concepts",
       "pattern": ""
+    },
+    {
+      "folder": "Computer science/Techs",
+      "tag": "#technologies",
+      "pattern": ""
+    },
+    {
+      "folder": "Computer science",
+      "tag": "",
+      "pattern": "#cs"
     }
   ],
   "use_regex_to_check_for_excluded_folder": false,
