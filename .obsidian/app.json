@@ -4,5 +4,6 @@
   "readableLineLength": false,
   "showInlineTitle": true,
   "rightToLeft": false,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "assets"
 }

@@ -1,0 +1,48 @@
+{
+  "trigger_auto_manual": "Manual",
+  "use_regex_to_check_for_tags": false,
+  "statusBar_trigger_indicator": true,
+  "folder_tag_pattern": [
+    {
+      "folder": "Computer science/Java",
+      "tag": "#java",
+      "pattern": ""
+    },
+    {
+      "folder": "Computer science/Database",
+      "tag": "#db",
+      "pattern": ""
+    },
+    {
+      "folder": "Computer science/System Design",
+      "tag": "#system-design",
+      "pattern": ""
+    },
+    {
+      "folder": "Computer science/Computer Networking",
+      "tag": "#networking",
+      "pattern": ""
+    },
+    {
+      "folder": "Computer science/Backend stuffs/APIS/Springboot",
+      "tag": "#springboot",
+      "pattern": ""
+    },
+    {
+      "folder": "Computer science/OS",
+      "tag": "#operating-system",
+      "pattern": ""
+    },
+    {
+      "folder": "Computer science/Basic Concepts",
+      "tag": "#cs-concepts",
+      "pattern": ""
+    }
+  ],
+  "use_regex_to_check_for_excluded_folder": false,
+  "excluded_folder": [
+    {
+      "folder": ""
+    }
+  ]
+}

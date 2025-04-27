@@ -1,0 +1,7 @@
+---
+tags:
+    - networking
+---
+
+- A device's Physical Address
+- cannot be changed

@@ -1,3 +1,8 @@
+---
+tags:
+    - networking
+---
+
 - 4 [[Bytes]] / 32 [[Bits]]
 - Two sections 
 	- [[Network Bits]]

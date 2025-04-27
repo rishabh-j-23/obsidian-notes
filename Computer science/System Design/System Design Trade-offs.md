@@ -1,3 +1,8 @@
+---
+tags:
+    - system-design
+---
+
 ## 1. [[SQL]] vs [[NoSQL]]
 ###### Challenges
 
@@ -5,7 +10,7 @@
 | ---------------------------------------------------------- | -------------------------------- |
 | [[Horizontal Scaling]]                                     | sacrifices querying capabilities |
 | modifying schemas                                          | consitency                       |
-| [[Database/Normalization]] vs [[Database/Denormalization]] |                                  |
+| [[Normalization]] vs [[Database/Denormalization]] |                                  |
 
 ## 2. [[Consistency]] vs [[Availability]]
 - speed vs scale

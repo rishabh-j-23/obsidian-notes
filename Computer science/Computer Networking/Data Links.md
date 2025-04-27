@@ -1,3 +1,8 @@
+---
+tags:
+    - networking
+---
+
 - Each device has a link address or [[MAC Address]]
 - Devices that directly reachable deices can communicate with [[MAC Address]]
 - uses Layer 2 [[Data Link Layer]]'s [[Frames]]

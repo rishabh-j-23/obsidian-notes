@@ -1,3 +1,8 @@
+---
+tags:
+    - networking
+---
+
 - A subnet, or subnetwork, is a segmented piece of a larger network.
 - More specifically, subnets are a logical partition of an [[IP Address]] network broken into multiple, smaller network segments.
 

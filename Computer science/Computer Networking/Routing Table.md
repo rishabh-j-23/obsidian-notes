@@ -1,3 +1,8 @@
+---
+tags:
+    - networking
+---
+
 - Following columns
 	- Network (type: [[IP Address]])
 	- Next Hop (type: [[IP Address]])
