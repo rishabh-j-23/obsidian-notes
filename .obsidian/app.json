@@ -5,5 +5,7 @@
   "showInlineTitle": true,
   "rightToLeft": false,
   "alwaysUpdateLinks": true,
-  "attachmentFolderPath": "assets"
+  "attachmentFolderPath": "assets",
+  "propertiesInDocument": "visible",
+  "useTab": false
 }
