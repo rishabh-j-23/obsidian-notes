@@ -11,15 +11,14 @@
             "id": "c9815c5c5c9e6882",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "Computer science/Techs/Redis.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
+                "aFile": "Computer science/Techs/Redis.md",
+                "bFile": "Computer science/Techs/Redis.md",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "Redis"
+              "icon": "diff",
+              "title": "Diff: Redis"
             }
           }
         ]
@@ -92,66 +91,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1ec082785fea9dc1",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Computer science/Techs/Redis.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks for Redis"
-            }
-          },
-          {
-            "id": "717b23994c34c4f9",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "Computer science/Techs/Redis.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Outgoing links from Redis"
-            }
-          },
-          {
-            "id": "6c51f8d1253915fd",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "Tags"
-            }
-          },
-          {
             "id": "be2951b884e217b1",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer science/Techs/Redis.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Redis"
+              "title": "Outline"
             }
           },
           {
@@ -165,13 +115,23 @@
             }
           },
           {
-            "id": "354ac60547b9182f",
+            "id": "cf749b8248482bcd",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {},
+              "icon": "lucide-info",
+              "title": "File properties"
+            }
+          },
+          {
+            "id": "f206c2a5af7443fe",
             "type": "leaf",
             "state": {
               "type": "all-properties",
               "state": {
                 "sortOrder": "frequency",
-                "showSearch": true,
+                "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-archive",
@@ -179,7 +139,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -198,12 +158,12 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "805bda8c232cb522",
+  "active": "c9815c5c5c9e6882",
   "lastOpenFiles": [
+    "Computer science/Techs/Redis.md",
     "Computer science/Computer Networking/ARP poisoning.md",
     "Computer science/Computer Networking/ARP (Address Resolution Protocol).md",
     "Excalidraw/Drawing 2025-04-27 17.22.01.excalidraw.md",
-    "Computer science/Techs/Redis.md",
     "Computer science/Backend stuffs/APIS/Springboot/Self Implementaions/RedisMutex.md",
     "Computer science/System Design/System Design.md",
     "Computer science/System Design/System Design Trade-offs.md",
