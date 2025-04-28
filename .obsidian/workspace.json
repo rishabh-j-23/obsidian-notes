@@ -185,6 +185,18 @@
               "icon": "lucide-archive",
               "title": "All properties"
             }
+          },
+          {
+            "id": "da1609b469797e77",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "Computer science/Techs/Zammad Helpdesk Portal.md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties for Zammad Helpdesk Portal"
+            }
           }
         ],
         "currentTab": 4
@@ -206,7 +218,7 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "c32fc1f956d07945",
+  "active": "805bda8c232cb522",
   "lastOpenFiles": [
     "Computer science/Techs/Zammad Helpdesk Portal.md",
     "Daily Notes/2025/04/2025-04-28_Monday.md",

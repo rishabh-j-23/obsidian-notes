@@ -1,3 +1,6 @@
+---
+aliases:
+---
 ###### Basic Setup:
 1. Needs
 	- Create Organization
