@@ -8,15 +8,15 @@
 		- allocation to which ticket goes to whom
 2. Give agent role permission to access a group
 	- Roles -> Agent -> Group permissions
-3. Create Trigger to auto assign a ticket to user group
+3. Create Trigger to auto assign a ticket to a certain group
 4. Select a group on which tickets are auto assigned
 	- Admin -> Channels -> Web -> Group selection for Ticket creation
 
 ###### To Find:
-1. How to disable group selection on customer side during ticket  creation  in case of multiple groups
+1. ~~How to disable group selection on customer side during ticket  creation  in case of multiple  groups~~ 
 2. Auto assign a ticket to an agent
 3. How to assign user to an organization automatically 
-	1. Try with domain based organization creation
+	1. Try with domain based organization creation?
 
 ###### To Fix:
 1. Email verification emails not being sent

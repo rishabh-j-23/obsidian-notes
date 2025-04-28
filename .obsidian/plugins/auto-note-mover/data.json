@@ -46,7 +46,7 @@
     {
       "folder": "Computer science",
       "tag": "",
-      "pattern": "#cs"
+      "pattern": "^cs"
     }
   ],
   "use_regex_to_check_for_excluded_folder": false,

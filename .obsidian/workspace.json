@@ -4,21 +4,32 @@
     "type": "split",
     "children": [
       {
-        "id": "9d76388e3b6761a0",
+        "id": "be15f120898fa3e7",
         "type": "tabs",
         "children": [
           {
-            "id": "c9815c5c5c9e6882",
+            "id": "c32fc1f956d07945",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "Computer science/Techs/Redis.md",
-                "bFile": "Computer science/Techs/Redis.md",
-                "aRef": ""
+                "file": "Computer science/Techs/Zammad Helpdesk Portal.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
               },
-              "icon": "diff",
-              "title": "Diff: Redis"
+              "icon": "lucide-file",
+              "title": "Zammad Helpdesk Portal"
+            }
+          },
+          {
+            "id": "baee690dfa59adc0",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -40,7 +51,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical",
+                "sortOrder": "byModifiedTime",
                 "autoReveal": true
               },
               "icon": "lucide-folder-closed",
@@ -53,7 +64,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#db",
+                "query": "a",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,8 +85,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -91,17 +101,65 @@
         "type": "tabs",
         "children": [
           {
+            "id": "1ec082785fea9dc1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Computer science/Backend stuffs/APIS/Springboot/Self Implementaions/RedisMutex.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for RedisMutex"
+            }
+          },
+          {
+            "id": "717b23994c34c4f9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "6c51f8d1253915fd",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
             "id": "be2951b884e217b1",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
+                "file": "Computer science/Backend stuffs/APIS/Springboot/Self Implementaions/RedisMutex.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of RedisMutex"
             }
           },
           {
@@ -115,17 +173,7 @@
             }
           },
           {
-            "id": "cf749b8248482bcd",
-            "type": "leaf",
-            "state": {
-              "type": "file-properties",
-              "state": {},
-              "icon": "lucide-info",
-              "title": "File properties"
-            }
-          },
-          {
-            "id": "f206c2a5af7443fe",
+            "id": "2ec87e76188e1dff",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -139,7 +187,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -147,30 +195,39 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-excalidraw-plugin:New drawing": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
+      "workspaces:Manage workspace layouts": false,
       "obsidian-git:Open Git source control": false,
-      "workspaces:Manage workspace layouts": false
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "c9815c5c5c9e6882",
+  "active": "c32fc1f956d07945",
   "lastOpenFiles": [
-    "Computer science/Techs/Redis.md",
-    "Computer science/Computer Networking/ARP poisoning.md",
-    "Computer science/Computer Networking/ARP (Address Resolution Protocol).md",
+    "Daily Notes/2025/04/2025-04-28_Monday.md",
+    "Computer science/Techs/Zammad Helpdesk Portal.md",
+    "Daily Notes/2025/04",
+    "Daily Notes/2025",
+    "2025-04-28.md",
+    "Daily Notes",
+    "Network Gateways or Routers.md",
+    "assets/subnet-types.png",
+    "assets/Pasted image 20250426161241.png",
+    "assets/Pasted image 20250426160408.png",
+    "assets/network-jumping.png",
+    "assets",
     "Excalidraw/Drawing 2025-04-27 17.22.01.excalidraw.md",
-    "Computer science/Backend stuffs/APIS/Springboot/Self Implementaions/RedisMutex.md",
     "Computer science/System Design/System Design.md",
     "Computer science/System Design/System Design Trade-offs.md",
-    "Computer science/Backend stuffs/Percentile Latency.md",
-    "Computer science/Backend stuffs/APM.md",
-    "assets",
-    "README.md",
+    "Computer science/System Design/Consistency.md",
+    "Computer science/System Design",
+    "Computer science/Database/Normalization.md",
+    "Computer science/Database/Database Normalization.md",
+    "Computer science/Database",
     "Computer science/Computer Networking/Subnet.md",
     "Computer science/Computer Networking/Routing Table.md",
     "Computer science/Computer Networking/OSPF.md",
@@ -178,27 +235,22 @@
     "Computer science/Computer Networking/Network Routing.md",
     "Computer science/Computer Networking/Network Protocols.md",
     "Computer science/Computer Networking/Network Gateways or Routers.md",
-    "Computer science/Computer Networking/MAC Address.md",
     "Computer science/Computer Networking/IPv4.md",
+    "Computer science/Computer Networking/MAC Address.md",
     "Computer science/Computer Networking/IP forwarding.md",
     "Computer science/Computer Networking/IP Address.md",
     "Computer science/Computer Networking/Host Bits.md",
+    "Computer science/Computer Networking/Data Links.md",
     "Computer science/Computer Networking/Gateways.md",
     "Computer science/Computer Networking/BGP.md",
-    "Computer science/Computer Networking/Data Links.md",
+    "Computer science/Computer Networking/ARP poisoning.md",
     "Computer science/Computer Networking",
-    "Computer science/Database/Database Normalization.md",
-    "assets/Pasted image 20250426161241.png",
-    "Computer science/System Design",
-    "Computer science/Database",
-    "assets/network-jumping.png",
-    "assets/subnet-types.png",
-    "assets/Pasted image 20250426160408.png",
     "Network Gateways",
-    "Excalidraw",
-    "Computer science/Techs",
-    "Computer science/Java/inbuilt packages",
-    "Computer science/Java",
-    "Computer science/Backend stuffs/APIS/Springboot/libs/slf4j"
+    "Pasted image 20250426162444.png",
+    "Pasted image 20250426161556.png",
+    "Pasted image 20250426161241.png",
+    "Pasted image 20250426160408.png",
+    "Computer science/Backend stuffs/APIS/Springboot/libs/slf4j",
+    "Computer science/Techs"
   ]
 }
