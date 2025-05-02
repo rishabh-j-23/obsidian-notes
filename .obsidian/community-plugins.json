@@ -1,8 +1,9 @@
 [
   "obsidian-git",
-  "obsidian-icon-folder",
-  "obsidian-excalidraw-plugin",
   "obsidian-vimrc-support",
   "vim-yank-highlight",
-  "auto-note-mover"
+  "auto-note-mover",
+  "multi-column-markdown",
+  "table-editor-obsidian",
+  "drawio-obsidian"
 ]

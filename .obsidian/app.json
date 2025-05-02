@@ -7,5 +7,6 @@
   "alwaysUpdateLinks": true,
   "attachmentFolderPath": "assets",
   "propertiesInDocument": "hidden",
-  "useTab": false
+  "useTab": false,
+  "newFileLocation": "current"
 }

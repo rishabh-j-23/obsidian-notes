@@ -8,31 +8,37 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c32fc1f956d07945",
+            "id": "b74860c61fed169c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer science/Techs/Zammad Helpdesk Portal.md",
+                "file": "Daily Notes/2025/05/2025-05-02_Friday.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Zammad Helpdesk Portal"
+              "title": "2025-05-02_Friday"
             }
           },
           {
-            "id": "baee690dfa59adc0",
+            "id": "59044c593f1d7f96",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Research/Notification or Alert System.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Notification or Alert System"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -52,7 +58,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "byModifiedTime",
-                "autoReveal": true
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -192,10 +198,20 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Computer science/Techs/Zammad Helpdesk Portal.md"
+                "file": "Research/Notification or Alert System.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for Zammad Helpdesk Portal"
+              "title": "File properties for Notification or Alert System"
+            }
+          },
+          {
+            "id": "17736518132dca0d",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           }
         ],
@@ -215,12 +231,23 @@
       "command-palette:Open command palette": false,
       "workspaces:Manage workspace layouts": false,
       "obsidian-git:Open Git source control": false,
-      "obsidian-excalidraw-plugin:New drawing": false
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "805bda8c232cb522",
+  "active": "59044c593f1d7f96",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2025-05-02 09.13.19.excalidraw.md",
+    "Research/Notification or Alert System.md",
+    "Computer science/Internship.md",
+    "Excalidraw",
+    "Daily Notes/2025/05/2025-05-02_Friday.md",
+    "Research",
+    "Computer science/Backend stuffs/APIS/Springboot/concepts/Graceful Shutdown.md",
+    "Daily Notes/2025/05",
+    "Computer science/Untitled",
     "Computer science/Techs/Zammad Helpdesk Portal.md",
+    "Computer science/Backend stuffs/APIS/Springboot/concepts",
     "Daily Notes/2025/04/2025-04-28_Monday.md",
     "Daily Notes/2025/04",
     "Daily Notes/2025",
@@ -239,7 +266,6 @@
     "Computer science/System Design",
     "Computer science/Database/Normalization.md",
     "Computer science/Database/Database Normalization.md",
-    "Computer science/Database",
     "Computer science/Computer Networking/Subnet.md",
     "Computer science/Computer Networking/Routing Table.md",
     "Computer science/Computer Networking/OSPF.md",
@@ -251,18 +277,9 @@
     "Computer science/Computer Networking/MAC Address.md",
     "Computer science/Computer Networking/IP forwarding.md",
     "Computer science/Computer Networking/IP Address.md",
-    "Computer science/Computer Networking/Host Bits.md",
-    "Computer science/Computer Networking/Data Links.md",
-    "Computer science/Computer Networking/Gateways.md",
-    "Computer science/Computer Networking/BGP.md",
-    "Computer science/Computer Networking/ARP poisoning.md",
-    "Computer science/Computer Networking",
-    "Network Gateways",
     "Pasted image 20250426162444.png",
     "Pasted image 20250426161556.png",
     "Pasted image 20250426161241.png",
-    "Pasted image 20250426160408.png",
-    "Computer science/Backend stuffs/APIS/Springboot/libs/slf4j",
-    "Computer science/Techs"
+    "Pasted image 20250426160408.png"
   ]
 }

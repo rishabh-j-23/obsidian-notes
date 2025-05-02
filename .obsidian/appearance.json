@@ -1,7 +1,7 @@
 {
   "interfaceFontFamily": "",
   "textFontFamily": "FiraCode Nerd Font,Adwaita Mono",
-  "cssTheme": "",
+  "cssTheme": "Catppuccin",
   "accentColor": "#9149c1",
   "showViewHeader": true,
   "showRibbon": true,

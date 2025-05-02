@@ -1,5 +1,5 @@
 {
-  "trigger_auto_manual": "Manual",
+  "trigger_auto_manual": "Automatic",
   "use_regex_to_check_for_tags": false,
   "statusBar_trigger_indicator": true,
   "folder_tag_pattern": [
@@ -47,6 +47,16 @@
       "folder": "Computer science",
       "tag": "",
       "pattern": "^cs"
+    },
+    {
+      "folder": "Computer science/Backend stuffs/APIS/Springboot/concepts",
+      "tag": "#springboot-concepts",
+      "pattern": ""
+    },
+    {
+      "folder": "Research",
+      "tag": "#research",
+      "pattern": ""
     }
   ],
   "use_regex_to_check_for_excluded_folder": false,
