@@ -58,3 +58,4 @@ violiation -> python alert processing -> server call python api -> queue -> aler
 - Notification settings?
     - template 
 
+![[alert system digrams.svg]]
