@@ -11,15 +11,12 @@
             "id": "619dd5a1fb9e877f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "diagram-edit",
               "state": {
-                "file": "Research/Notification or Alert System.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
+                "file": "alert system digrams.svg"
               },
               "icon": "lucide-file",
-              "title": "Notification or Alert System"
+              "title": "alert system digrams.svg"
             }
           }
         ]
@@ -220,8 +217,8 @@
   },
   "active": "619dd5a1fb9e877f",
   "lastOpenFiles": [
-    "alert system digrams.svg",
     "Research/Notification or Alert System.md",
+    "alert system digrams.svg",
     "Daily Notes/2025/05/2025-05-02_Friday.md",
     "Excalidraw/Drawing 2025-05-02 09.13.19.excalidraw.md",
     "Computer science/Internship.md",
