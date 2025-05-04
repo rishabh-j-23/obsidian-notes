@@ -6,5 +6,6 @@
   "multi-column-markdown",
   "table-editor-obsidian",
   "drawio-obsidian",
-  "obsidian-excalidraw-plugin"
+  "obsidian-excalidraw-plugin",
+  "obsidian-plantuml"
 ]

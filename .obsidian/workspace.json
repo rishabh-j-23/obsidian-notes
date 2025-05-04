@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "d74aa0ba86185200",
+        "id": "99af0d4b61bc9ad2",
         "type": "tabs",
         "children": [
           {
-            "id": "619dd5a1fb9e877f",
+            "id": "b8caec33b15bf940",
             "type": "leaf",
             "state": {
               "type": "diagram-edit",
@@ -18,8 +18,21 @@
               "icon": "lucide-file",
               "title": "alert system digrams.svg"
             }
+          },
+          {
+            "id": "6cfd0dd5b342016c",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2025-05-02 20.05.11.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2025-05-02 20.05.11.excalidraw"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -38,8 +51,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byModifiedTime",
-                "autoReveal": false
+                "sortOrder": "alphabetical",
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -51,7 +64,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "a",
+                "query": "tag:#db",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -76,7 +89,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "c14b0a5d628303b7",
@@ -87,12 +101,59 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1ec082785fea9dc1",
+            "id": "be2951b884e217b1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "805bda8c232cb522",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          },
+          {
+            "id": "cf749b8248482bcd",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {},
+              "icon": "lucide-info",
+              "title": "File properties"
+            }
+          },
+          {
+            "id": "f206c2a5af7443fe",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "600718bb3df8d711",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer science/Backend stuffs/APIS/Springboot/Self Implementaions/RedisMutex.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,11 +163,11 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for RedisMutex"
+              "title": "Backlinks"
             }
           },
           {
-            "id": "717b23994c34c4f9",
+            "id": "f97978962b1fb577",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -119,7 +180,7 @@
             }
           },
           {
-            "id": "6c51f8d1253915fd",
+            "id": "4203dd1367ad6093",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -134,58 +195,7 @@
             }
           },
           {
-            "id": "be2951b884e217b1",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "Computer science/Backend stuffs/APIS/Springboot/Self Implementaions/RedisMutex.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Outline of RedisMutex"
-            }
-          },
-          {
-            "id": "805bda8c232cb522",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
-            }
-          },
-          {
-            "id": "2ec87e76188e1dff",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-archive",
-              "title": "All properties"
-            }
-          },
-          {
-            "id": "da1609b469797e77",
-            "type": "leaf",
-            "state": {
-              "type": "file-properties",
-              "state": {
-                "file": "Untitled Diagram.svg"
-              },
-              "icon": "lucide-info",
-              "title": "File properties for Untitled Diagram"
-            }
-          },
-          {
-            "id": "17736518132dca0d",
+            "id": "78d720dc1ace9662",
             "type": "leaf",
             "state": {
               "type": "advanced-tables-toolbar",
@@ -195,7 +205,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -203,50 +213,46 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-excalidraw-plugin:New drawing": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "workspaces:Manage workspace layouts": false,
       "obsidian-git:Open Git source control": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-excalidraw-plugin:New drawing": false
+      "workspaces:Manage workspace layouts": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "619dd5a1fb9e877f",
+  "active": "805bda8c232cb522",
   "lastOpenFiles": [
-    "Research/Notification or Alert System.md",
+    "Excalidraw/Drawing 2025-05-02 20.05.11.excalidraw.md",
     "alert system digrams.svg",
-    "Daily Notes/2025/05/2025-05-02_Friday.md",
-    "Excalidraw/Drawing 2025-05-02 09.13.19.excalidraw.md",
-    "Computer science/Internship.md",
-    "Excalidraw",
+    "Research/Notification or Alert System.md",
+    "Untitled.canvas",
     "Research",
-    "Computer science/Backend stuffs/APIS/Springboot/concepts/Graceful Shutdown.md",
-    "Daily Notes/2025/05",
-    "Computer science/Untitled",
-    "Computer science/Techs/Zammad Helpdesk Portal.md",
-    "Computer science/Backend stuffs/APIS/Springboot/concepts",
+    "Daily Notes/2025/05/2025-05-02_Friday.md",
     "Daily Notes/2025/04/2025-04-28_Monday.md",
+    "Daily Notes/2025/05",
     "Daily Notes/2025/04",
     "Daily Notes/2025",
-    "2025-04-28.md",
     "Daily Notes",
-    "Network Gateways or Routers.md",
-    "assets/subnet-types.png",
-    "assets/Pasted image 20250426161241.png",
-    "assets/Pasted image 20250426160408.png",
-    "assets/network-jumping.png",
-    "assets",
+    "Computer science/Internship.md",
+    "Computer science/Backend stuffs/APIS/Springboot/concepts/Graceful Shutdown.md",
+    "Computer science/Backend stuffs/APIS/Springboot/concepts",
+    "Excalidraw/Drawing 2025-04-27 17.35.29.excalidraw.md",
+    "Computer science/Techs/Redis.md",
+    "Computer science/Computer Networking/ARP poisoning.md",
+    "Computer science/Computer Networking/ARP (Address Resolution Protocol).md",
     "Excalidraw/Drawing 2025-04-27 17.22.01.excalidraw.md",
+    "Computer science/Backend stuffs/APIS/Springboot/Self Implementaions/RedisMutex.md",
     "Computer science/System Design/System Design.md",
     "Computer science/System Design/System Design Trade-offs.md",
-    "Computer science/System Design/Consistency.md",
-    "Computer science/System Design",
-    "Computer science/Database/Normalization.md",
-    "Computer science/Database/Database Normalization.md",
+    "Computer science/Backend stuffs/Percentile Latency.md",
+    "Computer science/Backend stuffs/APM.md",
+    "assets",
+    "README.md",
     "Computer science/Computer Networking/Subnet.md",
     "Computer science/Computer Networking/Routing Table.md",
     "Computer science/Computer Networking/OSPF.md",
@@ -254,12 +260,13 @@
     "Computer science/Computer Networking/Network Routing.md",
     "Computer science/Computer Networking/Network Protocols.md",
     "Computer science/Computer Networking/Network Gateways or Routers.md",
-    "Computer science/Computer Networking/IPv4.md",
     "Computer science/Computer Networking/MAC Address.md",
-    "Computer science/Computer Networking/IP forwarding.md",
-    "Pasted image 20250426162444.png",
-    "Pasted image 20250426161556.png",
-    "Pasted image 20250426161241.png",
-    "Pasted image 20250426160408.png"
+    "Computer science/Computer Networking",
+    "assets/Pasted image 20250426161241.png",
+    "Computer science/System Design",
+    "Computer science/Database",
+    "assets/network-jumping.png",
+    "assets/subnet-types.png",
+    "assets/Pasted image 20250426160408.png"
   ]
 }
