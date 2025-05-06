@@ -57,6 +57,11 @@
       "folder": "Research",
       "tag": "#research",
       "pattern": ""
+    },
+    {
+      "folder": "Projects",
+      "tag": "#projects",
+      "pattern": ""
     }
   ],
   "use_regex_to_check_for_excluded_folder": false,

@@ -4,35 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "99af0d4b61bc9ad2",
+        "id": "701c5dfa053f8b5b",
         "type": "tabs",
         "children": [
           {
-            "id": "b8caec33b15bf940",
+            "id": "d4f1193d7181ab43",
             "type": "leaf",
             "state": {
-              "type": "diagram-edit",
-              "state": {
-                "file": "alert system digrams.svg"
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "alert system digrams.svg"
-            }
-          },
-          {
-            "id": "6cfd0dd5b342016c",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2025-05-02 20.05.11.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2025-05-02 20.05.11.excalidraw"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -227,10 +212,13 @@
   },
   "active": "805bda8c232cb522",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2025-05-02 20.05.11.excalidraw.md",
-    "alert system digrams.svg",
-    "Research/Notification or Alert System.md",
+    "Computer science/Backend stuffs/APIS/Springboot/libs/jackson libs.md",
+    "Projects/AeroSync.md",
     "Untitled.canvas",
+    "Projects",
+    "assets/alert system digrams.svg",
+    "Excalidraw/Drawing 2025-05-02 20.05.11.excalidraw.md",
+    "Research/Notification or Alert System.md",
     "Research",
     "Daily Notes/2025/05/2025-05-02_Friday.md",
     "Daily Notes/2025/04/2025-04-28_Monday.md",
@@ -260,11 +248,9 @@
     "Computer science/Computer Networking/Network Routing.md",
     "Computer science/Computer Networking/Network Protocols.md",
     "Computer science/Computer Networking/Network Gateways or Routers.md",
-    "Computer science/Computer Networking/MAC Address.md",
     "Computer science/Computer Networking",
     "assets/Pasted image 20250426161241.png",
     "Computer science/System Design",
-    "Computer science/Database",
     "assets/network-jumping.png",
     "assets/subnet-types.png",
     "assets/Pasted image 20250426160408.png"
