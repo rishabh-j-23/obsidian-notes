@@ -59,3 +59,7 @@ violiation -> python alert processing -> server call python api -> queue -> aler
     - template 
 
 ![[alert system digrams.svg]]
+violations saved -> alert object -> alert and violation save -> rmq publish -> 
+aler tsave
+feedback save
+notificcation  
