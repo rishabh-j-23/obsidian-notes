@@ -13,8 +13,8 @@
     - [ ] user group detections data not coming on ui and cloud
     - [x] violation sensitive data in matching text should be hidden
         - [x] server -> hide using unmask flag
-    - [ ] user management
-        - [ ] user groups arent getting applied
+    - [x] user management
+        - [x] user groups arent getting applied
               
 - ui
     - [ ] violation chart suspected action
