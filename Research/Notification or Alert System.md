@@ -64,3 +64,4 @@ aler tsave
 feedback save
 notificcation  
 
+![[Drawing 2025-05-14 11.14.28.excalidraw]]
