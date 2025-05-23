@@ -1,0 +1,9 @@
+- Hactoberfest
+    - https://www.holopin.io/userbadge/cm2tv0zx824850cl8a1gublgl
+- Google I/O badges
+    - https://developers.google.com/profile/u/106917781550601886658
+- Coursera
+    - https://www.coursera.org/accomplishments
+- Gate 2025
+    - ![[Pasted image 20250519144739.png]]
+    - 
