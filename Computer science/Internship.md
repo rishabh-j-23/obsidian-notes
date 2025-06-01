@@ -1,4 +1,3 @@
-# Bytemonk
 - Aspects and Annotations
 - Alert system
     - round robbing db
@@ -43,13 +42,62 @@
         - [ ] ui -> unmask box -> both matching text and surrounding text
 
 
-- "https://www.googleapis.com/auth/admin.directory.user.readonly"
-- "https://www.googleapis.com/auth/admin.directory.orgunit"
-- "https://www.googleapis.com/auth/gmail.readonly"
-- "https://mail.google.com/"
-- "https://www.googleapis.com/auth/admin.directory.customer.readonly"
-- "https://www.googleapis.com/auth/drive"
-        scopes.add("https://www.googleapis.com/auth/appsmarketplace.license");
-        scopes.add("https://www.googleapis.com/auth/userinfo.profile");
-        scopes.add("https://www.googleapis.com/auth/userinfo.email");
-        scopes.add("https://www.googleapis.com/auth/admin.directory.user.security");
+Google scopes used:
+- Gsuite:
+    - ./auth/activity => couldnt find this scope
+- Google OAuth2 API, v2
+    - https://www.googleapis.com/auth/userinfo.profile 
+        - Needed
+        - See your personal info, including any personal info you've made publicly available
+    - https://www.googleapis.com/auth/userinfo.email 
+        - Needed
+        - See your primary Google Account email address
+
+- Admin SDK => No usage details on cloud console
+    - https://www.googleapis.com/auth/admin.reports.audit.readonly	
+        - View audit reports for your G Suite domain
+        - Probably not needed
+    - https://www.googleapis.com/auth/admin.reports.usage.readonly	
+        - View usage reports for your G Suite domain
+        - Probably not needed
+    - https://www.googleapis.com/auth/admin.directory.user.security 
+        - Manage data access permissions for users on your domain
+        - Probably not needed
+    - https://www.googleapis.com/auth/admin.directory.domain.readonly" 
+        - View and manage the provisioning of domains for your customers
+        - Probably not needed
+    - https://www.googleapis.com/auth/admin.directory.user.readonly" 
+        - View and manage the provisioning of users on your domain
+    - https://www.googleapis.com/auth/admin.directory.customer.readonly" 
+        - View and manage the provisioning of users on your domain
+
+- Drive Api
+    - https://www.googleapis.com/auth/drive.metadata.readonly"
+        - Needed
+    - https://www.googleapis.com/auth/drive.readonly
+        - Needed
+    - https://www.googleapis.com/auth/drive.scripts	
+        - Modify your Google Apps Script scripts' behavior 
+        - not needed
+        - Apps Script is a cloud-based JavaScript platform powered by Google Drive that lets you integrate with and automate tasks across Google products.
+    - https://www.googleapis.com/auth/drive
+        - See, edit, create, and delete all of your Google Drive files
+        - very Sensitive probably not needed since read only is being used
+    - https://www.googleapis.com/auth/drive.metadata
+        - View and manage metadata of files in your Google Drive
+        - Probably not needed since we are using the metadata.readonly
+![[Pasted image 20250524093429.png]]
+
+- Gmail API
+    - https://www.googleapis.com/auth/gmail.readonly"
+        - Needed
+    - https://mail.google.com/"
+        - very sensitive
+        - probably not needed since we are not deleting the emails
+        - Read, compose, send, and permanently delete all your email from Gmail
+    - https://www.googleapis.com/auth/gmail.settings.basic	
+        - See, edit, create, or change your email settings and filters in Gmail
+    - https://www.googleapis.com/auth/gmail.settings.sharing	
+        - Manage your sensitive mail settings, including who can manage your mail
+        - This im not sure
+![[Pasted image 20250524092956.png]]
