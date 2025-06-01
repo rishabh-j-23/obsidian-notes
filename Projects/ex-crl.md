@@ -29,6 +29,11 @@
                 - [project_name]
                     - projectconfig.json
                     - headers.json
+                    - workflow.json
+                        - exec: array[request]
+                                - [request] : json
+                                - exec: [bool] 
+                                    - to exec this request or not
                     - requests
                         - [request].json
 - [request].json structure
@@ -37,4 +42,18 @@
     - headers
 
 ## Commands  
+- ex-crl init
+    - init the project with some default config
 - ex-crl exec [request]
+    - no flag
+        - parse [request].json file
+            - get headers
+            - get data
+            - get cookie
+            - exec the data
+            - measure time
+            - display the data
+    - -w, --workflow
+        - before every request `ex-crl exec` the request in this workflow file
+- -v, --verbose flag
+    - shows everything that is being executed basically all logs
