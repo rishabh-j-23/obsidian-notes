@@ -42,9 +42,9 @@
     - headers
 
 ## Commands  
-- ex-crl init
+- `ex-crl init [project-name]`
     - init the project with some default config
-- ex-crl exec [request]
+- `ex-crl exec [request]`
     - no flag
         - parse [request].json file
             - get headers
@@ -57,3 +57,7 @@
         - before every request `ex-crl exec` the request in this workflow file
 - -v, --verbose flag
     - shows everything that is being executed basically all logs
+- `ex-crl env` 
+    - use [env] to switch active project environment
+- `ex-crl list` 
+    - list to show available requests in table form
