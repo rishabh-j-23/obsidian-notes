@@ -1,4 +1,4 @@
-Functional requirements
+## Functional requirements 
 - Store requests => IMP -> figure this out
     - eg, for key login-rishabh => the equivalent request json will be stored
     - utilize cookies
@@ -13,11 +13,28 @@ Functional requirements
     - should show time for original request not the combined request
 - Define cookies?
 
-What to use
+## What to use 
 - Go
     - Go's built in http lib
-    - cobra module?
+    - cobra module
+    - encoding/json
 - fzf
+    - to search for request files
 - $EDITOR
-- **json based storage of requests locally? -> IMP**
-- 
+- **json based storage of requests locally -> IMP**
+    - store in `~/ex-crl`
+        - structure:
+            - config.json
+            - projects
+                - [project_name]
+                    - projectconfig.json
+                    - headers.json
+                    - requests
+                        - [request].json
+- [request].json structure
+    - http-method: [get | put | post ...]
+    - request-data
+    - headers
+
+## Commands  
+- ex-crl exec [request]
