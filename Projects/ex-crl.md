@@ -1,4 +1,4 @@
-Functional requirements
+## Functional requirements 
 - Store requests => IMP -> figure this out
     - eg, for key login-rishabh => the equivalent request json will be stored
     - utilize cookies
@@ -13,11 +13,51 @@ Functional requirements
     - should show time for original request not the combined request
 - Define cookies?
 
-What to use
+## What to use 
 - Go
     - Go's built in http lib
-    - cobra module?
+    - cobra module
+    - encoding/json
 - fzf
+    - to search for request files
 - $EDITOR
-- **json based storage of requests locally? -> IMP**
-- 
+- **json based storage of requests locally -> IMP**
+    - store in `~/ex-crl`
+        - structure:
+            - config.json
+            - projects
+                - [project_name]
+                    - projectconfig.json
+                    - headers.json
+                    - workflow.json
+                        - exec: array[request]
+                                - [request] : json
+                                - exec: [bool] 
+                                    - to exec this request or not
+                    - requests
+                        - [request].json
+- [request].json structure
+    - http-method: [get | put | post ...]
+    - request-data
+    - headers
+
+## Commands  
+- `ex-crl init [project-name]`
+    - init the project with some default config
+- `ex-crl exec [request]`
+    - no flag
+        - parse [request].json file
+            - get headers
+            - get data
+            - get cookie
+            - exec the data
+            - measure time
+            - display the data
+    - -w, --workflow
+        - before every request `ex-crl exec` the request in this workflow file
+- -v, --verbose flag
+    - shows everything that is being executed basically all logs
+- `ex-crl env` 
+    - use [env] to switch active project environment
+- `ex-crl list` 
+    - list to show available requests in table form
