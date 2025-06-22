@@ -7,24 +7,53 @@
     - databricks
     - kafka > KSQL DB
 
+certbot renew
+- enable port 80 to public on VM
+- add http version of url to api gateway
+- certbot renew
 ## TODO:
+- agent
+    - [ ] which certificate for distribution, certificate into .dmg on **mac**
+        - [Code signing](https://developer.apple.com/documentation/xcode/creating-distribution-signed-code-for-the-mac)
+        - [Packaging](https://developer.apple.com/documentation/xcode/packaging-mac-software-for-distribution)
+        - sudo chflags uchg /Applications/.Bytemonk.app -> locking the agent 
 - server
-    - [ ] cloud api rate limits
+    - [ ] NetworkStatsController
+        - [ ] merge post and put api to a single post api
+        - [ ] filter according to
+            - [ ] status -> dropdown (single select)
+            - [ ] category -> multi select
+        - [x] verify if everything works
+            - [x] POST api having issue when the entry does not exists
+                - issue was wrong payload structure
+        - [x] create new table wrt to orgId based store
+        - [x] put api
+            - url -> input, category -> output
+        - [x] post api -> user input -> some url.com -> correct category
+            - website_bank table
+    - [x] send a mail with random password when organization is onboarded
+    - [x] Password Expiration: Automatic password expiration policies (e.g., every 90 days) where appropriate, balanced with usability and security best practices.
+    - [x] Account Lockout: Implementation of account lockout mechanisms after a defined number of failed login attempts to deter brute-force attacks.
+    - [x] Password History: Prevention of password reuse by maintaining a history of previously used passwords.
+    - [ ] Implement mark false positive in violation actions
+    - [ ] outlook oauth installer email id
+    - [x] cloud api rate limits
+        - [x] present in the cloud console and each api info in api and services
     - [x] change redirect uri
         - [x] google => google console -> APi and services -> credentails -> oauth client ids -> select app -> change uri
         - [x] O365 => azure protal -> app registrations -> select app -> authentication -> change redirect uri
-    - [ ] Deployment of alert classification service
-        - [ ] check if alerts are working
+    - [x] Deployment of alert classification service
+        - [x] find out about genuine alert
+        - [x] check if alerts are working
         - [x] create workflow
         - [x] create .service file
         - [x] test the deployment 
             - [x] venv folder deleting whenever each llm app runs
-    - [ ] Fix gmail and outlook landing pages 
+    - [x] Fix gmail and outlook landing pages 
         - [x] return html
-        - [ ] gmail was using old api url
-        - [ ] html not implemented due to this
-        - [ ] cannot test O365 -> needs work or school account
-    - [ ] Implement mark false positive in violation actions
+        - [x] gmail was using old api url
+        - [x] html not implemented due to this
+        - [x] cannot test O365 -> needs work or school account
     - [x] implement ttl indexes
     - [x] remainder about not being able to post in private channel on slack
         - [x] not to select on channel which has slack bot already running on
@@ -35,6 +64,7 @@
         - [x] user groups arent getting applied
               
 - ui
+    - [ ] Password Construction Rules: Enforcement of minimum length (e.g., 12+ characters), inclusion of uppercase, lowercase, numbers, and special characters.
     - [ ] violation chart suspected action
         - [ ] ui -> should be label instead of name
     - [ ] data lineage -> unrelated data selected
