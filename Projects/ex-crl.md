@@ -13,6 +13,9 @@
     - should show time for original request not the combined request
 - Define cookies?
 
+### TODO
+- [ ] Implement cookie store
+
 ## What to use 
 - Go
     - Go's built in http lib
