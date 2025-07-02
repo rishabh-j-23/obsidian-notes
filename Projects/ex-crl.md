@@ -13,6 +13,10 @@
     - should show time for original request not the combined request
 - Define cookies?
 
+### TODO
+- [X] Implement cookie store
+- [ ] remove / from a api endpoint if it exists
+- [ ] add option to exclude workflow during exec
 ## What to use 
 - Go
     - Go's built in http lib
