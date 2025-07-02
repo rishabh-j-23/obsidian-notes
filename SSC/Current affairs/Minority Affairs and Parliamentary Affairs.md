@@ -1,0 +1,1 @@
+• [[Union Minister]] for [[Minority Affairs and Parliamentary Affairs]] = [[Shri Kiren Rijiju]]

@@ -1,0 +1,4 @@
+- [[Island country]]
+- [[President]] = [[Nikos Christodoulides]]
+- [[Currency]] = [[Euro]]
+- [[Capital]] = [[Nicosia]]

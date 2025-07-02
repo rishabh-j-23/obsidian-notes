@@ -1,0 +1,6 @@
+- [[Goa]]
+    - Second fully literate state under [[ULLAS]]
+    - First -> Mizoram
+    - Laddak -> union terriotory
+- [[Telangana]]
+    - 

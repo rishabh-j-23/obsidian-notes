@@ -1,0 +1,2 @@
+- [[Capital]] = [[Tashkat]]
+- Death of [[Lal Bahadur Shashtri]]

@@ -1,0 +1,11 @@
+- New Delhi hosted the first [[International Big Cat Alliance (IBCA) Assembly]] for global big cat conservation, envisioned by PM [[Narendra Modi]].
+- Union Minister for Environment, Forest and Climate Change, [[Shri Bhupender Yadav]] presided over the meeting.
+- IBCA is a global alliance initiated by India in March 2024.
+- Seven Big Cats Covered under IBCA= 
+    - [[Tiger]]
+    - [[Lion]]
+    - [[Leopard]]
+    - [[Snow Leopard]]
+    - [[Cheetah]]
+    - [[Jaguar]]
+    - [[Puma]]

@@ -1,0 +1,4 @@
+- The [[Government of India]] launched the [[DhartiAaba Janbhagidari Abhiyan]], a massive nationwide benefit saturation campaign.
+- This initiative spans over 549 tribal dominated districts and 207 particularly vulnerable tribal groups (PVT9) districts. covering more than one lakh villages and habitations.
+- Objective: Ensure benefit saturation through doorstep delivery of government schemes like Aadhaar, Ayushman Bharat, PM-Kisan, Jan Dhan, pensions, and more
+- Part Of: [[Janjatiya Gaurav Varsh]], honoring tribal heritage and the legacy Of [[Bhagwan Birsa Munda]]

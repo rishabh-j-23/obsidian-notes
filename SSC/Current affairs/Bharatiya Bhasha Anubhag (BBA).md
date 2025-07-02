@@ -1,0 +1,8 @@
+- section in [[New Delhi]]
+- [[Union Home Minister]] = [[Amit Shah]] launched 
+- In [[New Delhi]]
+- Encourage use of regional languages
+- Communication with states carried out in English
+    - [[Tamil Nadu]]
+    - [[Kerala]]
+    - [[Karnataka]]

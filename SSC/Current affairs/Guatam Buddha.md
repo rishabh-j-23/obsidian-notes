@@ -1,0 +1,7 @@
+- Lotus -> birth
+- Enlightment -> [[Bodgaya]]
+- First Serman -> [[Dhammachakrapravarthan]]
+    - shown by a Chakra Symbol
+    - [[Sarath]]
+- Death -> Kushinara
+    - represented by -> Stupa

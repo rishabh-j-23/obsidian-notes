@@ -1,6 +1,6 @@
 {
   "trigger_auto_manual": "Automatic",
-  "use_regex_to_check_for_tags": false,
+  "use_regex_to_check_for_tags": true,
   "statusBar_trigger_indicator": true,
   "folder_tag_pattern": [
     {
@@ -46,7 +46,7 @@
     {
       "folder": "Computer science",
       "tag": "",
-      "pattern": "^cs"
+      "pattern": "^#cs$"
     },
     {
       "folder": "Computer science/Backend stuffs/APIS/Springboot/concepts",
@@ -61,6 +61,46 @@
     {
       "folder": "Kanban",
       "tag": "#kanban",
+      "pattern": ""
+    },
+    {
+      "folder": "SSC/Maths and Quants",
+      "tag": "#maths",
+      "pattern": ""
+    },
+    {
+      "folder": "SSC/GK",
+      "tag": "#gk",
+      "pattern": ""
+    },
+    {
+      "folder": "SSC/History",
+      "tag": "#history",
+      "pattern": ""
+    },
+    {
+      "folder": "SSC/Geography",
+      "tag": "#geography",
+      "pattern": ""
+    },
+    {
+      "folder": "SSC/English",
+      "tag": "#english",
+      "pattern": ""
+    },
+    {
+      "folder": "SSC/Reasoning",
+      "tag": "#reasoning",
+      "pattern": ""
+    },
+    {
+      "folder": "SSC",
+      "tag": "",
+      "pattern": "^#ssc$"
+    },
+    {
+      "folder": "SSC/Current affairs",
+      "tag": "#current-affairs",
       "pattern": ""
     }
   ],

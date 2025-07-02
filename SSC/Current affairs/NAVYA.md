@@ -1,0 +1,3 @@
+- A new joint pilot initiative, NAVYA, is being launched by the Government of India to provide skills training to adolescent girls, aligning with the [[ViksitBharat@2047 Vision]]
+- [[NAVYA]] = Nurturing Aspirations through Vocational Training for Young Adolescent Girls
+- It's a joint initiative by the [[Ministry of Women and Child Development (MVVCD)]] and the [[Ministry of Skill Development and Entrepreneurship (MSDE)]].

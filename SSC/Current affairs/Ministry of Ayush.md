@@ -1,0 +1,2 @@
+- [[Union Ayush Minister]] = [[Shru Prataprao Jadhav]]
+- Ayush = [[Ayurveda, Yoga and Naturopathy Unani, Siddha and Homeopathy]]

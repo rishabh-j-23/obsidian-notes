@@ -12,17 +12,19 @@ certbot renew
 - add http version of url to api gateway
 - certbot renew
 ## TODO:
-- agent
-    - [ ] which certificate for distribution, certificate into .dmg on **mac**
-        - [Code signing](https://developer.apple.com/documentation/xcode/creating-distribution-signed-code-for-the-mac)
-        - [Packaging](https://developer.apple.com/documentation/xcode/packaging-mac-software-for-distribution)
-        - sudo chflags uchg /Applications/.Bytemonk.app -> locking the agent 
 - server
-    - [ ] NetworkStatsController
-        - [ ] merge post and put api to a single post api
-        - [ ] filter according to
-            - [ ] status -> dropdown (single select)
-            - [ ] category -> multi select
+    - [ ] .msi
+    - [ ] Allowed Integrations api
+        - [ ] accept input during org creation
+        - [x] put api to update that org
+        - [x] get api to get allowed integration
+        - [ ] ? check if the getOrg response needs the allowed integration in response
+        - [ ] add a checks on authorise apis
+    - [x] NetworkStatsController
+        - [x] merge post and put api to a single post api
+        - [x] filter according to
+            - [x] status -> dropdown (single select)
+            - [x] category -> multi select
         - [x] verify if everything works
             - [x] POST api having issue when the entry does not exists
                 - issue was wrong payload structure
@@ -63,13 +65,25 @@ certbot renew
     - [x] user management
         - [x] user groups arent getting applied
               
+- agent
+    - [ ] reverted the uninstall_type commit, the change is present in rishabh/do_not_delete/uninstall_type branch
+    - [x] which certificate for distribution, certificate into .dmg on **mac**
+        - [Code signing](https://developer.apple.com/documentation/xcode/creating-distribution-signed-code-for-the-mac)
+            - keychain access
+            - code authority certificate
+            - code signing certificate
+            - apple developer program
+        - [Packaging](https://developer.apple.com/documentation/xcode/packaging-mac-software-for-distribution)
+            - hdutil
+            - pass the code signing ids
+        - sudo chflags uchg /Applications/.Bytemonk.app -> locking the agent 
 - ui
-    - [ ] Password Construction Rules: Enforcement of minimum length (e.g., 12+ characters), inclusion of uppercase, lowercase, numbers, and special characters.
-    - [ ] violation chart suspected action
-        - [ ] ui -> should be label instead of name
-    - [ ] data lineage -> unrelated data selected
-    - [ ] violation sensitive data in matching text should be hidden
-        - [ ] ui -> unmask box -> both matching text and surrounding text
+    - [x] Password Construction Rules: Enforcement of minimum length (e.g., 12+ characters), inclusion of uppercase, lowercase, numbers, and special characters.
+    - [x] violation chart suspected action
+        - [x] ui -> should be label instead of name
+    - [x] data lineage -> unrelated data selected
+    - [x] violation sensitive data in matching text should be hidden
+        - [x] ui -> unmask box -> both matching text and surrounding text
 
 
 Google scopes used:

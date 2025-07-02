@@ -1,0 +1,1 @@
+• [[UMEED]] = Unified Waqf Management, Empowerment, Efficiency and Development
