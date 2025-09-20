@@ -102,6 +102,11 @@
       "folder": "SSC/Current affairs",
       "tag": "#current-affairs",
       "pattern": ""
+    },
+    {
+      "folder": "Computer science/Cloud/Azure",
+      "tag": "#azure",
+      "pattern": ""
     }
   ],
   "use_regex_to_check_for_excluded_folder": false,

@@ -3,7 +3,7 @@ tags:
   - current-affairs
 ---
 - [[Paraguay]] 
-    - Visited and met with [[Narendra Modi]]
+    - Visited and met with [[Narendra Modi]] 
 
 - [[United Kingdom]]
     - [[David Lammy]] visited [[India]]
