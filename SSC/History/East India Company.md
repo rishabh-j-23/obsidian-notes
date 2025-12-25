@@ -1,0 +1,3 @@
+- Created in 1599
+- 1600 => Recived [[Royal Charter]] 
+    - from [[Queen Elizabeth 1]] to trade in India

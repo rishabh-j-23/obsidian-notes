@@ -1,0 +1,1 @@
+- [[British]] allowed [[French]] to rule [[Pondicherry]]

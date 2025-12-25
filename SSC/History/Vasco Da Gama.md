@@ -1,0 +1,3 @@
+- 1498 => Arrived in India
+- Discovered first sea route to India
+- Welcomed by Calicut Ruler [[Zamarin]]

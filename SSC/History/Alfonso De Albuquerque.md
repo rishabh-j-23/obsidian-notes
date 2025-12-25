@@ -1,0 +1,4 @@
+- Captured [[Goa]] => 1510
+    - With help of [[Krishna Dev Rai (KDR)]]
+    - Abolished [[Sati]]
+- Introduced [[Tobacco]] and [[Cashew Nuts]] in India

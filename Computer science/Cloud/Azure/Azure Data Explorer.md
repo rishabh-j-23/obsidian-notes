@@ -27,6 +27,10 @@ tags:
 
 
 # Working
+> [!Docs] 
+> https://learn.microsoft.com/en-us/azure/data-explorer/how-it-works
+
 1. **Storage vs Compute**
     1. Persistent Data => [[Azure Blob Storage]] 
     2. Compute resources => Temp data store or cache
+2. 

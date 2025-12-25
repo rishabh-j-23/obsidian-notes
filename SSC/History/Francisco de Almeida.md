@@ -1,0 +1,3 @@
+- First Portuguese [[Viceroy of the India]]
+    - In 1505
+- Brought: [[Cartaze System (Blue Water Policy)]]
