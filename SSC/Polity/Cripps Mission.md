@@ -1,0 +1,3 @@
+- [[Staford Cripps]] 
+- [[Mahatma Gandhi]] -> rejected this offer
+    - Offer like [[Post Dated check]]

@@ -1,0 +1,5 @@
+- 3 Members
+    - [[Staford Cripps]]
+    - [[A.V. Alexander]]
+    - [[Pathick Lawrence]] -> Head of mission
+- Aim: Complete formalities to make [[India]] Independent

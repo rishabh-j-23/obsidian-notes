@@ -107,6 +107,11 @@
       "folder": "Computer science/Cloud/Azure",
       "tag": "#azure",
       "pattern": ""
+    },
+    {
+      "folder": "SSC/Polity",
+      "tag": "#polity",
+      "pattern": ""
     }
   ],
   "use_regex_to_check_for_excluded_folder": false,

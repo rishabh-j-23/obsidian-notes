@@ -1,0 +1,5 @@
+- [[Choudhary Rehmad Ali]]
+    - Pa -> Punjab
+    - ki -> Kashmir
+    - S -> Sindh
+    - Tan -> Balochistan

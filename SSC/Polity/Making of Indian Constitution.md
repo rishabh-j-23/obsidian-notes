@@ -1,0 +1,59 @@
+- Task of [[Constituent Assembly]]
+- Started in 1946
+- Completed on Jan 26th, 1950
+- 11 Sessions
+- 165 days of discussions
+- 2000 Amendments made before finalization
+
+- **Dec 9th, 1946**
+    - First Meeting of [[Constituent Assembly]] at [[New Delhi]]
+        1. Who would be president?
+            - Follow Seniority
+                - [[Dr. Sachidanand Sinha]
+                    - President on [[Constituent Assembly]] [Temp]
+    - [[Mohammad Ali Jinnah]] -> Not interested in [[Constituent Assembly]] of India
+        - Demanded separate nation: [[Pakistan]]
+- **Dec 11th, 1946**
+    - Voting
+    - [[Dr. Rajendra Prasad]] (Permanent Chairperson of [[Constituent Assembly]])
+    - 2 Deputy Chairperson
+        - [[V.T.Krisnamachari]]
+        - [[H.C.Mukharjee]]
+- **Dec 13th, 1946**
+    - [[Jawahar Lal Nehru]] Passed [[Objective Resolution]] 
+- **Aug 14, 1947**
+    - [[Pakistan]] created
+    - 90 members resigned from 389 members = 299 left
+- **Aug 15, 1947**
+    - Indian Independence
+- **Aug 29, 1947**
+    - Drafting Committee created
+    - [[Dr. Babasaheb R. Ambedkar]] -> [[Modern Manu]]
+- **Dec 4, 1947**
+    - First draft of [[Indian Constitution]]
+- **Dec 13th, 1946**
+    - [[Objective Resolution]]
+        - By [[Jawahar Lal Nehru]]
+        - What to keep and What to Remove
+    - Advisor
+        - [[B.N Rau]]
+            - Asked to visit 60 countries
+            - Read constitution
+- **Jun 3, 1947**
+    - [[Mountbatten Plan]]
+- **Nov 14, 1949**
+    - Final draft of [[Indian Constitution]]
+- **Nov 26, 1949** 
+    - Adopted on  by [[Constituent Assembly]]
+- **Jan 24, 1950**
+    - final sign by [[Firoz Gandhi]]
+    - [[Dr. Rajendra Prasad]] -> President of India
+- **Jan 26, 1950**
+    - [[Enforcement of Constitution]] nationwide
+    - [[Republic Day]]
+
+> [!Extras]
+    - [[Pakistan]]
+    - [[Minorities]] during [[Constituent Assembly]]
+        - Muslim
+        - Sikh

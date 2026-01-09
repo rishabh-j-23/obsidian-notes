@@ -1,0 +1,1 @@
+Nov 26, 1949 -> First [[President]]

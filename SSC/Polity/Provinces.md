@@ -1,0 +1,5 @@
+- [[Governor Province]]
+    - larger province
+    - Governor head -> appointed by British
+- [[Chief Commissioner Province]]
+    - smaller province
