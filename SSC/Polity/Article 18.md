@@ -1,0 +1,1 @@
+- Abolishment of all titles except Military and Academic

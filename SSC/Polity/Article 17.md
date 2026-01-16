@@ -1,0 +1,4 @@
+- Abolishes [[Untouchability]]
+- Forbids its practice in any form
+- Passed by parliament, [[Untouchability (Offences) Act of 1955]]
+- in [[1976]] this act renamed to [[Civil Rights Acts 1955]]

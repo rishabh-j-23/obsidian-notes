@@ -1,0 +1,1 @@
+- in [[1976]] this act renamed to [[Civil Rights Acts 1955]]

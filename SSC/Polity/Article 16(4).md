@@ -1,0 +1,3 @@
+- Empowers state to provision reservation of appointments of posts for [[Backward Class]] of citizen
+    - EG [[OBC]]
+- 

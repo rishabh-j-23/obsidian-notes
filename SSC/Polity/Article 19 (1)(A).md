@@ -1,0 +1,2 @@
+- [[Right to Freedom of Speech and Expression]]
+- In writing, speech, printing, picture or any other manner

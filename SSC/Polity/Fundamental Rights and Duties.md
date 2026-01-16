@@ -1,0 +1,5 @@
+---
+tags:
+  - polity
+---
+[[Fundamental Rights]]

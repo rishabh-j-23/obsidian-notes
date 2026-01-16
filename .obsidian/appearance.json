@@ -4,7 +4,7 @@
   "cssTheme": "Catppuccin",
   "accentColor": "#9149c1",
   "showViewHeader": true,
-  "showRibbon": true,
+  "showRibbon": false,
   "baseFontSize": 15,
   "monospaceFontFamily": "FiraCode Nerd Font Mono",
   "theme": "obsidian"

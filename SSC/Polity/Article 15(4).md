@@ -1,0 +1,1 @@
+- State can make special provision for [[Scheduled Castes (SC)]] and [[Scheduled Tribes (ST)]]

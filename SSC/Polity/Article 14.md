@@ -1,0 +1,5 @@
+- Equality before law
+    - law is same for all
+    - Taken from [[British Constitution]] 
+- Equal Protection of Laws for all peoples
+    - Taken from [[US Constitution]]

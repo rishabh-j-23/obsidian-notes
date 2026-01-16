@@ -1,0 +1,8 @@
+- Definition of state
+    - Basically a country
+    - Includes
+        - Government
+        - Parliament of India
+        - All local authorities (Municipalities, Panchayat raj, District Boards, etc.)
+        - Statutory and Non-Statutory authorities (LIC, ONGC, etc.)
+        - 
