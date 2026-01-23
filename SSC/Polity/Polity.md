@@ -2,3 +2,311 @@
 tags:
   - polity
 ---
+refer: https://www.youtube.com/live/8PMDYIdqjwE?si=RHHbYxaqqdHsDVv3
+- Total 25 Parts in Constitutions
+# [[PART 5: ARTICLE 51-151]]
+- Union
+- Divided into 5 chapters
+    - I -> Union Executive -> Article 52-78
+        - President 
+            - Article 52-62
+        - Vice President
+            - Article 63-71
+        - Attorney General
+            - 76
+        - Prime Minister
+            - 74-78
+        - Council of Minister
+    - II -> Union Executive -> Article 79-122
+        - Parliament
+    - III -> Union Executive -> Article 123
+        - Ordinance
+    - VI -> Union Executive -> Article 124-147
+        - Supreme Court
+
+> [!TRICK]
+> PREM Tr E QCOI
+## [[Article 52]]
+- There shall be president of India
+## [[Article 53]]
+- Executive power of the union
+## [[Article 54]]
+- election of the president
+- [[Electoral College]]
+    - Elected MPs and MLAs
+## [[Article 55]]
+- Manner of election of president
+- Proportional Representation + Single transferable vote
+    - Borrowed from Ireland
+- Indirect voting
+- Secret ballot
+- 50 proposers -> Someone who proposes someone as president candidate
+- 50 seconders -> people who backs the president candidate
+## [[Article 56]]
+- Term of office of president
+- 5 years term
+## [[Article 57]]
+- Eligibility for re-election 
+- Any no. of times -> no limit
+    - USA -> 2 times only
+## [[Article 58]]
+- Qualifications for election as president
+- 35 age
+- Citizen of India
+- Member of Lok Sabha
+## [[Article 59]]
+- Conditions of presidents office
+## [[Article 60]]
+- Oath or affirmation by the president
+- Should not be an MP/MLA
+- Given by [[CJI]]
+## [[Article 61]]
+- Procedure for impeachment of the president
+- Impeachment -> Removal of President
+    - Violation of Constitution
+    - Lok Sabha or Rajya Sabha can start
+        - 1/4th need to sign
+        - pass with special majority
+            - mac(majority of total member of house, 2/3th of voting)
+        - AKA [[Quasi Judicial Process]]
+- President can represent themselves
+- Participated by
+    - ALL MPs -> elected and nominated -> [[Electoral College]]
+- [[Electoral College]] vs Impeachment
+    - Electoral College -> all elected and nominated
+    - Impeachment -> Only elected
+
+## [[Article 62]]
+- Time of holding election to fill the vacancy
+
+> [!FACT]
+> President <-resignation-> Vice President
+> VP -> Acting President till new President
+> VP not available -> CJI becomes acting president
+> President election -> [Total valid votes / (1+1)] + 1
+
+## [[Presidents of India]]
+![[Pasted image 20260122164849.png]]
+## [[Article 63]]
+- There shall be a Vice President of India
+## [[Article 64]]
+- The Vice President to be ex-officio Chairman of the Council of States
+## [[Article 65]]
+- The Vice President to act as President or to discharge his functions during casual vacancies in the office or during the absence of President
+## [[Article 66]]
+- election of Vice President
+- Indirect election
+- Proportional representation and transferable vote
+- Participation
+    - All MPs -> elected and nominated
+## [[Article 67]]
+- Term of office of vice president
+- 5 yr term
+- Resign to president and vice versa
+
+> [!FACT]
+>- Removal -> Can be started in [[Council of States (Rajya Sabha)]] only
+>    - [[House of People (Lok Sabha)]] -> simple vote
+>    - 14 days time period
+## [[Article 68]]
+- Time of holding election to fill vacancy in the office of Vice-President and the term of office of person elected to fill casual vacancy
+## [[Article 69]]
+- Oath or affirmation by the Vice-President
+- Given by [[President]]
+## [[Article 70]]
+- Discharge of President's functions in other contingencies
+## [[Article 71]]
+- Matters relating to or connected with the election of Vice-President
+- For both [[President]] and [[Vice-President]] -> [[Supreme Court]] has final say
+## [[Vice-Presidents of India]]
+![[Pasted image 20260122170140.png]]
+
+[[Hamid Ansari]] -> served two terms
+
+## [[Article 72]]
+- Power of President to grant pardons, etc. and to suspend, remit or commute sentences in certain cases
+- Powers
+    - Pardon -> Complete absolve
+    - Commute -> change form of punishment
+    - Remission -> lessen the punishment
+    - Respite -> reduce the term of punishment due to special condition like health.
+    - Reprieve -> temporary hold on punishment
+- This is under judicial review
+
+> [!FACT]
+> - [[Article 161]] -> Governor Pardoning Power
+>     - Almost same as [[President]]
+>     - except 2
+>         - Court Martial
+>         - Death sentence
+
+## [[Article 73]]
+- Extent of Executive Power of union
+
+## [[Article 74]]
+- There shall be [[Council of Ministers]] headed by [[Prime Minister]] to aid and advise [[President]]
+- Read Head -> [[Prime Minister]]
+- Nominal Head -> [[President]]
+- [[42nd Amendment]] -> binding (president has to approve)
+- [[44nd Amendment]] -> Can be rejected once
+
+## [[Article 75]]
+**Clause 1** - The [[Prime Minister]] shall be appointed by the [[President]] and the other Ministers shall be appointed by the [[President]] on the advice of the [[Prime Minister]]
+
+**Clause 1A** - Added in [[91st Amendment]] in 2003
+- Total # of Ministers, including [[Prime Minister]], in [[Council of Ministers]] shall not exceed 15% of total number of members of the [[House of the People (Lok Sabha)]]
+
+**Clause 1B** - Added in [[91st Amendment]] in 2003
+- A member if either [[Houses of Parliament]] belonging to any political party who is disqualified for being a member of that House under paragraph 2 of the [[Tenth Schedule]] shall also be disqualified to be appointed as a Minister under clause (1) for the duration of the period commencing from the date of his disqualification till the date
+
+**Clause 2** - The Ministers shall hold office at the pleasure of the [[President]].
+
+**Clause 3** - The [[Council of Ministers]] shall be collectively responsible to the House of the People.
+
+**Clause 4** - Before a Minister enters his office, the [[President]] shall administer
+to him the oaths of office and secrecy according to the forms set out
+for the purpose in the Third Schedule.
+
+**Clause 5** - A Minister who for any period of six consecutive months is not a
+member of either House of Parliament shall at the expiration of that
+period cease to be a Minister.
+
+**Clause 6** - The salaries and allowances of Ministers shall be such as
+Parliament may from time to time by law determine and until
+Parliament so determines, shall be as specified in the Second
+Schedule.
+
+## [[Article 76]]
+- [[Attorney-General of India]]
+    - Highest law officer
+    - advices government in legal matters
+    
+Clause 1) - Appointment by [[President]]
+Clause 2) - Advise the [[Government of India]]
+Clause 3) - Right to Audience in all the courts
+Clause 4) - Pleasure of President
+
+- Not a full time advisor of [[Government of India]]
+- They can take private cases only if they are not against [[Government of India]]
+
+> [!FACTS]
+> - 1st [[Attorney-General of India]] - MC Setavad
+> - Current - Venkatraman
+> - [[Solicitor General]] - [[Tushar Mehta]] -> assists [[Attorney-General of India]]
+> 
+> [[Article 165]] 
+> - [[Advocate General]] -> Highest state officer of state
+
+
+## [[Article 77]]
+- Conduct of business of the [[Government of India]] transacts under [[President]]
+
+## [[Article 78]]
+- Duties of [[Prime Minister]] as respect to the furnishing of information to the [[President]], etc.
+- [[Prime Minister]] is [[Linchpin of the Government]]
+
+# [[Chapter 2: Parliament of India]]
+
+## [[Article 79]]
+- Composition of Parliament
+- Setting of [[House of People (Lok Sabha)]] and [[Council of States (Rajya Sabha)]] -> [[May 13, 1952]]
+- Has
+    - [[President]]
+    - [[Council of States (Rajya Sabha)]]
+        - Upper House
+        - Permanent House
+        - Elders House
+        - 2nd Chamber
+        - Constituted on [[Apr 3, 1952]]
+    - [[House of People (Lok Sabha)]]
+        - 1st Chamber
+        - Lower House
+        - Constituted on [[Apr 17, 1952]]
+![[Pasted image 20260122174616.png]]
+
+## [[Article 80]]
+- [[Council of States (Rajya Sabha)]]
+- 250 Total
+    - 238 elected
+        - indirectly
+        - proportional representation
+        - 
+    - 12
+        - Nominated from Fields -> **Li S A S**
+            - Literature
+            - Science
+            - Arts
+            - Social Service
+- Current Member 245 -> 233 elected + 12 Nominated
+- Theme: Lotus
+- No equal representation
+
+## [[Article 81]]
+- [[House of People (Lok Sabha)]]
+- Theme: Peacock
+- Total 550
+    - 530 Elected
+        - State
+    - 20 Elected
+        - UT
+    - Directly voted by people -> Direct Election
+    - [[First Past The Post System]] -> Winner takes all
+- Current membership -> 548
+
+> [!FACT]
+> - [[Uttar Pradesh]] -> Most Representation
+### [[Delimitation Commission]]
+- Happened in 
+    - [[1952]]
+    - [[1962]]
+    - [[1972]]
+    - [[2002]]
+- [[42nd Amendment]] -> No census till [[2000]], Used [[1971]] census
+- [[84th Amendment]] -> Freeze census till [[2026]]
+
+## [[Article 83]]
+- Duration of [[Houses of Parliament]] 
+- [[House of People (Lok Sabha)]]
+    - term of 5 year max
+    - Can be extended under [[Emergency (Polity)]]
+- [[Council of States (Rajya Sabha)]]
+    - No tenure
+    - 1/3rd members retire every 2 years
+        - Term: 6 years
+
+## [[Article 84]]
+- Qualification of Membership
+- Citizen of India
+- [[House of People (Lok Sabha)]] -> 25 year old
+- [[Council of States (Rajya Sabha)]] -> 30 year year old
+- Other qualification can be prescribed by the [[Parliament]]
+
+## [[Article 85]]
+- Sessions of [[Parliament]], prorogation and dissolution
+- Max 3 session, Min 2
+    - Gap between two sessions -> [[Resses]]
+    - [[Budget Session]] -> February to May.
+    - [[Monsoon Session]] -> July to September.
+    - [[Winter Session]] -> November to December. 
+- Prorogation, Summon, Dissolution -> done by [[President]]
+    - Dissolution of [[House of People (Lok Sabha)]] only (Permanent House)
+        - All Ministers needs to resign
+
+## [[Article 86]]
+- Right of [[President]] to address and send messages to [[Houses of Parliament]]
+
+## [[Article 87]]
+- Special address by the [[President]]
+- [[Motion of Thanks]]
+- After each [[General Election]] and 1st session of each year 
+    - Passed in both [[House of People (Lok Sabha)]] and [[Council of States (Rajya Sabha)]]
+        - if not passed ruling party don't have power
+            - ruling can be felled
+
+## [[Article 88]]
+- Rights of [[Ministers]] and [[Attorney-General of India]] as respective [[Houses of Parliament]]
+- [[Ministers]] can speak in any [[Houses of Parliament]]
+    - can only vote in their respective houses
+- [[Attorney-General of India]] can speak in any [[Houses of Parliament]]
+    - But cannot vote anywhere
+        - Not a member of any [[Houses of Parliament]]

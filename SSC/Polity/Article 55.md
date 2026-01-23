@@ -1,0 +1,7 @@
+- Manner of election of president
+- Proportional Representation + Single transferable vote
+    - Borrowed from Ireland
+- Indirect voting
+- Secret ballot
+- 50 proposers -> Someone who proposes someone as president candidate
+- 50 seconders -> people who backs the president candidate

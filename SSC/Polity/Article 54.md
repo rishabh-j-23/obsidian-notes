@@ -1,0 +1,3 @@
+- election of the president
+- [[Electoral College]]
+    - Elected MPs and MLAs
