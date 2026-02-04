@@ -1,0 +1,6 @@
+- [[Consolidate Fund of India]]
+    - [[Government of India]] needs permission of [[Houses of Parliament]]
+- [[Public Account of India]] -> no permission of [[Parliament]]
+- [[Contingency Fund of India]] -> [[Article 267]]
+    - In case of emergency
+    - No permission

@@ -310,3 +310,241 @@ Clause 4) - Pleasure of President
 - [[Attorney-General of India]] can speak in any [[Houses of Parliament]]
     - But cannot vote anywhere
         - Not a member of any [[Houses of Parliament]]
+
+
+
+*Officers of parliament*
+## [[Article 89]]
+- The Chairman and Deputy Chairman of Council of States
+- [[Vice-President]] is chairman
+- [[Deputy Chairman]] -> elected from member of [[Council of States (Rajya Sabha)]]
+
+## [[Article 90]]
+- Vacation and resignation of and removal from the office of the [[Deputy Chairman]]
+- [[Deputy Chairman]] give resignation to Chairman
+- Ground of removal
+    - [[Deputy Chairman]] -> Effective majority of [[Council of States (Rajya Sabha)]]
+## [[Article 91]]
+- Power of the [[Deputy Chairman]] or other person to perform the duties if the office of or to act Chairman
+- In case if both Chairman and [[Deputy Chairman]] not present
+    - Absent -> comes from [[Panel of Vice Chairperson]] -> 8 people present
+
+## [[Article 92]]
+- The chairman or the Deputy Chairman not to preside while a resolution for his removal from office is under consideration
+
+*Officer of [[Council of States (Rajya Sabha)]]*
+## [[Article 93]]
+- The [[Speaker]] and [[Deputy Speaker]] of the [[House of People (Lok Sabha)]]
+    - If [[Speaker]] not available the [[Deputy Speaker]] takes his place
+    - [[Speaker]] from leading/ruling party
+    - [[Deputy Speaker]] -> opposition party
+
+## [[Article 94]]
+- Vacation and resignation of and removal from the offices of the [[Speaker]] and [[Deputy Speaker]]
+    - Speaker <-resignation-> Deputy Speaker
+    - removal -> effective majority
+
+## [[Article 95]]
+- Power of the [[Deputy Speaker]] or other person to perform the duties of the office of or to act as [[Speaker]]
+
+## [[Article 96]]
+- The [[Speaker]] or the [[Deputy Speaker]] not to preside while a resolution for this removal from office is under consideration.
+- 10 people - [[Panel of Persons]]
+
+## [[Article 97]]
+- Salaries and allowances of the [[Chairman]] and he [[Deputy Chairman]] and the [[Speaker]] and [[Deputy Speaker]] is determined by themselves
+
+## [[Article 98]]
+- Secretariat of the [[Parliament]]
+
+## [[Article 99]]
+- Oath or affirmation by members
+    - Done by [[President]]
+- [[Pro-tam Speaker]] -> Temp 
+
+## [[Article 100]]
+- Voting in the Houses, power of Houses to act notwithstanding vacancies and quorum
+- [[Voting at First Instance]]
+- Heads -> [[Casting Vote]]
+
+## [[Article 101]]
+- Vacation of seats
+- Both shall not be members of both houses
+- not from [[State Legislature]] and [[Parliament]]
+
+## [[Article 102]]
+- Disqualification for membership
+    - not a Indian citizen
+    - office of profit (nowhere defined)
+    - Undischarged Insolent
+    - Unsound Mind
+    - Any other law created by [[Parliament]]
+        - e.g. RIA 1957
+- Decided by
+    - [[President]]
+
+## [[Article 103]]
+- Decision on question as to disqualifications of members
+    - [[President]] + [[Election Commission of India (ECI)]]
+
+> [!FACT]
+> - **Defection** -> Introduced in [[52nd Amendment]]
+>     - Change of Political Party
+>         - [[91st Amendment]]
+>             - if merger i.e. 2/3rd people leaves then no defection
+>             - final decision by [[Speaker]]
+>             - e.g. Kihito Hollohan case -> Subject to [[Judiciary Review]]
+>     - Independent Member joins any Political Party
+>     - Nominated Member joins after 6 months
+>     - Votes contrary to the direction given by his/her party
+
+## [[Article 104]]
+- Penalty for sitting and voting before making oath or affirmation under article 99 or when not qualifies or when disqualified
+- 500 INR/Day
+
+## [[Article 105]]
+- Powers, privileges, etc. of the [[Houses of Parliament]] and of the members and committees
+- No liabilities in Houses
+    - Punishment decided by [[Speaker]]
+- Cannot be arrested in civil matter if [[Parliament]] in session and 40 days before and after
+
+## [[Article 106]]
+- Allowances decided by [[Parliament]]
+
+## [[Article 107]]
+- Provisions as to introducing and passing of Bills
+- [[Ordinary Bills]]
+    - [[Public Ordinary Bills]]
+        - 7Days notice period
+        - most probable to be passed
+    - [[Private Ordinary Bills]]
+        - 1month notice period
+        - least most to be passed
+    - Can be passed in both [[House of People (Lok Sabha)]] -> [[Council of States (Rajya Sabha)]] -> [[President]]
+        - anyone can reject
+        - Case1
+            - [[House of People (Lok Sabha)]] proposes bill
+            - [[Council of States (Rajya Sabha)]] proposes changes
+            - [[House of People (Lok Sabha)]] reject changes
+            - Bill stays in deadlock for 6 months
+            - [[President]] may call a [[Joint Sitting]]
+            - passed on basis of [[Simple Vote]]
+
+## [[Article 108]]
+- [[Joint Sitting]] of both houses in certain cases
+    - Taken from [[Australia's Constitution]]
+    - Simple Majority => Bill -> Acts
+    - 3 [[Joint Sitting]]
+        - POTA
+        - Dowry
+        - Banking
+    - Runs according to [[House of People (Lok Sabha)]] rules
+
+> [!INFO]
+> [[Bill Lapse]]
+> - [[Prorogation]]
+>     - No effect on bill
+>     - Pending notices lapses
+> - [[Dissolution]]
+>     - Bill lapses
+>     - Bills that does not lapses
+>         1. Originated in [[Council of States (Rajya Sabha)]]
+>         2. [[House of People (Lok Sabha)]] -> [[Council of States (Rajya Sabha)]] -> [[President]]
+>         3. [[Joint Sitting]]
+
+
+## [[Article 109]]
+- Special procedure in respect of [[Money Bills]]
+- [[Money Bills]]
+    - Can only rise in [[House of People (Lok Sabha)]]
+    - [[Council of States (Rajya Sabha)]] has no amending power
+    - No [[Joint Sitting]]
+
+    Step 1. Prior recommendation of [[President]]
+    Step 2. [[House of People (Lok Sabha)]] [[Speaker]] certifies the bill 
+        - 2018 -> Aadhar Case
+            - bill passed as money bill and approved
+
+## [[Article 110]]
+- Definition of [[Money Bills]]
+
+## [[Article 111]]
+- [[President]]
+    - No Veto power in case of [[Constitutional Bill]]
+        - Done in [[24th Amendment]]
+    - Two Powers
+        - Positive
+            - Assent
+        - Negative
+            - Absolute Veto
+                - Reject the bill directly
+            - Suspensive Veto
+                - Returns the bill 
+                - Not Available in case of [[Money Bills]]
+            - Pocket Veto
+                - no response
+                - Done by [[Giani Zail Singh]]
+                    - 1976 bill
+
+## [[Article 112]]
+- Annual financial statement == [[Budget]]
+- [[President]] shall cause to be laid before both the [[Houses of Parliament]] by [[Finance Minister]]
+- PDSVAF
+    - Present
+    - Discuss
+    - Scrutiny
+    - Voting
+        - Cut Motion
+            - Policy cut - demand increased by 1INR
+            - Economy cut - lumpsum reduction
+            - Token cut - by 100INR
+    - [[Appropriation Bills]]
+    - [[Finance Bill]]
+- 
+## [[Article 113]]
+- Procedure in [[Parliament]] with respect to estimates
+- Estimate of Expenditures
+    - Charged Expenditure 
+        - Not Votable
+            - bcs of salary
+    - Made from
+        - All but salary
+        - All voting allowed
+        - form [[House of People (Lok Sabha)]]
+## [[Article 114]]
+- [[Appropriation Bills]]
+- 
+
+## [[Article 115]]
+- Supplementary, additional or excess grants
+
+## [[Article 116]]
+- Votes on account, votes of credit and exceptional grants
+- [[Votes on account]]
+
+## [[Article 117]]
+(1). Like [[Ordinary Bills]]
+(2). In [[Houses of Parliament]] asked by [[President]]
+- Special Provisions as to [[Financial Bills]]
+    - [[Money Bills]] + Matters of General Legislation
+
+## [[Article 118]]
+- Rules of procedure
+
+## [[Article 119]]
+- Regulation by law of procedure in Parliament in relation to financial business
+
+## [[Article 120]]
+- Language to be used in Parliament
+    - Hindi
+    - English -> was supposed to be removed after 15yrs
+
+## [[Article 121]]
+- Restriction on discussion in Parliaments by Courts
+
+## [[Article 122]]
+- Courts not to inquire into proceedings of [[Parliament]]
+
+
+# [[Chapter 3]]
+
