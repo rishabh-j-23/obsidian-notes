@@ -366,6 +366,8 @@ Clause 4) - Pleasure of President
 - Voting in the Houses, power of Houses to act notwithstanding vacancies and quorum
 - [[Voting at First Instance]]
 - Heads -> [[Casting Vote]]
+- Quorom - 1/10th members required to run house proceeding
+- [[Preceding Officer]] can adjourn
 
 ## [[Article 101]]
 - Vacation of seats
@@ -546,5 +548,31 @@ Clause 4) - Pleasure of President
 - Courts not to inquire into proceedings of [[Parliament]]
 
 
-# [[Chapter 3]]
+# [[Chapter 3: Ordinance]]
+
+## [[Article 123]]
+- Power of [[President]] to promulgate [[Ordinance]] during recess of [[Parliament]]
+- DC Wadwa vs State of Bihar case
+
+# [[Chapter 4: Supreme Court]]
+- Article 124-147
+
+[[Question Hour]]
+[[Zero Hour]]
+[[Motion]]
+## [[Article 124]]
+- Establishment and constitution of [[Supreme Court]]
+- Judges
+    - Originally -> 1 [[Chief Justice]] + 7 Other Judges
+    - At Present ->  1 [[Chief Justice]] + 33 Other Judges
+    - Appointed by [[President]]
+    - Tenure -> 65yrs of Age
+    - Office Vacant
+        - Resign
+        - Removal
+            - Proved mis behavior
+            - Incapacity
+        - Tenure end
+    - Judges Enquiry
+
 

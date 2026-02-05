@@ -1,0 +1,4 @@
+- First Sitting -> [[Jan 28, 1950]]
+- aka [[Guardian of Constitution]]
+- replace the [[Federal Court]]
+    - Established in 1937
