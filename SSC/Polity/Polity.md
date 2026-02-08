@@ -21,11 +21,13 @@ refer: https://www.youtube.com/live/8PMDYIdqjwE?si=RHHbYxaqqdHsDVv3
         - Parliament
     - III -> Union Executive -> Article 123
         - Ordinance
-    - VI -> Union Executive -> Article 124-147
+    - IV -> Union Executive -> Article 124-147
         - Supreme Court
 
 > [!TRICK]
 > PREM Tr E QCOI
+
+# [[Part 5 - Chapter 1: Union Executive]]
 ## [[Article 52]]
 - There shall be president of India
 ## [[Article 53]]
@@ -205,7 +207,7 @@ Clause 4) - Pleasure of President
 - Duties of [[Prime Minister]] as respect to the furnishing of information to the [[President]], etc.
 - [[Prime Minister]] is [[Linchpin of the Government]]
 
-# [[Chapter 2: Parliament of India]]
+# [[Part 5 - Chapter 2: Parliament of India]]
 
 ## [[Article 79]]
 - Composition of Parliament
@@ -548,13 +550,13 @@ Clause 4) - Pleasure of President
 - Courts not to inquire into proceedings of [[Parliament]]
 
 
-# [[Chapter 3: Ordinance]]
+# [[Part 5 - Chapter 3: Ordinance]]
 
 ## [[Article 123]]
 - Power of [[President]] to promulgate [[Ordinance]] during recess of [[Parliament]]
 - DC Wadwa vs State of Bihar case
 
-# [[Chapter 4: Supreme Court]]
+# [[Part 5 - Chapter 4: Supreme Court]]
 - Article 124-147
 
 [[Question Hour]]
@@ -566,13 +568,144 @@ Clause 4) - Pleasure of President
     - Originally -> 1 [[Chief Justice]] + 7 Other Judges
     - At Present ->  1 [[Chief Justice]] + 33 Other Judges
     - Appointed by [[President]]
+        - Takes recommendation from [[Collegium]]
+        - 
     - Tenure -> 65yrs of Age
     - Office Vacant
         - Resign
         - Removal
             - Proved mis behavior
             - Incapacity
+            - Taken from USA
+            - [[House of People (Lok Sabha)]] - 100 people approval needed
+            - [[Council of States (Rajya Sabha)]] - 50 people approval needed
+            - [[Special Majority]]
         - Tenure end
     - Judges Enquiry
+    - Qualification
+        - 5 years as judge in [[High Court]] or 10yr advocate of [[High Court]] or Distinguished Purist
 
+### Judges Cases
+- [[SP Gupta Case (1st Judges case)]]
+- [[2nd Judges case]] -> CJI binding on President from 2 Judges -> aka [[Collegium]]
+- [[3rd Judges case]] -> CJI binding on President from 4 Judges
+- [[99th Amendment]] -> No [[Collegium]], only [[NJAC]]
+- [[4th Judges case]] -> [[99th Amendment]]'s [[NJAC]] declared unconstitutional
+
+## [[Article 125]]
+- Salaries, etc. of Judges
+
+## [[Article 126]]
+- Appoint of acting [[CJI]]
+
+## [[Article 127]]
+- Appointment of ad hoc Judges to complete quorum
+
+## [[Article 128]]
+- Attendance of retired Judges
+
+> [!FACT]
+> [[First Female CJI]] -> [[BV Nagarathna]]
+
+
+## [[Article 129]]
+- [[Supreme Court]] to be a court of record
+- Can punish for its contempt
+
+## [[Article 130]]
+- Delhi to be Seat of [[Supreme Court]]
+
+## [[Article 131]]
+- Original jurisdiction of the [[Supreme Court]]
+- Can be of Exclusive nature
+    - for 
+        - Issue between central and state
+        - Issue between states
+
+## [[Article 132]]
+- Appellate Jurisdiction of [[Supreme Court]] in appeals from High Courts in certain cases
+## [[Article 133]]
+- Appellate Jurisdiction of [[Supreme Court]] in appeals from High Courts in civil matters
+## [[Article 134]]
+- Appellate Jurisdiction of [[Supreme Court]] in appeals from High Courts in criminal matters
+
+## [[Article 135]]
+- Jurisdiction and powers of the [[Federal Court]] under existing law to be exercisable by the [[Supreme Court]]
+
+## [[Article 136]]
+- Special leave to appeal by the [[Supreme Court]]
+
+## [[Article 137]]
+- Review of Judgement or orders by the [[Supreme Court]]
+    - Judicial Review taken from [[USA]]
+    - Judicial Independence from USA as well
+    
+## [[Article 138]]
+- Enlargement of the jurisdiction of the [[Supreme Court]] by [[Parliament]]
+
+## [[Article 139]]
+- Conferment on the Supreme Court of powers to issue certain writs
+
+## [[Article 140]]
+- [[Ancillary Powers]] - extra powers
+- given by [[Parliament]]
+
+## [[Article 141]]
+- Law declared by [[Supreme Court]] to be binding on all courts
+
+## [[Article 142]]
+- [[Supreme Court]] to pass any decree or order necessary for doing complete justice in any case or matter pending before it.
+## [[Article 143]]
+- Power of [[President]] to consult [[Supreme Court]]
+- Advisory Jurisdiction
+## [[Article 144]]
+- Civil and Judicial authorities to act in aid of the [[Supreme Court]]
+
+> [!TRICK]
+> SC  SAAR C Seat Offer
+> 124 to 131
+
+# [[Part 5 - Chapter 5 Controller and Auditor-General]]
+- Article 148 to 151
+
+## [[Controller and Auditor General of India (CAG)]]
+- Guardian of public purse
+- guide and philosopher of [[Public Accounts Committee (PAC)]]
+- Term: 6yrs / 65yrs of age
+- Removal - same as [[Supreme Court]] judge
+- [[Single Membered Body]]
+
+## [[Article 148]]
+- There shall be [[Controller and Auditor General of India (CAG)]] who shall be appointed by the [[President]] by warrant under his hand and seal and shall only be removed from office in like manner and on like grounds as a Judge of [[Supreme Court]]
+
+## [[Article 149]]
+- [[Controller and Auditor General of India (CAG)]] shall perform such duties and exercise such powers in relation to the accounts of the Union and of the States and of any other authority or body as may be prescribed by or under any law made by parliament
+## [[Article 150]]
+- Accounts of the Union and of the States shall be kept in such form as the [[President]] may on the advice of the [[Controller and Auditor General of India (CAG)]] prescribe
+## [[Article 151]]
+- Reports relating to the accounts of the Union shall be kept in such form as the [[President]] 
+- Reports relating to the accounts of a state shall be submitted to the [[Governor of the State]]
+
+# [[Part 6: The States]]
+### State Executives
+- Governor
+- CM
+- COM
+- Advocate General
+
+![[Pasted image 20260208154830.png]]
+#### Similarity
+- [[President]] == [[Governor of the State]]
+- [[Prime Minister]] == [[Chief Minister]]
+- [[Attorney-General of India]] == [[Advocate General]]
+-  89 and 90
+    - Article 74 to 111 + 89 
+    - Article 112 to 123 + 90
+![[Pasted image 20260208154955.png]]
+- Above six states have a [[Bicameral Legislature]]
+
+- Out of 8 [[Union Territory]], 3 [[Union Territory]] have [[Legislative Assembly]]
+    - Delhi
+    - Pondicherry
+    - Jammu and Kashmir
 
