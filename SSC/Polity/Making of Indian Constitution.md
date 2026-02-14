@@ -5,6 +5,16 @@
 - 165 days of discussions
 - 2000 Amendments made before finalization
 
+- [[Sept 2nd, 1946]]
+    - [[Interim Government]]
+        - [[President]]: [[Mountbatten]]
+        - [[Vice-President]]: [[Jawahar Lal Nehru]]
+        - [[Home Minister]]: [[Sardar Patel]]
+        - [[Defense Minister]]: [[Baldev Singh]]
+        - [[Agriculture Minister]]: [[Dr. Rajendra Prasad]]
+        - [[Law Minister]]: [[J.N. Mandal]]
+        - [[Labour Minister]]: [[Jagjiwan Ram]]
+        - [[Finance Minister]]: [[Liakat Ali Khan]]
 - **[[Dec 9th, 1946]]**
     - First Meeting of [[Constituent Assembly]] at [[New Delhi]]
         1. Who would be president?

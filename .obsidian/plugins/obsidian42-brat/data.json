@@ -1,0 +1,23 @@
+{
+  "pluginList": [
+    "latazadehomero/cornell-marginalia"
+  ],
+  "pluginSubListFrozenVersion": [
+    {
+      "repo": "latazadehomero/cornell-marginalia",
+      "version": "1.0.2"
+    }
+  ],
+  "themesList": [],
+  "updateAtStartup": true,
+  "updateThemesAtStartup": true,
+  "enableAfterInstall": true,
+  "loggingEnabled": false,
+  "loggingPath": "BRAT-log",
+  "loggingVerboseEnabled": false,
+  "debuggingMode": false,
+  "notificationsEnabled": true,
+  "personalAccessToken": "",
+  "selectLatestPluginVersionByDefault": false,
+  "allowIncompatiblePlugins": false
+}

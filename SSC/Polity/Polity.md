@@ -417,7 +417,7 @@ Clause 4) - Pleasure of President
 
 ## [[Article 107]]
 - Provisions as to introducing and passing of Bills
-- [[Ordinary Bills]]
+- [[Ordinary Bill]]
     - [[Public Ordinary Bills]]
         - 7Days notice period
         - most probable to be passed
@@ -527,7 +527,7 @@ Clause 4) - Pleasure of President
 - [[Votes on account]]
 
 ## [[Article 117]]
-(1). Like [[Ordinary Bills]]
+(1). Like [[Ordinary Bill]]
 (2). In [[Houses of Parliament]] asked by [[President]]
 - Special Provisions as to [[Financial Bills]]
     - [[Money Bills]] + Matters of General Legislation
@@ -709,3 +709,56 @@ Clause 4) - Pleasure of President
     - Pondicherry
     - Jammu and Kashmir
 
+## [[Article 169]]
+- Abolition and Creation of [[Legislative Council]]
+- [[Parliament]] can do it anytime
+    - needs [[Simple Majority]]
+    
+## [[Article 170]]
+- [[Legislative Assembly]]
+    - Maximum 500
+    - Min 60 
+    
+## [[Article 171]]
+- Composition of [[Legislative Council]] 
+- 1/3 -> Elected from [[Legislative Assembly]]
+- 1/3 -> Elected from Local Bodies
+- 1/12 -> Graduates
+- 1/12 -> Teachers
+- 1/6 -> Nominated by [[Governor of the State]] 
+    - Li S A S Co-operative Society
+
+## [[Article 172]]
+- Duration of [[State Legislature]]
+- [[Legislative Assembly]] - 5yrs
+- [[Legislative Council]] - no term
+
+
+[[Ordinary Bill]]
+- Power([[Legislative Assembly]]) > Power([[Legislative Council]]) 
+- [[Legislative Council]] 
+    - Can stop stop bill for 
+        - 3 months first time
+        - 1 month second time
+        
+[[Money Bills]]
+- Power([[Legislative Assembly]]) > Power([[Legislative Council]]) 
+
+## [[Governor of the State]]
+- Article 152 to 167
+![[Pasted image 20260208161114.png]]
+
+## [[High Court]]
+- Article 214 to 231
+![[Pasted image 20260208162015.png]]
+- Judge of [[High Court]]
+    - 10yrs advocated in [[High Court]]
+    - or 10 yr Judicial Office
+
+[[7th Amendment]]
+- a [[Governor of the State]] and [[High Court]] can serve multiple states
+    - Lakshadweep -> Kerala [[High Court]]
+    - Andaman Nicobar -> WB [[High Court]]
+    - Dadar, Diu, Goa -> MH [[High Court]]
+    - Nagaland, Mizoram, Arunachal, Assam -> Guwahati [[High Court]]
+    - Pondicherry -> TN [[High Court]]
