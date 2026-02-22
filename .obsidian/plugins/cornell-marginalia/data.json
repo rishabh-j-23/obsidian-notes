@@ -1,7 +1,7 @@
 {
   "ignoredFolders": "Templates",
-  "alignment": "left",
-  "marginWidth": 15,
+  "alignment": "right",
+  "marginWidth": 38,
   "fontSize": "0.85em",
   "fontFamily": "inherit",
   "enableReadingView": true,
