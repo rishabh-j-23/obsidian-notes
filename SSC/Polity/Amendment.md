@@ -1,0 +1,1 @@
+- A formal change to law, contract, constitution or other legal document
