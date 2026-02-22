@@ -2,6 +2,7 @@
 tags:
   - maths
 ---
+![[Pasted image 20260219215242.png]]
 # if comparing two numbers
 - take ratio
 

@@ -4,7 +4,7 @@
     - M.N. Roy Founder
 
 # 1935
-- Official demand of constitution -> by [[Indian National Congress]]
+- Official demand of constitution -> by [[Indian National Congress (INC)]]
 
 
 # 1937
@@ -17,21 +17,21 @@
     - No britishers
 
 # 1939
--  Attack on Poland -> [[World War II]]
+-  Attack on Poland -> [[World War II (WW2)]]
     - By [[Adolf Hitler]]
     - aided by [[Bennito Mussolini]] of Italy
 
 # 1940
 - [[August Offer]]
     - Offer by britishers
-    - have indians join [[World War II]]
+    - have indians join [[World War II (WW2)]]
 
 # 1941
 - [[Japan]] -> Hawaii -> Pearl Harbor -> Torpedo Attack
     - [[Franklin D Roosevelt]] President at time
 # 1942
 - Committee -> [[Cripps Mission]] 
-    - [[Staford Cripps]] 
+    - [[Stafford Cripps]] 
     - [[Mahatma Gandhi]] -> rejected this offer
         - Offer like Post Dated check
 # 1945

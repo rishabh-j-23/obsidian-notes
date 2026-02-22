@@ -1,0 +1,7 @@
+- [[1946]]
+- Lead by
+    - [[Pethick Lawrence]] - Chairman
+    - [[Stafford Cripps]]
+    - [[A.V. Alexander]]
+- Accepted by both [[Indian National Congress (INC)]] and [[Muslim League]]
+- [[Constituent Assembly]] formed according to this

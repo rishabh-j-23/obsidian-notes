@@ -1,0 +1,3 @@
+- Status given by [[British Empire]]
+- Implies that a country will be allowed to have self-governing
+- But it would part of [[British Empire]]
