@@ -2,13 +2,20 @@
 tags:
   - polity
 ---
-## TOC
-[[History Timeline]]
-[[Constituent Assembly]]
-[[Demand for Constituent Assembly]]
-[[Making of Indian Constitution]]
-
-
 - Partly Rigid, partly flexible
-- 
+- Symbol - [[Elephant]]
+- Language - English
+- [[Indian Constitution]] consisted of:
+    - First:
+        - 395 Articles
+        - 8 Schedules
+        - 22 Parts
+        - Preamble
+    - Current
+        - 448 Articles
+        - 12 Schedules
+        - 25 Parts
+            - Part 7 deleted
+            - Part IV-A, IX-B and XIV-A added
+        - Preamble
 

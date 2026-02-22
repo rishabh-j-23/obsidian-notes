@@ -1,0 +1,28 @@
+{
+  "ignoredFolders": "Templates",
+  "alignment": "left",
+  "marginWidth": 15,
+  "fontSize": "0.85em",
+  "fontFamily": "inherit",
+  "enableReadingView": true,
+  "tags": [
+    {
+      "prefix": "!",
+      "color": "#ffea00"
+    },
+    {
+      "prefix": "?",
+      "color": "#ff9900"
+    },
+    {
+      "prefix": "X-",
+      "color": "#ff4d4d"
+    },
+    {
+      "prefix": "V-",
+      "color": "#00cc66"
+    }
+  ],
+  "outgoingLinks": [],
+  "lastOmniDestination": "Marginalia Inbox"
+}

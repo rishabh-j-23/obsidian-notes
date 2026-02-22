@@ -1,0 +1,3 @@
+- Passed by [[Jawahar Lal Nehru]] on [[Dec 13th, 1946]]
+- Accepted on [[Jan 22, 1947]] by [[Constituent Assembly]]
+- Defined the guiding principles for the Constitution. It established India as an independent sovereign republic, guaranteed fundamental rights to all citizens, and acted as the foundation for the Preamble

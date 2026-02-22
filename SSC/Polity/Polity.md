@@ -4,6 +4,13 @@ tags:
 ---
 refer: https://www.youtube.com/live/8PMDYIdqjwE?si=RHHbYxaqqdHsDVv3
 - Total 25 Parts in Constitutions
+## TOC
+[[History Timeline]]
+[[Constituent Assembly]]
+[[Demand for Constituent Assembly]]
+[[Making of Indian Constitution]]
+[[Schedules of Indian Constitution]]
+
 # [[PART 5: ARTICLE 51-151]]
 - Union
 - Divided into 5 chapters

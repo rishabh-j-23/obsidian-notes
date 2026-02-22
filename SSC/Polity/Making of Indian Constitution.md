@@ -7,7 +7,7 @@
 
 - [[Sept 2nd, 1946]]
     - [[Interim Government]]
-        - [[President]]: [[Mountbatten]]
+        - [[President]]: [[Lord Mountbatten]]
         - [[Vice-President]]: [[Jawahar Lal Nehru]]
         - [[Home Minister]]: [[Sardar Patel]]
         - [[Defense Minister]]: [[Baldev Singh]]
@@ -51,6 +51,12 @@
             - Read constitution
 - **[[Jun 3, 1947]]**
     - [[Mountbatten Plan]]
+- [[Feb 21, 1948]]
+    - First draft published
+    - Took 8 months to discuss
+- [[Nov 4, 1948]]
+    - [[Dr. Babasaheb R. Ambedkar]] - final draft before [[Constituent Assembly]]
+![[Pasted image 20260222165409.png]]
 - **[[Nov 14, 1949]]**
     - Final draft of [[Indian Constitution]]
 - **[[Nov 26, 1949]]** 
