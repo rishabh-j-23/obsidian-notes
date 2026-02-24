@@ -41,7 +41,10 @@ var DEFAULT_SETTINGS = {
     { prefix: "V-", color: "#00cc66" }
   ],
   outgoingLinks: [],
-  lastOmniDestination: "Marginalia Inbox"
+  lastOmniDestination: "Marginalia Inbox",
+  extractHighlights: false,
+  ignoredHighlightFolders: "Excalidraw",
+  ignoredHighlightTexts: "\u26A0  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. \u26A0"
 };
 var MarginNoteWidget = class extends import_view.WidgetType {
   constructor(text, app, customColor, sourcePath = "", direction = ">") {
@@ -497,6 +500,15 @@ var _OmniCaptureModal = class _OmniCaptureModal extends import_obsidian.Modal {
     saveBtn.style.backgroundColor = "var(--interactive-accent)";
     saveBtn.style.color = "var(--text-on-accent)";
     saveBtn.onclick = () => this.saveCapture();
+    this.modalEl.addEventListener("keydown", (e) => {
+      if ((e.ctrlKey || e.metaKey) && e.key === "Enter") {
+        e.preventDefault();
+        this.saveCapture();
+      }
+    });
+    setTimeout(() => {
+      this.thoughtInput.focus();
+    }, 50);
   }
   async saveCapture() {
     const thought = this.thoughtInput.value.trim();
@@ -564,12 +576,13 @@ var _OmniCaptureModal = class _OmniCaptureModal extends import_obsidian.Modal {
     finalMd += `
 ---
 `;
-    const file = this.app.vault.getAbstractFileByPath(`${destName}.md`);
+    let file = this.app.metadataCache.getFirstLinkpathDest(destName, "");
     try {
       if (file instanceof import_obsidian.TFile) {
         await this.app.vault.append(file, finalMd);
       } else {
-        await this.app.vault.create(`${destName}.md`, `# \u{1F4E5} ${destName}
+        const fileName = destName.endsWith(".md") ? destName : `${destName}.md`;
+        await this.app.vault.create(fileName, `# \u{1F4E5} ${destName}
 ` + finalMd);
       }
       new import_obsidian.Notice(`\u2705 Capture injected into ${destName}`);
@@ -591,6 +604,8 @@ var CornellNotesView = class extends import_obsidian.ItemView {
   constructor(leaf, plugin) {
     super(leaf);
     this.currentTab = "current";
+    // 🧠 Memoria para el Cosido por Teclado
+    this.selectedForStitch = [];
     this.isStitchingMode = false;
     this.sourceStitchItem = null;
     this.searchQuery = "";
@@ -599,6 +614,11 @@ var CornellNotesView = class extends import_obsidian.ItemView {
     this.draggedSidebarItems = null;
     this.isGroupedByContent = false;
     this.pinboardItems = [];
+    this.pinboardFocusIndex = null;
+    this.targetInsertIndex = null;
+    this.targetInsertAsChild = false;
+    this.autoPasteInterval = null;
+    this.lastClipboardText = "";
     this.plugin = plugin;
   }
   getViewType() {
@@ -693,6 +713,15 @@ var CornellNotesView = class extends import_obsidian.ItemView {
       btnGroup.classList.toggle("cornell-tab-active", this.isGroupedByContent);
       this.applyFiltersAndRender();
     };
+    container.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowDown") {
+        const activeEl = document.activeElement;
+        if (activeEl && (activeEl.classList.contains("cornell-sidebar-item") || activeEl.classList.contains("cornell-pinboard-item"))) return;
+        e.preventDefault();
+        const firstItem = container.querySelector(".cornell-sidebar-item, .cornell-pinboard-item");
+        if (firstItem) firstItem.focus();
+      }
+    });
   }
   updateStitchBanner() {
     const banner = this.containerEl.querySelector(".cornell-stitch-banner");
@@ -775,6 +804,36 @@ var CornellNotesView = class extends import_obsidian.ItemView {
             outgoingLinks
           });
         }
+        if (this.plugin.settings.extractHighlights) {
+          const ignoredHlPaths = this.plugin.settings.ignoredHighlightFolders.split(",").map((s) => s.trim()).filter((s) => s.length > 0);
+          const isFolderIgnored = ignoredHlPaths.some((p) => file.path.startsWith(p));
+          if (!isFolderIgnored) {
+            const highlightRegex = /==(.*?)==/g;
+            let highlightMatch;
+            const blockIdMatch = line.match(/\^([a-zA-Z0-9]+)\s*$/);
+            const lineBlockId = blockIdMatch ? blockIdMatch[1] : null;
+            const ignoredTexts = this.plugin.settings.ignoredHighlightTexts.split(",").map((s) => s.trim().toLowerCase()).filter((s) => s.length > 0);
+            while ((highlightMatch = highlightRegex.exec(line)) !== null) {
+              const rawHighlightText = highlightMatch[1].trim();
+              if (rawHighlightText.length === 0) continue;
+              const isTextIgnored = ignoredTexts.some((t) => rawHighlightText.toLowerCase().includes(t));
+              if (isTextIgnored) continue;
+              const linkRegex = /(?<!!)\[\[(.*?)\]\]/g;
+              const outgoingLinks = [];
+              const linkMatches = Array.from(rawHighlightText.matchAll(linkRegex));
+              linkMatches.forEach((m) => outgoingLinks.push(m[1]));
+              allItemsFlat.push({
+                text: `==${rawHighlightText}==`,
+                rawText: rawHighlightText,
+                color: "var(--text-highlight-bg)",
+                file,
+                line: i,
+                blockId: lineBlockId,
+                outgoingLinks
+              });
+            }
+          }
+        }
       }
     }
     this.cachedItems = allItemsFlat;
@@ -840,71 +899,194 @@ var CornellNotesView = class extends import_obsidian.ItemView {
     topControls.style.flexDirection = "column";
     topControls.style.gap = "10px";
     topControls.style.marginBottom = "20px";
+    const outlineRow = topControls.createDiv();
+    outlineRow.style.display = "flex";
+    outlineRow.style.gap = "5px";
+    const exportMindmapBtn = outlineRow.createEl("button", { text: "\u{1F4CB} Copy", title: "Copy Board to Clipboard" });
+    exportMindmapBtn.style.flex = "1";
+    exportMindmapBtn.style.cursor = "pointer";
+    exportMindmapBtn.onclick = () => this.exportMindmap();
+    const importSkeletonBtn = outlineRow.createEl("button", { text: "\u{1F4E5} Paste", title: "Import headers & lists from active note" });
+    importSkeletonBtn.style.flex = "1";
+    importSkeletonBtn.style.cursor = "pointer";
+    importSkeletonBtn.onclick = () => this.importActiveFileSkeleton();
     const exportRow = topControls.createDiv();
     exportRow.style.display = "flex";
     exportRow.style.gap = "5px";
-    const exportBtn = exportRow.createEl("button", { text: "\u{1F4DD} Note" });
+    const exportRow1 = topControls.createDiv();
+    exportRow1.style.display = "flex";
+    exportRow1.style.gap = "5px";
+    exportRow1.style.marginBottom = "5px";
+    const exportBtn = exportRow1.createEl("button", { text: "\u{1F4DD} Note", title: "Export to Markdown Note" });
     exportBtn.style.flex = "1";
     exportBtn.style.backgroundColor = "var(--interactive-accent)";
     exportBtn.style.color = "var(--text-on-accent)";
-    exportBtn.style.fontWeight = "bold";
     exportBtn.style.border = "none";
     exportBtn.style.cursor = "pointer";
     exportBtn.onclick = () => this.exportPinboard();
-    const exportMindmapBtn = exportRow.createEl("button", { text: "\u{1F4CB} Clip" });
-    exportMindmapBtn.style.flex = "1";
-    exportMindmapBtn.style.backgroundColor = "var(--color-green)";
-    exportMindmapBtn.style.color = "#fff";
-    exportMindmapBtn.style.fontWeight = "bold";
-    exportMindmapBtn.style.border = "none";
-    exportMindmapBtn.style.cursor = "pointer";
-    exportMindmapBtn.onclick = () => this.exportMindmap();
-    const exportCanvasBtn = exportRow.createEl("button", { text: "\u{1F3A8} Canvas" });
+    const exportCanvasBtn = exportRow1.createEl("button", { text: "\u{1F3A8} Canvas", title: "Export to Canvas" });
     exportCanvasBtn.style.flex = "1";
     exportCanvasBtn.style.backgroundColor = "var(--color-purple)";
     exportCanvasBtn.style.color = "#fff";
-    exportCanvasBtn.style.fontWeight = "bold";
     exportCanvasBtn.style.border = "none";
     exportCanvasBtn.style.cursor = "pointer";
     exportCanvasBtn.onclick = () => this.exportCanvas();
+    const exportRow2 = topControls.createDiv();
+    exportRow2.style.display = "flex";
+    exportRow2.style.gap = "5px";
+    const clearBoardBtn = exportRow2.createEl("button", { text: "\u{1F5D1}\uFE0F Clear", title: "Clear Board" });
+    clearBoardBtn.style.flex = "1";
+    clearBoardBtn.onclick = () => {
+      this.pinboardItems = [];
+      this.applyFiltersAndRender();
+      new import_obsidian.Notice("Board cleared!");
+    };
+    const autoPasteBtn = exportRow2.createEl("button", { text: this.autoPasteInterval ? "\u23F8 Auto ON" : "\u25B6 Auto OFF", title: "Auto-add copied text to Board" });
+    autoPasteBtn.style.flex = "1";
+    autoPasteBtn.style.backgroundColor = this.autoPasteInterval ? "var(--color-green)" : "";
+    autoPasteBtn.style.color = this.autoPasteInterval ? "#fff" : "";
+    autoPasteBtn.style.border = "none";
+    autoPasteBtn.style.cursor = "pointer";
+    autoPasteBtn.onclick = async () => {
+      if (this.autoPasteInterval) {
+        window.clearInterval(this.autoPasteInterval);
+        this.autoPasteInterval = null;
+        new import_obsidian.Notice("\u{1F916} Auto-Paste deactivated.");
+      } else {
+        this.lastClipboardText = await navigator.clipboard.readText();
+        this.autoPasteInterval = window.setInterval(async () => {
+          try {
+            const currentText = await navigator.clipboard.readText();
+            if (currentText && currentText !== this.lastClipboardText) {
+              this.lastClipboardText = currentText;
+              this.pinboardItems.push({ text: currentText, rawText: currentText, color: "transparent", file: null, line: -1, blockId: null, outgoingLinks: [], isCustom: true, indentLevel: 0 });
+              this.applyFiltersAndRender();
+              new import_obsidian.Notice("Text auto-pasted! \u{1F4DD}");
+            }
+          } catch (e) {
+          }
+        }, 1e3);
+        new import_obsidian.Notice("\u{1F916} Auto-Paste ON! Copy text to see it appear.");
+      }
+      this.applyFiltersAndRender();
+    };
     const titleRow = topControls.createDiv();
     titleRow.style.display = "flex";
     titleRow.style.gap = "5px";
-    const titleInput = titleRow.createEl("input", { type: "text", placeholder: "Add title (Ej: ## My amazing title)" });
+    const titleInput = titleRow.createEl("input", { type: "text", placeholder: "Add text (Use # for titles)" });
     titleInput.style.flexGrow = "1";
-    titleInput.style.backgroundColor = "var(--background-modifier-form-field)";
-    titleInput.style.border = "1px solid var(--background-modifier-border)";
     const addTitleBtn = titleRow.createEl("button", { text: "\u2795" });
     addTitleBtn.onclick = () => {
       const val = titleInput.value.trim();
       if (val) {
-        this.pinboardItems.push({
-          text: val,
-          rawText: val,
-          color: "transparent",
-          file: null,
-          line: -1,
-          blockId: null,
-          outgoingLinks: [],
-          isTitle: true
-        });
+        let newItem;
+        if (val.startsWith("#")) {
+          newItem = { text: val, rawText: val, color: "transparent", file: null, line: -1, blockId: null, outgoingLinks: [], isTitle: true };
+        } else {
+          newItem = { text: val, rawText: val, color: "transparent", file: null, line: -1, blockId: null, outgoingLinks: [], isCustom: true, indentLevel: 0 };
+        }
+        if (this.targetInsertIndex !== null && this.targetInsertIndex >= 0) {
+          if (!newItem.isTitle) {
+            const parentIndent = this.pinboardItems[this.targetInsertIndex].indentLevel || 0;
+            newItem.indentLevel = this.targetInsertAsChild ? parentIndent + 1 : parentIndent;
+          }
+          this.pinboardItems.splice(this.targetInsertIndex + 1, 0, newItem);
+          this.targetInsertIndex = null;
+        } else {
+          this.pinboardItems.push(newItem);
+        }
+        titleInput.value = "";
         this.applyFiltersAndRender();
+        setTimeout(() => {
+          const newInput = container.querySelector('input[placeholder*="Add text"]');
+          if (newInput) newInput.focus();
+        }, 50);
       }
     };
+    titleInput.addEventListener("keypress", (e) => {
+      if (e.key === "Enter") addTitleBtn.click();
+    });
     if (this.pinboardItems.length === 0) {
-      container.createEl("p", { text: "Your Board is empty. Start by adding a title or pinning notes!", cls: "cornell-sidebar-empty" });
+      container.createEl("p", { text: "Your Board is empty. Paste a skeleton, add nodes, or pin notes!", cls: "cornell-sidebar-empty" });
       return;
     }
     let draggedIndex = null;
     const listContainer = container.createDiv();
     this.pinboardItems.forEach((item, index) => {
+      let currentIndex = index;
       let itemWrapper = listContainer.createDiv();
       itemWrapper.setAttr("draggable", "true");
+      itemWrapper.classList.add("cornell-pinboard-item");
+      itemWrapper.tabIndex = 0;
       itemWrapper.style.cursor = "grab";
       itemWrapper.style.marginBottom = "5px";
       const indent = item.indentLevel || 0;
       itemWrapper.style.marginLeft = `${indent * 20}px`;
-      itemWrapper.style.transition = "margin-left 0.2s ease";
+      itemWrapper.style.borderRadius = "4px";
+      itemWrapper.addEventListener("focus", () => {
+        itemWrapper.style.backgroundColor = "var(--background-modifier-hover)";
+        itemWrapper.style.outline = "2px solid var(--interactive-accent)";
+        itemWrapper.style.outlineOffset = "-2px";
+      });
+      itemWrapper.addEventListener("blur", () => {
+        itemWrapper.style.backgroundColor = "transparent";
+        itemWrapper.style.outline = "none";
+      });
+      itemWrapper.addEventListener("cornell-move", (e) => {
+        const dir = e.detail;
+        if (dir === "up" && index > 0) {
+          const temp = this.pinboardItems[index];
+          this.pinboardItems[index] = this.pinboardItems[index - 1];
+          this.pinboardItems[index - 1] = temp;
+          this.pinboardFocusIndex = index - 1;
+          this.applyFiltersAndRender();
+        } else if (dir === "down" && index < this.pinboardItems.length - 1) {
+          const temp = this.pinboardItems[index];
+          this.pinboardItems[index] = this.pinboardItems[index + 1];
+          this.pinboardItems[index + 1] = temp;
+          this.pinboardFocusIndex = index + 1;
+          this.applyFiltersAndRender();
+        } else if (dir === "left") {
+          item.indentLevel = Math.max(0, (item.indentLevel || 0) - 1);
+          this.pinboardFocusIndex = index;
+          this.applyFiltersAndRender();
+        } else if (dir === "right") {
+          item.indentLevel = (item.indentLevel || 0) + 1;
+          this.pinboardFocusIndex = index;
+          this.applyFiltersAndRender();
+        }
+      });
+      itemWrapper.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          e.stopPropagation();
+          this.targetInsertIndex = currentIndex;
+          this.targetInsertAsChild = e.altKey;
+          titleInput.focus();
+          return;
+        }
+        if (!e.ctrlKey && !e.metaKey && !e.shiftKey && !e.altKey) {
+          if (e.key === "ArrowUp") {
+            e.preventDefault();
+            e.stopPropagation();
+            if (itemWrapper.previousElementSibling) itemWrapper.previousElementSibling.focus();
+          } else if (e.key === "ArrowDown") {
+            e.preventDefault();
+            e.stopPropagation();
+            if (itemWrapper.nextElementSibling) itemWrapper.nextElementSibling.focus();
+          } else if (e.key.toLowerCase() === "h") {
+            e.preventDefault();
+            e.stopPropagation();
+            const hoverEvent = new MouseEvent("mouseenter", { bubbles: true, cancelable: true });
+            itemWrapper.dispatchEvent(hoverEvent);
+          } else if (e.key === "Escape") {
+            e.preventDefault();
+            e.stopPropagation();
+            const leaveEvent = new MouseEvent("mouseleave", { bubbles: true, cancelable: true });
+            itemWrapper.dispatchEvent(leaveEvent);
+          }
+        }
+      });
       if (item.isTitle) {
         itemWrapper.style.padding = "10px 5px";
         itemWrapper.style.marginTop = "15px";
@@ -915,19 +1097,45 @@ var CornellNotesView = class extends import_obsidian.ItemView {
         itemWrapper.style.justifyContent = "space-between";
         const match = item.text.match(/^(#+)\s(.*)/);
         itemWrapper.style.fontSize = match ? match[1].length === 1 ? "1.4em" : "1.25em" : "1.1em";
-        itemWrapper.createSpan({ text: match ? match[2] : item.text });
-        const delBtn = itemWrapper.createSpan({ text: "\xD7", title: "Borrar t\xEDtulo" });
+        const titleSpan = itemWrapper.createSpan({ text: match ? match[2] : item.text });
+        titleSpan.style.wordBreak = "break-word";
+        titleSpan.style.whiteSpace = "normal";
+        const delBtn = itemWrapper.createSpan({ text: "\xD7", title: "Borrar" });
         delBtn.style.cursor = "pointer";
+        delBtn.style.flexShrink = "0";
         delBtn.onclick = () => {
-          this.pinboardItems.splice(index, 1);
+          this.pinboardItems.splice(currentIndex, 1);
           this.applyFiltersAndRender();
         };
+      } else if (item.isCustom) {
+        itemWrapper.style.padding = "6px 8px";
+        itemWrapper.style.display = "flex";
+        itemWrapper.style.justifyContent = "space-between";
+        itemWrapper.style.alignItems = "flex-start";
+        itemWrapper.style.color = "var(--text-normal)";
+        itemWrapper.style.borderLeft = "2px solid var(--background-modifier-border)";
+        itemWrapper.style.backgroundColor = "var(--background-primary-alt)";
+        const textSpan = itemWrapper.createSpan({ text: "\u26AC " + item.text });
+        textSpan.style.wordBreak = "break-word";
+        textSpan.style.whiteSpace = "normal";
+        textSpan.style.flex = "1";
+        textSpan.style.marginRight = "10px";
+        const delBtn = itemWrapper.createSpan({ text: "\xD7", title: "Delete node" });
+        delBtn.style.cursor = "pointer";
+        delBtn.style.opacity = "0.3";
+        delBtn.style.flexShrink = "0";
+        delBtn.onclick = () => {
+          this.pinboardItems.splice(currentIndex, 1);
+          this.applyFiltersAndRender();
+        };
+        itemWrapper.onmouseenter = () => delBtn.style.opacity = "1";
+        itemWrapper.onmouseleave = () => delBtn.style.opacity = "0.3";
       } else {
-        const marginaliaDOM = this.createItemDiv(item, itemWrapper, true, index);
+        const marginaliaDOM = this.createItemDiv(item, itemWrapper, true, currentIndex);
         marginaliaDOM.setAttr("draggable", "false");
       }
       itemWrapper.addEventListener("dragstart", (e) => {
-        draggedIndex = index;
+        draggedIndex = currentIndex;
         itemWrapper.style.opacity = "0.4";
         e.stopPropagation();
       });
@@ -942,11 +1150,12 @@ var CornellNotesView = class extends import_obsidian.ItemView {
         e.preventDefault();
         e.stopPropagation();
         itemWrapper.style.borderTop = "";
-        if (draggedIndex !== null && draggedIndex !== index) {
+        if (draggedIndex !== null && draggedIndex !== currentIndex) {
           const itemToMove = this.pinboardItems[draggedIndex];
           this.pinboardItems.splice(draggedIndex, 1);
-          const targetIndex = draggedIndex < index ? index - 1 : index;
+          const targetIndex = draggedIndex < currentIndex ? currentIndex - 1 : currentIndex;
           this.pinboardItems.splice(targetIndex, 0, itemToMove);
+          this.pinboardFocusIndex = targetIndex;
           this.applyFiltersAndRender();
         }
       });
@@ -955,6 +1164,10 @@ var CornellNotesView = class extends import_obsidian.ItemView {
         draggedIndex = null;
       });
     });
+    if (this.pinboardFocusIndex !== null && listContainer.children[this.pinboardFocusIndex]) {
+      listContainer.children[this.pinboardFocusIndex].focus();
+      this.pinboardFocusIndex = null;
+    }
   }
   async exportPinboard() {
     if (this.pinboardItems.length === 0) return;
@@ -970,6 +1183,13 @@ var CornellNotesView = class extends import_obsidian.ItemView {
       if (item.isTitle) {
         const text = item.text.startsWith("#") ? item.text : `## ${item.text}`;
         content += `${text}
+
+`;
+        continue;
+      }
+      if (item.isCustom) {
+        const indentSpaces = "  ".repeat(item.indentLevel || 0);
+        content += `${indentSpaces}- ${item.text}
 
 `;
         continue;
@@ -1005,8 +1225,6 @@ var CornellNotesView = class extends import_obsidian.ItemView {
       const newFile = await this.plugin.app.vault.create(fileName, content);
       await this.plugin.app.workspace.getLeaf(true).openFile(newFile);
       new import_obsidian.Notice("Pinboard compiled successfully!");
-      this.pinboardItems = [];
-      this.applyFiltersAndRender();
     } catch (error) {
       new import_obsidian.Notice("Error creating Pinboard file. Check console.");
     }
@@ -1022,6 +1240,10 @@ var CornellNotesView = class extends import_obsidian.ItemView {
       if (item.isTitle) {
         const text = item.text.startsWith("#") ? item.text : `# ${item.text}`;
         content += `${text}
+`;
+      } else if (item.isCustom) {
+        const indentSpaces = "	".repeat(item.indentLevel || 0);
+        content += `${indentSpaces}- ${item.text}
 `;
       } else {
         const indentSpaces = "	".repeat(item.indentLevel || 0);
@@ -1079,6 +1301,14 @@ var CornellNotesView = class extends import_obsidian.ItemView {
         parentAtLevel = {};
         parentAtLevel[-1] = nodeId;
         currentY += 150;
+      } else if (item.isCustom) {
+        const indent = item.indentLevel || 0;
+        const baseX = (indent + 1) * 450;
+        nodes.push({ id: nodeId, type: "text", text: `**${item.text}**`, x: baseX, y: currentY, width: 250, height: 60, color: "5" });
+        const parentId = parentAtLevel[indent - 1] || lastTitleId;
+        if (parentId) edges.push({ id: genId(), fromNode: parentId, fromSide: "right", toNode: nodeId, toSide: "left" });
+        parentAtLevel[indent] = nodeId;
+        currentY += 100;
       } else {
         const indent = item.indentLevel || 0;
         const baseX = (indent + 1) * 450;
@@ -1338,10 +1568,140 @@ ${canvasNoteContent}
       colorDot.style.backgroundColor = color;
       groupHeader.createSpan({ text: `${items.length} notes` });
       for (const item of items) {
-        this.createItemDiv(item, container);
+        const marginaliaDOM = this.createItemDiv(item, container);
+        marginaliaDOM.classList.add("cornell-sidebar-item");
+        marginaliaDOM.tabIndex = 0;
+        marginaliaDOM.style.outline = "none";
+        marginaliaDOM.addEventListener("focus", () => {
+          marginaliaDOM.style.outline = "2px solid var(--interactive-accent)";
+          marginaliaDOM.style.outlineOffset = "2px";
+        });
+        marginaliaDOM.addEventListener("blur", () => {
+          marginaliaDOM.style.outline = "none";
+        });
+        marginaliaDOM.addEventListener("keydown", async (e) => {
+          const pinCurrentItem = (targetItem, domEl) => {
+            const alreadyPinned = this.pinboardItems.some(
+              (pinned) => pinned.file && targetItem.file && pinned.blockId === targetItem.blockId && pinned.file.path === targetItem.file.path
+            );
+            if (!alreadyPinned) {
+              this.pinboardItems.push(targetItem);
+              new import_obsidian.Notice(`\u{1F4CC} Pinned: ${targetItem.text.substring(0, 15)}...`);
+              const originalBg = domEl.style.backgroundColor;
+              domEl.style.backgroundColor = "var(--color-green)";
+              setTimeout(() => domEl.style.backgroundColor = originalBg, 200);
+            }
+          };
+          if (e.key === "ArrowUp") {
+            e.preventDefault();
+            e.stopPropagation();
+            let prev = marginaliaDOM.previousElementSibling;
+            while (prev && prev.tabIndex < 0) {
+              prev = prev.previousElementSibling;
+            }
+            if (prev) {
+              prev.focus();
+              if (e.shiftKey) pinCurrentItem(item, marginaliaDOM);
+            }
+          } else if (e.key === "ArrowDown") {
+            e.preventDefault();
+            e.stopPropagation();
+            let next = marginaliaDOM.nextElementSibling;
+            while (next && next.tabIndex < 0) {
+              next = next.nextElementSibling;
+            }
+            if (next) {
+              next.focus();
+              if (e.shiftKey) pinCurrentItem(item, marginaliaDOM);
+            }
+          } else if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) {
+            e.preventDefault();
+            e.stopPropagation();
+            const leaf = this.plugin.app.workspace.getLeaf(false);
+            await leaf.openFile(item.file, { eState: { line: item.line } });
+          } else if (e.key === "Enter" || e.key.toLowerCase() === "p") {
+            e.preventDefault();
+            e.stopPropagation();
+            pinCurrentItem(item, marginaliaDOM);
+          } else if (e.code === "Space") {
+            e.preventDefault();
+            e.stopPropagation();
+            const selIndex = this.selectedForStitch.findIndex((i) => i === item);
+            if (selIndex > -1) {
+              this.selectedForStitch.splice(selIndex, 1);
+              marginaliaDOM.style.boxShadow = "";
+            } else {
+              this.selectedForStitch.push(item);
+              marginaliaDOM.style.boxShadow = "0 0 0 2px var(--color-blue) inset";
+            }
+          } else if (e.key.toLowerCase() === "h") {
+            e.preventDefault();
+            e.stopPropagation();
+            const hoverEvent = new MouseEvent("mouseenter", { bubbles: true, cancelable: true });
+            marginaliaDOM.dispatchEvent(hoverEvent);
+          } else if (e.key === "Escape") {
+            e.preventDefault();
+            e.stopPropagation();
+            const leaveEvent = new MouseEvent("mouseleave", { bubbles: true, cancelable: true });
+            marginaliaDOM.dispatchEvent(leaveEvent);
+            document.querySelectorAll(".hover-popover").forEach((el) => el.remove());
+          }
+        });
       }
     }
     if (totalFound === 0) container.createEl("p", { text: "No notes match your search.", cls: "cornell-sidebar-empty" });
+  }
+  // 🦴 NUEVO MOTOR: Importador de Esqueletos
+  async importActiveFileSkeleton() {
+    const activeFile = this.plugin.app.workspace.getActiveFile();
+    if (!activeFile) {
+      new import_obsidian.Notice("\u26A0\uFE0F Open a note first to import its skeleton.");
+      return;
+    }
+    const content = await this.plugin.app.vault.cachedRead(activeFile);
+    const lines = content.split("\n");
+    let importedCount = 0;
+    for (const line of lines) {
+      const titleMatch = line.match(/^(#+)\s+(.*)/);
+      if (titleMatch) {
+        this.pinboardItems.push({
+          text: line,
+          rawText: line,
+          color: "transparent",
+          file: null,
+          line: -1,
+          blockId: null,
+          outgoingLinks: [],
+          isTitle: true
+        });
+        importedCount++;
+        continue;
+      }
+      const listMatch = line.match(/^(\s*)[-*+]\s+(.*)/);
+      if (listMatch) {
+        const spaces = listMatch[1].length;
+        const level = Math.floor(spaces / 2);
+        const text = listMatch[2];
+        this.pinboardItems.push({
+          text,
+          rawText: text,
+          color: "transparent",
+          file: null,
+          line: -1,
+          blockId: null,
+          outgoingLinks: [],
+          isCustom: true,
+          indentLevel: level
+        });
+        importedCount++;
+      }
+    }
+    if (importedCount > 0) {
+      new import_obsidian.Notice(`\u{1F9B4} Imported ${importedCount} skeleton nodes!`);
+      this.applyFiltersAndRender();
+    } else {
+      new import_obsidian.Notice("No headers or lists found in this note.");
+    }
   }
   createItemDiv(item, parentContainer, isPinboardView = false, pinIndex = -1) {
     const itemDiv = parentContainer.createDiv({ cls: "cornell-sidebar-item" });
@@ -1350,7 +1710,35 @@ ${canvasNoteContent}
     textRow.style.display = "flex";
     textRow.style.justifyContent = "space-between";
     textRow.style.alignItems = "flex-start";
-    const textSpan = textRow.createSpan({ text: item.text });
+    const textSpan = textRow.createSpan();
+    textSpan.style.wordBreak = "break-word";
+    textSpan.style.flexGrow = "1";
+    textSpan.style.marginRight = "10px";
+    import_obsidian.MarkdownRenderer.renderMarkdown(
+      item.text,
+      // El texto crudo (ej: ![[archivo.pdf#page=1]])
+      textSpan,
+      // Dónde lo vamos a dibujar
+      item.file.path,
+      // 🔗 FUNDAMENTAL: La ruta base para que los enlaces sepan a dónde apuntar
+      this
+      // El componente actual que controla el ciclo de vida
+    );
+    setTimeout(() => {
+      const paragraphs = textSpan.querySelectorAll("p");
+      paragraphs.forEach((p) => {
+        p.style.margin = "0";
+        p.style.display = "inline";
+      });
+      const embeds = textSpan.querySelectorAll(".internal-embed, img");
+      embeds.forEach((embed) => {
+        const el = embed;
+        el.style.maxHeight = "180px";
+        el.style.maxWidth = "100%";
+        el.style.objectFit = "contain";
+        el.style.borderRadius = "4px";
+      });
+    }, 50);
     if (isPinboardView) {
       const indentControls = textRow.createSpan();
       indentControls.style.marginLeft = "10px";
@@ -1376,6 +1764,8 @@ ${canvasNoteContent}
     const isAlreadyPinned = this.pinboardItems.some((p) => p.rawText === item.rawText && p.file.path === item.file.path);
     let iconText = isPinboardView ? "\xD7" : isAlreadyPinned ? "\u25CF" : "\u25CB";
     const pinBtn = textRow.createEl("span", { text: iconText });
+    pinBtn.style.flexShrink = "0";
+    pinBtn.style.cursor = "pointer";
     pinBtn.style.cursor = "pointer";
     pinBtn.style.marginLeft = "10px";
     pinBtn.style.transition = "opacity 0.2s ease, transform 0.2s ease";
@@ -1440,10 +1830,15 @@ ${canvasNoteContent}
     };
     let hoverTimeout = null;
     let tooltipEl = null;
+    let tooltipComponent = null;
     let isHovering = false;
     const removeTooltip = () => {
       isHovering = false;
       if (hoverTimeout) clearTimeout(hoverTimeout);
+      if (tooltipComponent) {
+        tooltipComponent.unload();
+        tooltipComponent = null;
+      }
       if (tooltipEl) {
         tooltipEl.remove();
         tooltipEl = null;
@@ -1460,41 +1855,94 @@ ${canvasNoteContent}
         const lines = content.split("\n");
         const startLine = Math.max(0, item.line - 1);
         const endLine = Math.min(lines.length - 1, item.line + 1);
-        let contextText = "";
+        removeTooltip();
+        let rawBlock = "";
         for (let i = startLine; i <= endLine; i++) {
           let cleanLine = lines[i].replace(/%%[><](.*?)%%/g, "").trim();
           if (cleanLine) {
             if (i === item.line) {
-              contextText += `<div class="cornell-hover-highlight">${cleanLine}</div>`;
+              rawBlock += `==${cleanLine}==
+`;
             } else {
-              contextText += `<div class="cornell-hover-text-line">${cleanLine}</div>`;
+              rawBlock += `${cleanLine}
+`;
             }
           }
         }
-        if (!contextText) contextText = "<div class='cornell-hover-text-line'><i>No text context available.</i></div>";
-        document.querySelectorAll(".cornell-hover-tooltip").forEach((el) => el.remove());
+        const pdfRegex = /!*\[\[(.*?\.(?:pdf).*?)\]\]/i;
+        const pdfMatch = rawBlock.match(pdfRegex);
+        if (pdfMatch) {
+          const pdfLinkText = pdfMatch[1];
+          this.plugin.app.workspace.trigger("hover-link", {
+            event: e,
+            source: "preview",
+            hoverParent: itemDiv,
+            targetEl: itemDiv,
+            linktext: pdfLinkText,
+            sourcePath: item.file.path
+          });
+          return;
+        }
         tooltipEl = document.createElement("div");
-        tooltipEl.className = "cornell-hover-tooltip";
+        tooltipEl.className = "popover hover-popover cornell-hover-tooltip markdown-rendered markdown-preview-view";
+        tooltipEl.style.position = "fixed";
+        tooltipEl.style.zIndex = "99999";
+        tooltipEl.style.width = "450px";
+        tooltipEl.style.maxHeight = "350px";
+        tooltipEl.style.overflowY = "auto";
+        tooltipEl.style.backgroundColor = "var(--background-primary)";
+        tooltipEl.style.border = "1px solid var(--background-modifier-border)";
+        tooltipEl.style.boxShadow = "0 10px 20px rgba(0,0,0,0.3)";
+        tooltipEl.style.borderRadius = "8px";
+        tooltipEl.style.padding = "12px";
+        tooltipEl.style.display = "flex";
+        tooltipEl.style.flexDirection = "column";
+        tooltipEl.style.gap = "8px";
+        const styleTag = document.createElement("style");
+        styleTag.innerHTML = `
+
+                    .cornell-hover-tooltip p { margin: 0 0 8px 0 !important; }
+
+                `;
+        tooltipEl.appendChild(styleTag);
         const header = tooltipEl.createDiv({ cls: "cornell-hover-context" });
-        header.innerHTML = `<span>\u{1F4C4} <b>${item.file.basename}</b></span> <span>L${item.line + 1}</span>`;
+        header.innerHTML = `<span style="font-size: 1.1em; color: var(--text-normal); font-weight: bold; display: block; border-bottom: 1px solid var(--background-modifier-border); padding-bottom: 6px; width: 100%;">\u{1F4C4} ${item.file.basename} (L${item.line + 1})</span>`;
         const body = tooltipEl.createDiv();
-        body.innerHTML = contextText;
+        body.style.width = "100%";
         document.body.appendChild(tooltipEl);
         const rect = itemDiv.getBoundingClientRect();
-        let leftPos = rect.left - 340;
+        let leftPos = rect.left - 470;
         if (leftPos < 10) leftPos = rect.right + 20;
         tooltipEl.style.left = `${leftPos}px`;
-        tooltipEl.style.top = `${Math.min(rect.top, window.innerHeight - 150)}px`;
+        let topPos = rect.top;
+        if (topPos + 350 > window.innerHeight) topPos = window.innerHeight - 360;
+        tooltipEl.style.top = `${Math.max(10, topPos)}px`;
+        const imgRegex = /!\[\[(.*?\.(?:png|jpg|jpeg|gif|bmp|svg))\|?(.*?)\]\]/gi;
+        rawBlock = rawBlock.replace(imgRegex, (match, filename) => {
+          const file = this.plugin.app.metadataCache.getFirstLinkpathDest(filename.trim(), item.file.path);
+          if (file) {
+            const resourcePath = this.plugin.app.vault.getResourcePath(file);
+            return `<img src="${resourcePath}" style="max-height:220px; max-width:100%; border-radius:6px; display:block; margin:8px auto;">`;
+          }
+          return match;
+        });
+        if (!rawBlock.trim()) rawBlock = "*No text context available.*";
+        await import_obsidian.MarkdownRenderer.renderMarkdown(
+          rawBlock,
+          body,
+          item.file.path,
+          this
+        );
         requestAnimationFrame(() => {
           if (tooltipEl) tooltipEl.addClass("is-visible");
         });
-      }, 600);
+      }, 500);
     });
     itemDiv.addEventListener("mouseleave", removeTooltip);
     if (!isPinboardView) {
       itemDiv.setAttr("draggable", "true");
       itemDiv.addEventListener("dragstart", (event) => {
-        removeTooltip();
+        document.querySelectorAll(".hover-popover").forEach((el) => el.remove());
         if (!event.dataTransfer) return;
         event.dataTransfer.effectAllowed = "copy";
         let targetId = item.blockId;
@@ -1589,6 +2037,13 @@ Are you sure you want to proceed?`,
       return lines.join("\n");
     });
   }
+  // Se ejecuta cuando cierras la barra lateral
+  async onClose() {
+    if (this.autoPasteInterval) {
+      window.clearInterval(this.autoPasteInterval);
+      this.autoPasteInterval = null;
+    }
+  }
 };
 var CornellSettingTab = class extends import_obsidian.PluginSettingTab {
   constructor(app, plugin) {
@@ -1600,6 +2055,21 @@ var CornellSettingTab = class extends import_obsidian.PluginSettingTab {
     containerEl.empty();
     containerEl.createEl("h2", { text: "Cornell Marginalia Settings" });
     containerEl.createEl("h3", { text: "General Appearance" });
+    new import_obsidian.Setting(containerEl).setName("Extract Highlights").setDesc("OPTIONAL: Include standard text highlights (==text==) in the Explorer and Pinboard.").addToggle((toggle) => toggle.setValue(this.plugin.settings.extractHighlights).onChange(async (value) => {
+      this.plugin.settings.extractHighlights = value;
+      await this.plugin.saveSettings();
+      this.plugin.app.workspace.getLeavesOfType(CORNELL_VIEW_TYPE).forEach((leaf) => {
+        if (leaf.view instanceof CornellNotesView) leaf.view.scanNotes();
+      });
+    }));
+    new import_obsidian.Setting(containerEl).setName("Ignored Folders for Highlights").setDesc("Comma-separated list of folders to ignore ONLY for highlights (e.g., Excalidraw, Templates).").addTextArea((t) => t.setValue(this.plugin.settings.ignoredHighlightFolders).onChange(async (v) => {
+      this.plugin.settings.ignoredHighlightFolders = v;
+      await this.plugin.saveSettings();
+    }));
+    new import_obsidian.Setting(containerEl).setName("Ignored Highlight Texts").setDesc("Comma-separated list of exact texts or fragments to ignore (e.g., Switch to EXCALIDRAW VIEW).").addTextArea((t) => t.setValue(this.plugin.settings.ignoredHighlightTexts).onChange(async (v) => {
+      this.plugin.settings.ignoredHighlightTexts = v;
+      await this.plugin.saveSettings();
+    }));
     new import_obsidian.Setting(containerEl).setName("Enable in Reading View").setDesc("Shows marginalia in reading mode. Turn this off if you prefer a clean view.").addToggle((toggle) => toggle.setValue(this.plugin.settings.enableReadingView).onChange(async (value) => {
       this.plugin.settings.enableReadingView = value;
       await this.plugin.saveSettings();
@@ -1695,6 +2165,157 @@ var CornellMarginalia = class extends import_obsidian.Plugin {
       callback: () => {
         new OmniCaptureModal(this.app, this).open();
       }
+    });
+    ["up", "down", "left", "right"].forEach((dir) => {
+      this.addCommand({
+        id: `cornell-pinboard-move-${dir}`,
+        name: `Pinboard: Move Item ${dir.charAt(0).toUpperCase() + dir.slice(1)}`,
+        // Por defecto les ponemos Alt + Flechas para que no choquen con Outliner
+        hotkeys: [{ modifiers: ["Alt"], key: `Arrow${dir.charAt(0).toUpperCase() + dir.slice(1)}` }],
+        checkCallback: (checking) => {
+          const activeEl = document.activeElement;
+          if (activeEl && activeEl.classList.contains("cornell-pinboard-item")) {
+            if (!checking) {
+              activeEl.dispatchEvent(new CustomEvent("cornell-move", { detail: dir }));
+            }
+            return true;
+          }
+          return false;
+        }
+      });
+    });
+    this.addCommand({
+      id: "cornell-focus-explorer",
+      name: "Open & Focus Marginalia Explorer",
+      hotkeys: [{ modifiers: ["Alt"], key: "e" }],
+      // Alt+E por defecto (Explorer)
+      callback: async () => {
+        let leaves = this.app.workspace.getLeavesOfType(CORNELL_VIEW_TYPE);
+        if (leaves.length === 0) {
+          const rightLeaf = this.app.workspace.getRightLeaf(false);
+          if (rightLeaf) {
+            await rightLeaf.setViewState({ type: CORNELL_VIEW_TYPE, active: true });
+          }
+          leaves = this.app.workspace.getLeavesOfType(CORNELL_VIEW_TYPE);
+        }
+        this.app.workspace.revealLeaf(leaves[0]);
+        setTimeout(() => {
+          const view = leaves[0].view;
+          const firstItem = view.containerEl.querySelector(".cornell-sidebar-item, .cornell-pinboard-item");
+          if (firstItem) firstItem.focus();
+        }, 100);
+      }
+    });
+    this.addCommand({
+      id: "cornell-mass-stitch",
+      name: "Execute Mass Stitch (Keyboard Mode)",
+      hotkeys: [{ modifiers: ["Alt"], key: "s" }],
+      // Alt + S por defecto
+      callback: () => {
+        const leaves = this.app.workspace.getLeavesOfType(CORNELL_VIEW_TYPE);
+        if (leaves.length > 0) {
+          const view = leaves[0].view;
+          if (view.selectedForStitch.length < 2) {
+            new import_obsidian.Notice("\u26A0\uFE0F Select at least 2 marginalias using Spacebar first.");
+            return;
+          }
+          const targets = [view.selectedForStitch[view.selectedForStitch.length - 1]];
+          const sources = view.selectedForStitch.slice(0, -1);
+          view.executeMassStitch(sources, targets).then(() => {
+            view.selectedForStitch = [];
+            view.applyFiltersAndRender();
+          });
+        } else {
+          new import_obsidian.Notice("Open the Marginalia Explorer first.");
+        }
+      }
+    });
+    this.addCommand({
+      id: "cornell-refresh-explorer",
+      name: "Refresh Explorer",
+      hotkeys: [{ modifiers: ["Alt"], key: "r" }],
+      // Alt+R por defecto
+      callback: () => {
+        const leaves = this.app.workspace.getLeavesOfType(CORNELL_VIEW_TYPE);
+        if (leaves.length > 0) {
+          const view = leaves[0].view;
+          view.scanNotes();
+          new import_obsidian.Notice("Marginalias refreshed!");
+        }
+      }
+    });
+    this.addCommand({
+      id: "cornell-search-explorer",
+      name: "Focus Search Bar",
+      hotkeys: [{ modifiers: ["Alt"], key: "f" }],
+      callback: () => {
+        const leaves = this.app.workspace.getLeavesOfType(CORNELL_VIEW_TYPE);
+        if (leaves.length > 0) {
+          const view = leaves[0].view;
+          const searchInput = view.containerEl.querySelector(".cornell-search-bar");
+          if (searchInput) {
+            searchInput.focus();
+            searchInput.select();
+          }
+        } else {
+          new import_obsidian.Notice("Open the Marginalia Explorer first.");
+        }
+      }
+    });
+    this.addCommand({
+      id: "cornell-focus-pinboard-input",
+      name: "Pinboard: Focus Add Text Input",
+      hotkeys: [{ modifiers: ["Alt"], key: "a" }],
+      callback: () => {
+        const leaves = this.app.workspace.getLeavesOfType(CORNELL_VIEW_TYPE);
+        if (leaves.length > 0) {
+          const view = leaves[0].view;
+          if (view.currentTab !== "pinboard") {
+            view.currentTab = "pinboard";
+            view.renderUI();
+            view.applyFiltersAndRender();
+          }
+          setTimeout(() => {
+            const input = view.containerEl.querySelector('input[placeholder*="Add text"]');
+            if (input) {
+              input.focus();
+            }
+          }, 50);
+        } else {
+          new import_obsidian.Notice("Open the Marginalia Explorer first.");
+        }
+      }
+    });
+    ["Current", "Vault", "Threads", "Board"].forEach((tabName, index) => {
+      this.addCommand({
+        id: `cornell-switch-tab-${tabName.toLowerCase()}`,
+        name: `Switch to Tab: ${tabName}`,
+        hotkeys: [{ modifiers: ["Alt"], key: (index + 1).toString() }],
+        // Alt+1, 2, 3, 4
+        callback: () => {
+          const leaves = this.app.workspace.getLeavesOfType(CORNELL_VIEW_TYPE);
+          if (leaves.length > 0) {
+            const view = leaves[0].view;
+            const elements = Array.from(view.containerEl.querySelectorAll("div, button"));
+            const tabButton = elements.find((el) => {
+              var _a;
+              const text = ((_a = el.textContent) == null ? void 0 : _a.trim().toLowerCase()) || "";
+              return text.endsWith(tabName.toLowerCase()) && el.children.length <= 2;
+            });
+            if (tabButton) {
+              tabButton.click();
+              setTimeout(() => {
+                const firstItem = view.containerEl.querySelector(".cornell-sidebar-item, .cornell-pinboard-item");
+                if (firstItem) firstItem.focus();
+              }, 100);
+            } else {
+              new import_obsidian.Notice(`\u26A0\uFE0F Could not find the ${tabName} tab.`);
+            }
+          } else {
+            new import_obsidian.Notice("Open the Marginalia Explorer first.");
+          }
+        }
+      });
     });
     this.addCommand({
       id: "open-doodle-canvas",
