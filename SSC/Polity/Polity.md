@@ -5,6 +5,8 @@ tags:
 refer: https://www.youtube.com/live/8PMDYIdqjwE?si=RHHbYxaqqdHsDVv3
 - Total 25 Parts in Constitutions
 ## TOC
+[[Indian Constitution]]
+[[Features of Constitution]]
 [[History Timeline]]
 [[Constituent Assembly]]
 [[Demand for Constituent Assembly]]
