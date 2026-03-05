@@ -1,4 +1,4 @@
 - [[Island country]]
-- [[President]] = [[Nikos Christodoulides]]
+- [[President (IN)]] = [[Nikos Christodoulides]]
 - [[Currency]] = [[Euro]]
 - [[Capital]] = [[Nicosia]]

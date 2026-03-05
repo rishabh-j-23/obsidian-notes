@@ -12,7 +12,8 @@ refer: https://www.youtube.com/live/8PMDYIdqjwE?si=RHHbYxaqqdHsDVv3
 [[Demand for Constituent Assembly]]
 [[Making of Indian Constitution]]
 [[Schedules of Indian Constitution]]
-
+[[Preamble]]
+[[PART I - UNION AND ITS TERRITORY]]
 # [[PART 5: ARTICLE 51-151]]
 - Union
 - Divided into 5 chapters
@@ -123,12 +124,12 @@ refer: https://www.youtube.com/live/8PMDYIdqjwE?si=RHHbYxaqqdHsDVv3
 - Time of holding election to fill vacancy in the office of Vice-President and the term of office of person elected to fill casual vacancy
 ## [[Article 69]]
 - Oath or affirmation by the Vice-President
-- Given by [[President]]
+- Given by [[President (IN)]]
 ## [[Article 70]]
 - Discharge of President's functions in other contingencies
 ## [[Article 71]]
 - Matters relating to or connected with the election of Vice-President
-- For both [[President]] and [[Vice-President]] -> [[Supreme Court]] has final say
+- For both [[President (IN)]] and [[Vice-President]] -> [[Supreme Court]] has final say
 ## [[Vice-Presidents of India]]
 ![[Pasted image 20260122170140.png]]
 
@@ -146,7 +147,7 @@ refer: https://www.youtube.com/live/8PMDYIdqjwE?si=RHHbYxaqqdHsDVv3
 
 > [!FACT]
 > - [[Article 161]] -> Governor Pardoning Power
->     - Almost same as [[President]]
+>     - Almost same as [[President (IN)]]
 >     - except 2
 >         - Court Martial
 >         - Death sentence
@@ -155,14 +156,14 @@ refer: https://www.youtube.com/live/8PMDYIdqjwE?si=RHHbYxaqqdHsDVv3
 - Extent of Executive Power of union
 
 ## [[Article 74]]
-- There shall be [[Council of Ministers]] headed by [[Prime Minister]] to aid and advise [[President]]
+- There shall be [[Council of Ministers]] headed by [[Prime Minister]] to aid and advise [[President (IN)]]
 - Read Head -> [[Prime Minister]]
-- Nominal Head -> [[President]]
-- [[42nd Amendment]] -> binding (president has to approve)
+- Nominal Head -> [[President (IN)]]
+- [[42nd CAA (Amendment) 1976]] -> binding (president has to approve)
 - [[44nd Amendment]] -> Can be rejected once
 
 ## [[Article 75]]
-**Clause 1** - The [[Prime Minister]] shall be appointed by the [[President]] and the other Ministers shall be appointed by the [[President]] on the advice of the [[Prime Minister]]
+**Clause 1** - The [[Prime Minister]] shall be appointed by the [[President (IN)]] and the other Ministers shall be appointed by the [[President (IN)]] on the advice of the [[Prime Minister]]
 
 **Clause 1A** - Added in [[91st Amendment]] in 2003
 - Total # of Ministers, including [[Prime Minister]], in [[Council of Ministers]] shall not exceed 15% of total number of members of the [[House of the People (Lok Sabha)]]
@@ -170,11 +171,11 @@ refer: https://www.youtube.com/live/8PMDYIdqjwE?si=RHHbYxaqqdHsDVv3
 **Clause 1B** - Added in [[91st Amendment]] in 2003
 - A member if either [[Houses of Parliament]] belonging to any political party who is disqualified for being a member of that House under paragraph 2 of the [[Tenth Schedule]] shall also be disqualified to be appointed as a Minister under clause (1) for the duration of the period commencing from the date of his disqualification till the date
 
-**Clause 2** - The Ministers shall hold office at the pleasure of the [[President]].
+**Clause 2** - The Ministers shall hold office at the pleasure of the [[President (IN)]].
 
 **Clause 3** - The [[Council of Ministers]] shall be collectively responsible to the House of the People.
 
-**Clause 4** - Before a Minister enters his office, the [[President]] shall administer
+**Clause 4** - Before a Minister enters his office, the [[President (IN)]] shall administer
 to him the oaths of office and secrecy according to the forms set out
 for the purpose in the Third Schedule.
 
@@ -192,7 +193,7 @@ Schedule.
     - Highest law officer
     - advices government in legal matters
     
-Clause 1) - Appointment by [[President]]
+Clause 1) - Appointment by [[President (IN)]]
 Clause 2) - Advise the [[Government of India]]
 Clause 3) - Right to Audience in all the courts
 Clause 4) - Pleasure of President
@@ -210,10 +211,10 @@ Clause 4) - Pleasure of President
 
 
 ## [[Article 77]]
-- Conduct of business of the [[Government of India]] transacts under [[President]]
+- Conduct of business of the [[Government of India]] transacts under [[President (IN)]]
 
 ## [[Article 78]]
-- Duties of [[Prime Minister]] as respect to the furnishing of information to the [[President]], etc.
+- Duties of [[Prime Minister]] as respect to the furnishing of information to the [[President (IN)]], etc.
 - [[Prime Minister]] is [[Linchpin of the Government]]
 
 # [[Part 5 - Chapter 2: Parliament of India]]
@@ -222,7 +223,7 @@ Clause 4) - Pleasure of President
 - Composition of Parliament
 - Setting of [[House of People (Lok Sabha)]] and [[Council of States (Rajya Sabha)]] -> [[May 13, 1952]]
 - Has
-    - [[President]]
+    - [[President (IN)]]
     - [[Council of States (Rajya Sabha)]]
         - Upper House
         - Permanent House
@@ -272,7 +273,7 @@ Clause 4) - Pleasure of President
     - [[1962]]
     - [[1972]]
     - [[2002]]
-- [[42nd Amendment]] -> No census till [[2000]], Used [[1971]] census
+- [[42nd CAA (Amendment) 1976]] -> No census till [[2000]], Used [[1971]] census
 - [[84th Amendment]] -> Freeze census till [[2026]]
 
 ## [[Article 83]]
@@ -299,15 +300,15 @@ Clause 4) - Pleasure of President
     - [[Budget Session]] -> February to May.
     - [[Monsoon Session]] -> July to September.
     - [[Winter Session]] -> November to December. 
-- Prorogation, Summon, Dissolution -> done by [[President]]
+- Prorogation, Summon, Dissolution -> done by [[President (IN)]]
     - Dissolution of [[House of People (Lok Sabha)]] only (Permanent House)
         - All Ministers needs to resign
 
 ## [[Article 86]]
-- Right of [[President]] to address and send messages to [[Houses of Parliament]]
+- Right of [[President (IN)]] to address and send messages to [[Houses of Parliament]]
 
 ## [[Article 87]]
-- Special address by the [[President]]
+- Special address by the [[President (IN)]]
 - [[Motion of Thanks]]
 - After each [[General Election]] and 1st session of each year 
     - Passed in both [[House of People (Lok Sabha)]] and [[Council of States (Rajya Sabha)]]
@@ -370,7 +371,7 @@ Clause 4) - Pleasure of President
 
 ## [[Article 99]]
 - Oath or affirmation by members
-    - Done by [[President]]
+    - Done by [[President (IN)]]
 - [[Pro-tam Speaker]] -> Temp 
 
 ## [[Article 100]]
@@ -394,11 +395,11 @@ Clause 4) - Pleasure of President
     - Any other law created by [[Parliament]]
         - e.g. RIA 1957
 - Decided by
-    - [[President]]
+    - [[President (IN)]]
 
 ## [[Article 103]]
 - Decision on question as to disqualifications of members
-    - [[President]] + [[Election Commission of India (ECI)]]
+    - [[President (IN)]] + [[Election Commission of India (ECI)]]
 
 > [!FACT]
 > - **Defection** -> Introduced in [[52nd Amendment]]
@@ -433,14 +434,14 @@ Clause 4) - Pleasure of President
     - [[Private Ordinary Bills]]
         - 1month notice period
         - least most to be passed
-    - Can be passed in both [[House of People (Lok Sabha)]] -> [[Council of States (Rajya Sabha)]] -> [[President]]
+    - Can be passed in both [[House of People (Lok Sabha)]] -> [[Council of States (Rajya Sabha)]] -> [[President (IN)]]
         - anyone can reject
         - Case1
             - [[House of People (Lok Sabha)]] proposes bill
             - [[Council of States (Rajya Sabha)]] proposes changes
             - [[House of People (Lok Sabha)]] reject changes
             - Bill stays in deadlock for 6 months
-            - [[President]] may call a [[Joint Sitting]]
+            - [[President (IN)]] may call a [[Joint Sitting]]
             - passed on basis of [[Simple Vote]]
 
 ## [[Article 108]]
@@ -462,7 +463,7 @@ Clause 4) - Pleasure of President
 >     - Bill lapses
 >     - Bills that does not lapses
 >         1. Originated in [[Council of States (Rajya Sabha)]]
->         2. [[House of People (Lok Sabha)]] -> [[Council of States (Rajya Sabha)]] -> [[President]]
+>         2. [[House of People (Lok Sabha)]] -> [[Council of States (Rajya Sabha)]] -> [[President (IN)]]
 >         3. [[Joint Sitting]]
 
 
@@ -473,7 +474,7 @@ Clause 4) - Pleasure of President
     - [[Council of States (Rajya Sabha)]] has no amending power
     - No [[Joint Sitting]]
 
-    Step 1. Prior recommendation of [[President]]
+    Step 1. Prior recommendation of [[President (IN)]]
     Step 2. [[House of People (Lok Sabha)]] [[Speaker]] certifies the bill 
         - 2018 -> Aadhar Case
             - bill passed as money bill and approved
@@ -482,7 +483,7 @@ Clause 4) - Pleasure of President
 - Definition of [[Money Bills]]
 
 ## [[Article 111]]
-- [[President]]
+- [[President (IN)]]
     - No Veto power in case of [[Constitutional Bill]]
         - Done in [[24th Amendment]]
     - Two Powers
@@ -501,7 +502,7 @@ Clause 4) - Pleasure of President
 
 ## [[Article 112]]
 - Annual financial statement == [[Budget]]
-- [[President]] shall cause to be laid before both the [[Houses of Parliament]] by [[Finance Minister]]
+- [[President (IN)]] shall cause to be laid before both the [[Houses of Parliament]] by [[Finance Minister]]
 - PDSVAF
     - Present
     - Discuss
@@ -537,7 +538,7 @@ Clause 4) - Pleasure of President
 
 ## [[Article 117]]
 (1). Like [[Ordinary Bill]]
-(2). In [[Houses of Parliament]] asked by [[President]]
+(2). In [[Houses of Parliament]] asked by [[President (IN)]]
 - Special Provisions as to [[Financial Bills]]
     - [[Money Bills]] + Matters of General Legislation
 
@@ -562,7 +563,7 @@ Clause 4) - Pleasure of President
 # [[Part 5 - Chapter 3: Ordinance]]
 
 ## [[Article 123]]
-- Power of [[President]] to promulgate [[Ordinance]] during recess of [[Parliament]]
+- Power of [[President (IN)]] to promulgate [[Ordinance]] during recess of [[Parliament]]
 - DC Wadwa vs State of Bihar case
 
 # [[Part 5 - Chapter 4: Supreme Court]]
@@ -576,7 +577,7 @@ Clause 4) - Pleasure of President
 - Judges
     - Originally -> 1 [[Chief Justice]] + 7 Other Judges
     - At Present ->  1 [[Chief Justice]] + 33 Other Judges
-    - Appointed by [[President]]
+    - Appointed by [[President (IN)]]
         - Takes recommendation from [[Collegium]]
         - 
     - Tenure -> 65yrs of Age
@@ -665,7 +666,7 @@ Clause 4) - Pleasure of President
 ## [[Article 142]]
 - [[Supreme Court]] to pass any decree or order necessary for doing complete justice in any case or matter pending before it.
 ## [[Article 143]]
-- Power of [[President]] to consult [[Supreme Court]]
+- Power of [[President (IN)]] to consult [[Supreme Court]]
 - Advisory Jurisdiction
 ## [[Article 144]]
 - Civil and Judicial authorities to act in aid of the [[Supreme Court]]
@@ -685,14 +686,14 @@ Clause 4) - Pleasure of President
 - [[Single Membered Body]]
 
 ## [[Article 148]]
-- There shall be [[Controller and Auditor General of India (CAG)]] who shall be appointed by the [[President]] by warrant under his hand and seal and shall only be removed from office in like manner and on like grounds as a Judge of [[Supreme Court]]
+- There shall be [[Controller and Auditor General of India (CAG)]] who shall be appointed by the [[President (IN)]] by warrant under his hand and seal and shall only be removed from office in like manner and on like grounds as a Judge of [[Supreme Court]]
 
 ## [[Article 149]]
 - [[Controller and Auditor General of India (CAG)]] shall perform such duties and exercise such powers in relation to the accounts of the Union and of the States and of any other authority or body as may be prescribed by or under any law made by parliament
 ## [[Article 150]]
-- Accounts of the Union and of the States shall be kept in such form as the [[President]] may on the advice of the [[Controller and Auditor General of India (CAG)]] prescribe
+- Accounts of the Union and of the States shall be kept in such form as the [[President (IN)]] may on the advice of the [[Controller and Auditor General of India (CAG)]] prescribe
 ## [[Article 151]]
-- Reports relating to the accounts of the Union shall be kept in such form as the [[President]] 
+- Reports relating to the accounts of the Union shall be kept in such form as the [[President (IN)]] 
 - Reports relating to the accounts of a state shall be submitted to the [[Governor of the State]]
 
 # [[Part 6: The States]]
@@ -704,7 +705,7 @@ Clause 4) - Pleasure of President
 
 ![[Pasted image 20260208154830.png]]
 #### Similarity
-- [[President]] == [[Governor of the State]]
+- [[President (IN)]] == [[Governor of the State]]
 - [[Prime Minister]] == [[Chief Minister]]
 - [[Attorney-General of India]] == [[Advocate General]]
 -  89 and 90

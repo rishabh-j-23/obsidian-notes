@@ -1,0 +1,5 @@
+- Part of [[Part 6: The States]]
+    - deals with [[Scheduled Areas]]
+- act came in [[1996]]
+    - extend [[Part 6: The States]] to deal with [[Scheduled Areas]]
+- 

@@ -1,6 +1,6 @@
 ## Timeline
 - [[1928]]
-    - early draft of [[Indian Constitution]] (Nehru Report) was submitted by [[All Parties Conference]] at [[Lucknow]]
+    - early draft of [[Indian Constitution]] (Nehru Report) was submitted by [[All Parties Conference]] at [[Lucknow, UP]]
     - chaired by [[Motilal Nehru]]
 - [[1934]]
     - [[M.N. Roy]] proposed idea of [[Constituent Assembly]]

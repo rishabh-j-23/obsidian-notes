@@ -7,7 +7,7 @@
 
 - [[Sept 2nd, 1946]]
     - [[Interim Government]]
-        - [[President]]: [[Lord Mountbatten]]
+        - [[President (IN)]]: [[Lord Mountbatten]]
         - [[Vice-President]]: [[Jawahar Lal Nehru]]
         - [[Home Minister]]: [[Sardar Patel]]
         - [[Defense Minister]]: [[Baldev Singh]]

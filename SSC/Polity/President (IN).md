@@ -1,0 +1,2 @@
+- [[Supreme Commander of Defense Forces of India]]
+- Power of President -> [[Article 50]] to [[Article 74]] 

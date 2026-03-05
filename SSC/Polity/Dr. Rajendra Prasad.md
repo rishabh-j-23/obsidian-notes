@@ -1,1 +1,1 @@
-Nov 26, 1949 -> First [[President]]
+Nov 26, 1949 -> First [[President (IN)]]

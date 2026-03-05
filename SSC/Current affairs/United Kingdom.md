@@ -1,5 +1,5 @@
 - [[Foreign Secretary]] = '[[David Lammy]]'
-- [[President]] = [[Sir Keir Starmer]]
+- [[President (IN)]] = [[Sir Keir Starmer]]
 - [[Monarch (Head of state)]] = [[King Charles III]]
 - [[Currency]] = Pound Sterling
 - [[Capital]] = [[London]]

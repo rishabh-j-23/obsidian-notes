@@ -183,46 +183,42 @@ body[style*="--cornell-float: right"] .reading-mode-margin.cornell-reverse-align
     border-left: none !important;
 }
 
-/* --- MODO ACTIVO (BLUR) PARA VISTA DE LECTURA --- */
+/* --- MODO ACTIVO (BLUR) DEFINITIVO V2 (SALVANDO LA MARGINALIA) --- */
 
-/* SOLO aplica el difuminado si el body tiene la clase activa */
-body.cornell-active-recall-on .cornell-flashcard-target {
+/* 1. Atacamos al texto base y a todos sus hijos EXCEPTO la marginalia y su contenido */
+body.cornell-active-recall-on .cornell-flashcard-target,
+body.cornell-active-recall-on .cornell-flashcard-target *:not(.cm-cornell-margin):not(.cm-cornell-margin *) {
     color: transparent !important;
-    text-shadow: 0 0 12px var(--text-normal);
+    text-shadow: 0 0 12px var(--text-normal) !important;
     cursor: help;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
-/* Al pasar el mouse, revela el texto */
-body.cornell-active-recall-on .cornell-flashcard-target:hover {
-    color: var(--text-normal) !important;
-    text-shadow: none;
-}
-
-/* Proteger la marginalia para que la "pregunta" siga viéndose */
-body.cornell-active-recall-on .cornell-flashcard-target .cm-cornell-margin {
-    text-shadow: none !important;
-}
-
+/* 2. Escudo absoluto para la Marginalia (Quitamos la regla de color para que no herede la transparencia) */
+body.cornell-active-recall-on .cornell-flashcard-target .cm-cornell-margin,
 body.cornell-active-recall-on .cornell-flashcard-target .cm-cornell-margin * {
     text-shadow: none !important;
-    color: inherit !important;
+    filter: none !important;
+    opacity: 1 !important;
 }
 
-/*COMENTARIO*/
-/* --- ACTIVE RECALL BLUR (VERSIÓN BLOQUE/LÍNEA) --- */
-/* Se aplica a toda la línea contenedora */
-.cornell-blur {
-    color: transparent !important;
-    text-shadow: 0 0 12px var(--text-normal);
-    cursor: help;
-    transition: all 0.3s ease;
+/* 3. Parche LaTeX e Imágenes (Excluimos las imágenes que estén DENTRO de la marginalia por si acaso) */
+body.cornell-active-recall-on .cornell-flashcard-target mjx-container,
+body.cornell-active-recall-on .cornell-flashcard-target img:not(.cm-cornell-margin img) {
+    filter: blur(8px) opacity(0.6) !important;
+    transition: filter 0.3s ease, opacity 0.3s ease !important;
 }
 
-/* Al pasar el mouse por la línea, revelamos TODO el texto */
-.cornell-blur:hover {
+/* 4. Hover Reveal: Recuperamos la visión al pasar el mouse */
+body.cornell-active-recall-on .cornell-flashcard-target:hover,
+body.cornell-active-recall-on .cornell-flashcard-target:hover *:not(.cm-cornell-margin):not(.cm-cornell-margin *) {
     color: var(--text-normal) !important;
-    text-shadow: none;
+    text-shadow: none !important;
+}
+
+body.cornell-active-recall-on .cornell-flashcard-target:hover mjx-container,
+body.cornell-active-recall-on .cornell-flashcard-target:hover img:not(.cm-cornell-margin img) {
+    filter: blur(0px) opacity(1) !important;
 }
 
 
@@ -265,37 +261,57 @@ body.cornell-active-recall-on .cornell-flashcard-target .cm-cornell-margin * {
 
 
 /* ======================================================
-   🖨️ SOPORTE PARA EXPORTACIÓN A PDF (INLINE & ABSOLUTE)
+   🖨️ SOPORTE PARA EXPORTACIÓN A PDF (VERSIÓN FLOAT BLINDADA)
    ====================================================== */
 
 @media print {
-    /* 1. La "Caja Fuerte" (El Párrafo) */
-    p:has(.cornell-print-margin),
-    li:has(.cornell-print-margin),
-    blockquote:has(.cornell-print-margin) {
+    /* 1. La "Caja Fuerte" (El Párrafo) - Direccionalidad Izquierda (%%>) */
+    p:has(.cornell-print-margin[data-direction=">"]),
+    li:has(.cornell-print-margin[data-direction=">"]),
+    blockquote:has(.cornell-print-margin[data-direction=">"]) {
         position: relative !important;
-        /* Empujamos el texto principal a la derecha para crear la columna Cornell */
-        padding-left: 28% !important; 
+        padding-left: 28% !important; /* Deja espacio a la izquierda */
         page-break-inside: avoid !important;
         break-inside: avoid !important;
+        display: flow-root !important; 
     }
 
-    /* 2. La Marginalia salta a la columna vacía */
+    /* 1b. La "Caja Fuerte" (El Párrafo) - Direccionalidad Derecha (%%<) */
+    p:has(.cornell-print-margin[data-direction="<"]),
+    li:has(.cornell-print-margin[data-direction="<"]),
+    blockquote:has(.cornell-print-margin[data-direction="<"]) {
+        position: relative !important;
+        padding-right: 28% !important; /* Deja espacio a la derecha */
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        display: flow-root !important; 
+    }
+
+    /* 2. Clase base de Marginalia */
     .cornell-print-margin {
-        position: absolute !important;
-        left: 0 !important;
-        /* top: 0 asegura que quede alineada con la primera línea del párrafo, 
-           sin importar dónde hayas puesto la nota */
-        top: 2px !important; 
-        
-        width: 24% !important;
+        width: 35% !important;
         display: block !important;
-        text-align: right !important;
-        padding-right: 10px !important;
-        
         background-color: transparent !important;
         font-size: 9.5pt !important;
         line-height: 1.2 !important;
+    }
+
+    /* 2a. Flotante a la Izquierda (%%>) */
+    .cornell-print-margin[data-direction=">"] {
+        float: left !important;
+        clear: left !important;
+        margin-left: -38% !important; 
+        text-align: right !important;
+        padding-right: 10px !important;
+    }
+
+    /* 2b. Flotante a la Derecha (%%<) */
+    .cornell-print-margin[data-direction="<"] {
+        float: right !important;
+        clear: right !important;
+        margin-right: -38% !important; 
+        text-align: left !important;
+        padding-left: 10px !important;
     }
 
     /* 3. Seguro anti-blur */
@@ -683,17 +699,25 @@ body.cornell-active-recall-on .cornell-flashcard-target .cm-cornell-margin * {
 
 /* 🎨 INVERSIÓN INTELIGENTE PARA DOODLES EN MODO OSCURO */
 
-/* Obsidian añade la clase .theme-dark al body cuando activas el modo oscuro.
-   Buscamos cualquier imagen dentro de marginalias cuyo nombre (src) contenga "doodle_". */
-body.theme-dark .cm-cornell-margin img[src*="doodle_"] {
+/* Buscamos cualquier imagen dentro de marginalias cuyo nombre (src) contenga "doodle_" */
+body.theme-dark .cm-cornell-margin img[src*="doodle_"],
+body.theme-dark .reading-mode-margin img[src*="doodle_"],
+body.theme-dark .cornell-rhizome-node img[src*="doodle_"] {
     /* Convierte los píxeles negros en blancos puros */
     filter: invert(1); 
-    
-    /* Le bajamos un 10% el brillo para que la tinta blanca no te encandile al leer de noche */
     opacity: 0.9; 
-    
-    /* Una transición suave por si cambias de tema claro a oscuro con la nota abierta */
     transition: filter 0.3s ease, opacity 0.3s ease; 
+}
+
+/* 🧼 LIMPIEZA TOTAL DE BORDES PARA DOODLES (Efecto "Tinta en Papel") */
+.cm-cornell-margin img[src*="doodle_"],
+.reading-mode-margin img[src*="doodle_"],
+.cornell-rhizome-node img[src*="doodle_"] {
+    border: none !important; 
+    box-shadow: none !important;
+    background: transparent !important;
+    padding: 0 !important;
+    outline: none !important;
 }
 
 /* 🧼 LIMPIEZA TOTAL DE BORDES PARA DOODLES (Efecto "Tinta en Papel") */
@@ -715,8 +739,906 @@ body.theme-dark .cm-cornell-margin img[src*="doodle_"] {
 
 
 /* ======================================================
+   ⚡ QUICK CAPTURE BAR (TOP PERSISTENTE)
+   ====================================================== */
+
+/* Contenedor principal limpio, sin bordes toscos */
+.cornell-quick-capture {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 15px;
+    padding: 0 4px; /* Un poquito de aire lateral */
+}
+
+/* Fila Superior: Destino y controles */
+.cornell-qc-toprow {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+}
+
+.cornell-qc-label {
+    font-size: 0.8em;
+    font-weight: 600;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+
+/* Input destino estilo Obsidian nativo */
+input.cornell-qc-dest {
+    flex-grow: 1;
+    height: 28px;
+    font-size: 0.85em;
+    background-color: var(--background-modifier-form-field);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 4px;
+    color: var(--text-normal);
+    padding: 0 8px;
+    min-width: 50px;
+}
+
+/* Micro-botones (ZK y Doodle) */
+button.cornell-qc-btn {
+    height: 28px;
+    font-size: 0.8em;
+    padding: 0 10px;
+    background-color: transparent;
+    border: 1px solid var(--background-modifier-border);
+    box-shadow: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+button.cornell-qc-btn:hover {
+    background-color: var(--background-modifier-hover);
+    color: var(--text-normal);
+}
+
+/* Fila Inferior: Textarea y Botón Rayo */
+.cornell-qc-bottomrow {
+    display: flex;
+    gap: 8px; /* Espacio entre la barra y el botón */
+    align-items: flex-start; /* Evita que el botón se estire feo si agrandas la caja de texto */
+    width: 100%;
+}
+
+/* Textarea idéntico a la barra de búsqueda */
+textarea.cornell-qc-textarea {
+    flex-grow: 1; /* Ocupa todo el espacio disponible */
+    min-height: 38px;
+    height: 38px;
+    resize: vertical; /* Permite agrandar hacia abajo si escribes mucho */
+    font-size: 0.85em;
+    padding: 8px 12px;
+    background-color: var(--background-modifier-form-field);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 6px; /* Bordes redondeados idénticos a Search */
+    color: var(--text-normal);
+    line-height: 1.4;
+    width: 100%; /* Forzar ancho completo */
+    box-sizing: border-box;
+    box-shadow: inset 0 0 0 1px transparent; /* Suavidad nativa */
+}
+
+textarea.cornell-qc-textarea:focus {
+    border-color: var(--interactive-accent);
+    box-shadow: 0 0 0 1px var(--interactive-accent);
+    outline: none;
+}
+
+/* Botón del Rayo alineado a la derecha */
+button.cornell-qc-submit {
+    flex-shrink: 0; /* ESCUDO: Evita que el text-area aplaste al botón */
+    width: 38px;
+    height: 38px; /* Cuadrado perfecto del mismo alto inicial que el textarea */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent);
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Ligera sombra para que resalte */
+    transition: transform 0.1s ease, filter 0.2s ease;
+}
+
+button.cornell-qc-submit:hover {
+    filter: brightness(1.1);
+}
+
+button.cornell-qc-submit:active {
+    transform: scale(0.95); /* Efecto de "clic" satisfactorio */
+}
+
+/* ======================================================
+   🎨 MINIMALIST ICONS & SEARCH BAR REFINEMENT
+   ====================================================== */
+
+/* Alinear iconos y texto en los botones */
+.cornell-qc-btn, .cornell-qc-label-icon {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.8em;
+    color: var(--text-muted);
+}
+.cornell-qc-label-icon { font-weight: 600; }
+
+/* Tamaño de los iconos SVG nativos */
+.cornell-qc-btn svg, .cornell-qc-label-icon svg { width: 14px; height: 14px; }
+.cornell-qc-submit svg { width: 18px; height: 18px; }
+
+/* Contenedor de la barra de búsqueda con Lupa incrustada */
+.cornell-search-wrapper {
+    position: relative;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.cornell-search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+    opacity: 0.6;
+    display: flex;
+    pointer-events: none; /* Para que puedas hacer clic a través del icono */
+}
+.cornell-search-icon svg { width: 14px; height: 14px; }
+
+/* Estilo táctico/secundario para la caja de búsqueda */
+input.cornell-search-bar {
+    width: 100%;
+    padding-left: 30px !important; /* Espacio para la lupa */
+    background-color: transparent; /* Se funde con el fondo para ser menos llamativa */
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 20px; /* Bordes redondeados típicos de cajas de búsqueda */
+    color: var(--text-normal);
+    font-size: 0.85em;
+    height: 30px;
+    transition: background-color 0.2s ease;
+}
+
+input.cornell-search-bar:focus {
+    background-color: var(--background-modifier-form-field);
+}
+
+/* 🛡️ ESCUDO ANTI-ROBO DE HOVER PARA LA BARRA LATERAL */
+/* Convierte las miniaturas en fantasmas para el ratón, permitiendo que la caja principal detecte el hover y muestre el texto de la nota */
+/* .cornell-sidebar-item-text .internal-embed,
+/*.cornell-sidebar-item-text img {
+/*    pointer-events: none !important;
+/* }
+
+
+
+/* ======================================================
    👻 CLASE PARA OCULTAR TEXTO CRUDO EN MODO EDICIÓN
    ====================================================== */
 .cornell-hide-raw {
     display: none !important;
+}
+
+
+/* ======================================================
+   🎮 GAMIFICATION ADDON STYLES
+   ====================================================== */
+.cornell-profile-widget {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: var(--background-secondary);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.cornell-profile-avatar {
+    font-size: 2em;
+    background: var(--background-primary);
+    border-radius: 50%;
+    padding: 5px;
+    height: 65px;
+    width: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--interactive-accent);
+}
+
+.cornell-profile-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.cornell-profile-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85em;
+    font-weight: bold;
+    color: var(--text-normal);
+}
+
+.cornell-profile-score {
+    color: var(--text-muted);
+    font-weight: normal;
+}
+
+.cornell-xp-bar-container {
+    width: 100%;
+    height: 6px;
+    background-color: var(--background-modifier-border);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.cornell-xp-bar {
+    height: 100%;
+    background-color: var(--color-green);
+    transition: width 0.3s ease;
+}
+
+.cornell-xp-text {
+    font-size: 0.7em;
+    color: var(--text-faint);
+    text-align: right;
+}
+
+/* ======================================================
+   🖼️ CUSTOM BACKGROUND ADDON STYLES
+   ====================================================== */
+.cornell-sidebar-container {
+    position: relative; /* Necesario para contener el fondo */
+    overflow: hidden; /* Evita que el blur ensucie fuera de la barra */
+    z-index: 1;
+}
+
+/* El pseudo-elemento que dibuja el fondo con blur */
+.cornell-sidebar-container::before {
+    content: "";
+    position: absolute;
+    top: -20px; left: -20px; right: -20px; bottom: -20px; /* Expandido para ocultar los bordes feos del blur */
+    background-image: var(--cornell-sidebar-bg, none);
+    background-size: cover;
+    background-position: center;
+    filter: blur(var(--cornell-sidebar-blur, 0px));
+    z-index: -2;
+    pointer-events: none;
+    transition: filter 0.3s ease;
+}
+
+/* El oscurecedor (Overlay) para que el texto siga siendo legible */
+.cornell-sidebar-container::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: var(--background-primary);
+    opacity: var(--cornell-sidebar-opacity, 0);
+    z-index: -1;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+/* --- ACTUALIZACIONES DEL PERFIL --- */
+.cornell-profile-widget {
+    /* Hacemos la tarjeta un poco transparente tipo "Glassmorphism" */
+    background-color: rgba(var(--background-secondary-rgb), 0.6) !important;
+    backdrop-filter: blur(8px); 
+    border-color: rgba(var(--background-modifier-border-rgb), 0.3) !important;
+}
+
+.cornell-profile-avatar-img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--interactive-accent);
+    flex-shrink: 0;
+}
+
+.cornell-profile-quote {
+    font-size: 0.8em;
+    font-style: italic;
+    color: var(--text-muted);
+    margin-top: 6px;
+    line-height: 1.2;
+}
+
+/* ======================================================
+   🌱 RHIZOME TIME MACHINE STYLES
+   ====================================================== */
+.cornell-rhizome-canvas {
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-primary-alt);
+    background-image: radial-gradient(circle, var(--background-modifier-border) 1px, transparent 1px);
+    background-size: 25px 25px;
+    overflow: hidden; 
+    display: block; /* 👈 Cambiado a block */
+}
+
+/* 1. El Marco de la Ventana (El que maneja las barras de scroll) */
+.cornell-rhizome-scroll {
+    display: block; /* 👈 Ya no es flex, ahora es una simple ventana */
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Permite scroll en ambas direcciones */
+    position: relative;
+}
+
+/* 2. El Lienzo Elástico (El que hace zoom y agrupa las columnas) */
+.cornell-rhizome-content {
+    display: flex; /* 👈 ESTO CREA LAS COLUMNAS HORIZONTALES */
+    flex-direction: row;
+    gap: 60px;
+    align-items: flex-start;
+    padding: 60px;
+    min-width: max-content; /* 👈 MAGIA: Obliga al lienzo a crecer hacia la derecha infinitamente */
+    transform-origin: top left;
+    transition: zoom 0.2s ease;
+}
+
+.cornell-rhizome-day-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+    /* 🛡️ EL ESCUDO: Forzamos un ancho estricto */
+    width: 280px; 
+    min-width: 280px;
+    max-width: 280px; 
+}
+
+/* 3. El Hilo del Tiempo Vertical (Arreglo del scroll infinito) */
+.cornell-rhizome-day-column::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    bottom: -3000px; /* 👈 Cambiamos el -100vh problemático por un valor estático seguro */
+    width: 2px;
+    background: var(--background-modifier-border-hover);
+    z-index: 0;
+}
+
+.cornell-rhizome-date-label {
+    background: var(--background-secondary);
+    color: var(--text-muted);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.85em;
+    z-index: 1;
+    margin-bottom: 30px;
+    border: 1px solid var(--background-modifier-border);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.cornell-rhizome-nodes {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    z-index: 1;
+    width: 100%;
+}
+
+/* Las tarjetas de las Marginalias */
+.cornell-rhizome-node {
+    background: var(--background-primary);
+    border-left: 4px solid; /* El color se inyecta por JS */
+    border-top: 1px solid var(--background-modifier-border);
+    border-right: 1px solid var(--background-modifier-border);
+    border-bottom: 1px solid var(--background-modifier-border);
+    border-radius: 6px;
+    padding: 14px;
+    width: 100%;
+    font-size: 0.85em;
+    color: var(--text-normal);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    line-height: 1.4;
+    /* Efecto Glassmorphism ligero */
+    backdrop-filter: blur(4px);
+    background-color: rgba(var(--background-primary-rgb), 0.85);
+}
+
+/*  rompe palabras */
+.cornell-rhizome-node span {
+    display: block;
+    white-space: normal;      
+    overflow-wrap: break-word; 
+    word-break: break-word;    
+}
+
+.cornell-rhizome-node:hover {
+    transform: translateY(-3px) scale(1.02);
+    background: var(--background-secondary);
+}
+/* --- SVG Y HILOS SEMÁNTICOS --- */
+.cornell-rhizome-scroll {
+    position: relative; 
+}
+
+.cornell-rhizome-svg-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    pointer-events: none; 
+    z-index: 0; 
+}
+
+.cornell-semantic-thread {
+    stroke-dasharray: 6 6;
+    animation: cornell-flow 15s linear infinite;
+    opacity: 0; /* 👈 MAGIA: Invisibles por defecto */
+    transition: opacity 0.3s ease, stroke-width 0.3s ease;
+}
+
+/* Cuando el ratón pasa por una nota, el JS le pone esta clase a sus hilos */
+.cornell-semantic-thread.is-visible {
+    opacity: 0.8;
+    stroke-width: 3px;
+    filter: drop-shadow(0 0 4px var(--interactive-accent));
+}
+
+.cornell-rhizome-node {
+    z-index: 2; 
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Efecto para la nota que estás tocando */
+.cornell-rhizome-node.is-hovered {
+    transform: translateY(-3px) scale(1.05);
+    z-index: 10;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4) !important;
+}
+
+/* Efecto para las notas conectadas en el otro extremo del tiempo */
+.cornell-rhizome-node.is-connected {
+    transform: scale(1.02);
+    border-color: var(--interactive-accent) !important;
+    box-shadow: 0 0 20px var(--interactive-accent) !important;
+    z-index: 9;
+}
+
+@keyframes cornell-flow {
+    to { stroke-dashoffset: -100; }
+}
+
+/* --- CONTROLES DE ZOOM --- */
+.cornell-rhizome-zoom-controls {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    gap: 8px;
+    background: var(--background-secondary);
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--background-modifier-border);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    z-index: 100; /* Siempre por encima de todo */
+}
+
+.cornell-rhizome-zoom-controls button {
+    background: var(--background-primary);
+    border: 1px solid var(--background-modifier-border);
+    color: var(--text-normal);
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 4px 12px;
+    font-size: 0.85em;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.cornell-rhizome-zoom-controls button:hover {
+    background: var(--interactive-accent);
+    color: var(--text-on-accent);
+    transform: translateY(-2px);
+}
+
+/* El nuevo contenedor interno flex */
+.cornell-rhizome-content {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    transform-origin: top left; /* El zoom se hace desde la esquina superior izquierda */
+    transition: zoom 0.2s ease; /* Animación fluida al hacer clic en los botones */
+}
+
+/* ======================================================
+   🎯 MODO FOCO SEMÁNTICO & BOTONERA DE ACCIONES (COSIDO)
+   ====================================================== */
+
+/* Ocultar tarjetas que no están en el foco */
+.cornell-rhizome-node.is-dimmed {
+    display: none !important;
+}
+
+/* Ocultar columnas de días que se quedaron vacías */
+.cornell-rhizome-day-column.is-empty {
+    display: none !important;
+}
+
+/* 🛠️ NUEVA BOTONERA MÚLTIPLE (Reemplaza al viejo cornell-focus-btn) */
+.cornell-rhizome-actions {
+    position: absolute;
+    top: 5px; right: 5px;
+    display: flex; gap: 4px;
+    opacity: 0; transition: opacity 0.2s ease;
+    z-index: 20;
+}
+
+.cornell-rhizome-node:hover .cornell-rhizome-actions {
+    opacity: 1; 
+}
+
+.cornell-action-btn {
+    width: 24px; height: 24px;
+    background: var(--background-modifier-hover);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 4px;
+    color: var(--text-muted);
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.cornell-action-btn:hover {
+    color: var(--interactive-accent);
+    background: var(--background-primary);
+    transform: scale(1.1);
+}
+
+.cornell-action-btn svg { width: 14px; height: 14px; }
+
+/* Efecto Mágico: Cuando seleccionas una nota como origen del cosido */
+.cornell-rhizome-node.is-stitching-source {
+    border-color: var(--color-blue) !important;
+    box-shadow: 0 0 20px var(--color-blue) !important;
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+/* Cartel Flotante del Modo Cosido */
+.cornell-rhizome-stitch-banner {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-blue);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    z-index: 1000;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    animation: cornell-pop-up 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.cornell-stitch-cancel {
+    background: rgba(0,0,0,0.2) !important;
+    color: white !important;
+    border: none !important;
+    cursor: pointer;
+    padding: 4px 12px !important;
+    border-radius: 15px !important;
+}
+
+.cornell-stitch-cancel:hover {
+    background: rgba(0,0,0,0.4) !important;
+}
+
+@keyframes cornell-pop-up {
+    0% { transform: translate(-50%, 20px); opacity: 0; }
+    100% { transform: translate(-50%, 0); opacity: 1; }
+}
+
+/* Banner superior cuando el Modo Foco está activo */
+.cornell-focus-banner {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--background-secondary);
+    border: 1px solid var(--interactive-accent);
+    color: var(--text-normal);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.cornell-focus-exit-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+}
+
+.cornell-focus-exit-btn:hover {
+    color: var(--text-error);
+}
+/* ======================================================
+   🔥 MODO REVISIÓN (SRS HEATMAP CONTROLS)
+   ====================================================== */
+
+.cornell-rhizome-zoom-controls button.is-reviewing {
+    background-color: var(--color-orange);
+    color: white;
+    border-color: var(--color-orange);
+}
+
+.cornell-srs-controls {
+    display: flex;
+    gap: 6px;
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px dashed var(--background-modifier-border);
+}
+
+.cornell-srs-controls button {
+    flex: 1;
+    font-size: 0.7em;
+    font-weight: bold;
+    padding: 6px 4px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+    background: var(--background-primary-alt);
+}
+
+.cornell-srs-controls button.srs-hard {
+    color: var(--color-red);
+    background: rgba(var(--color-red-rgb), 0.1);
+}
+
+.cornell-srs-controls button.srs-good {
+    color: var(--color-orange);
+    background: rgba(var(--color-orange-rgb), 0.1);
+}
+
+.cornell-srs-controls button.srs-easy {
+    color: var(--color-green);
+    background: rgba(var(--color-green-rgb), 0.1);
+}
+
+.cornell-srs-controls button:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+/* ======================================================
+   🔍 BARRA SUPERIOR DE FILTROS (MÁQUINA DEL TIEMPO)
+   ====================================================== */
+.cornell-rhizome-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.cornell-rhizome-topbar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 20px;
+    background-color: var(--background-secondary);
+    border-bottom: 1px solid var(--background-modifier-border);
+    z-index: 100;
+    flex-shrink: 0;
+}
+
+.cornell-rhizome-topbar .cornell-search-wrapper {
+    margin-bottom: 0;
+    max-width: 300px;
+}
+
+.cornell-rhizome-filter-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: transparent;
+    border: 1px solid var(--background-modifier-border);
+    color: var(--text-muted);
+    border-radius: 4px;
+    padding: 4px 10px;
+    cursor: pointer;
+    font-size: 0.85em;
+    transition: all 0.2s ease;
+    box-shadow: none;
+}
+
+.cornell-rhizome-filter-btn:hover {
+    background: var(--background-modifier-hover);
+    color: var(--text-normal);
+}
+
+.cornell-rhizome-filter-btn.is-active {
+    background: rgba(var(--interactive-accent), 0.1);
+    border-color: var(--interactive-accent);
+    color: var(--interactive-accent);
+}
+
+.cornell-spin {
+    animation: cornell-spin-anim 1s linear infinite;
+}
+
+@keyframes cornell-spin-anim { 
+    100% { transform: rotate(360deg); } 
+}
+
+/* ======================================================
+   🌌 FONDO CUSTOMIZABLE PARA LA MÁQUINA DEL TIEMPO
+   ====================================================== */
+
+.cornell-rhizome-wrapper {
+    position: relative;
+    overflow: hidden; /* Evita que el fondo se desborde */
+}
+
+/* La imagen de fondo pura */
+.cornell-rhizome-custom-bg {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 0;
+    pointer-events: none; /* Te permite hacer clic a través de ella */
+    
+}
+
+/* 💎 MAGIA: Si hay fondo, el canvas se vuelve transparente, 
+   pero CONSERVA los puntos de radial-gradient por defecto */
+.cornell-rhizome-canvas.has-custom-bg {
+    background-color: transparent !important;
+    z-index: 1; /* Sube por encima del fondo */
+}
+
+/* 💎 EFECTO CRISTAL (Glassmorphism) para la barra superior */
+.cornell-rhizome-wrapper:has(.cornell-rhizome-custom-bg) .cornell-rhizome-topbar {
+    background: rgba(var(--background-secondary-rgb), 0.5) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ======================================================
+   🔍 LIGHTBOX PARA DOODLES Y VISUALIZADOR DE IMÁGENES
+   ====================================================== */
+.cornell-lightbox-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(5px);
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: zoom-out;
+    animation: cornell-fade-in 0.2s ease forwards;
+}
+
+.cornell-lightbox-overlay img {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 8px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+    animation: cornell-pop-in 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes cornell-fade-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes cornell-pop-in { 
+    from { transform: scale(0.9); opacity: 0; } 
+    to { transform: scale(1); opacity: 1; } 
+}
+
+/* ======================================================
+   🎨 INVERSIÓN INTELIGENTE PARA DOODLES EN EL PANEL LATERAL (EXPLORER & BOARD)
+   ====================================================== */
+
+/* Apuntamos a las imágenes "doodle_" que viven dentro de las listas del panel lateral */
+body.theme-dark .cornell-sidebar-item img[src*="doodle_"],
+body.theme-dark .cornell-pinboard-item img[src*="doodle_"] {
+    /* Magia: Convierte la tinta negra en blanca */
+    filter: invert(1); 
+    
+    /* Suavizamos el blanco puro un 10% para que no lastime la vista en modo nocturno */
+    opacity: 0.9; 
+    
+    /* Transición suave por si el usuario cambia el tema de Obsidian en tiempo real */
+    transition: filter 0.3s ease, opacity 0.3s ease; 
+}
+
+/* 🧼 Limpieza de bordes: Aseguramos el efecto "Tinta sobre papel" en el panel */
+.cornell-sidebar-item img[src*="doodle_"],
+.cornell-pinboard-item img[src*="doodle_"] {
+    border: none !important; 
+    box-shadow: none !important;
+    background: transparent !important;
+}
+
+/* ======================================================
+   ⚡ CORNELL PDF DOODLE ADDON - FIX CAPAS
+   ====================================================== */
+
+/* Estado por defecto: Dibujando */
+.cornell-pdf-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999 !important; 
+    
+    /* IMPORTANTE: Quitamos el !important de aquí para que JS pueda actuar */
+    pointer-events: auto; 
+    background-color: rgba(255, 204, 0, 0.05); 
+    cursor: crosshair; 
+}
+
+/* Modo Reposo (cuando hacemos doble clic) */
+.cornell-pdf-overlay.is-resting {
+    /* Dejamos pasar los clics para poder seleccionar el texto de Obsidian */
+    pointer-events: none !important; 
+    background-color: transparent !important;
+}
+
+.cornell-pdf-overlay canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* El botón del rayo debe estar todavía más arriba y ser SIEMPRE cliqueable */
+.cornell-harvest-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10000 !important;
+    
+    /* Aunque el padre sea intocable, el botón SÍ recibe clics */
+    pointer-events: auto !important; 
+    
+    background-color: var(--interactive-accent);
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.cornell-harvest-btn:hover {
+    transform: scale(1.1);
 }
