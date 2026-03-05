@@ -1,3 +1,5 @@
+- **80 Lok Sabha Constituencies** in **Uttar Pradesh**
+- **17** seats among the 80 Lok Sabha Constituencies are reserved for the Scheduled Castes.
 - As per the provision of [[Article 79]] of Indian Constitution, 
     - the [[House of the People (Lok Sabha)]], the Lok Sabha is the lower House of the parliament.
     - Lok Sabha is composed of representatives of the people chosen by direct election on the basis of the adult suffrage. The maximum strength of the House envisaged by the Constitution is 552.

@@ -1,0 +1,4 @@
+- It is an Island country in Europe.
+- Iceland is a constitutional republic with a multi-party system and is considered as the worlds' oldest parliamentary democracy.
+- [[Reykjavik]] is the capital of Iceland.
+- [[Guoni Thorlacius Johannesson]] is the current President of Iceland as of 2026.

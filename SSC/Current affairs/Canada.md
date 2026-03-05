@@ -1,2 +1,2 @@
-- [[Prime Minister]] = [[Mark Carney]]
+- [[Prime Minister (IN)]] = [[Mark Carney]]
 - [[Capital]] = [[Ottawa]]

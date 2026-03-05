@@ -1,0 +1,7 @@
+- The interval between two sessions of parliament must not exceed 6 months.
+- Max 3 session, Min 2 - [[Sessions of Parliament]]
+    - Gap between two sessions -> [[Resses]]
+    - [[Budget Session]] -> February to May.
+    - [[Monsoon Session]] -> July to September.
+    - [[Winter Session]] -> November to December. 
+- The **President** can **summon** each House of the Parliament from time to time.

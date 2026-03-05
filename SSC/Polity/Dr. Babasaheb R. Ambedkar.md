@@ -1,1 +1,4 @@
 - Aka [[Modern Manu]]
+- The **[[Drafting Committee of the Constitution]]** was chaired by Dr. B.R Ambedkar.
+- **B. R. Ambedkar** was a wise constitutional expert, he had studied the constitutions of about **60 countries.**
+- He is recognized as the **"[[Father of the Constitution of India]]".**

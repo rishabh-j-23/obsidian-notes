@@ -17,9 +17,9 @@ from [[Article 1]] to [[Article 4]]
 - India if Indestructible Union of Destructible States
 - Us is Indestructible Union of Indestructible States
 ## [[Article 2 - Admission or Establishment of new States]]
-- [[Parliament]] by law may establish or admit new states on such terms and conditions as it thinks fit
+- [[Parliament (Sansad)]] by law may establish or admit new states on such terms and conditions as it thinks fit
 ## [[Article 3 - Formation of new States and alternation of areas, boundaries or names of existing states]]
-- [[Parliament]] by law
+- [[Parliament (Sansad)]] by law
     - Form a state
         - separation of territory from any State
         - Uniting two or more states

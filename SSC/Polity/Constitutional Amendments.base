@@ -1,0 +1,14 @@
+formulas:
+  Amendment: |
+    file.links.filter(value.toString().contains("Amendment")).isTruthy() || file.basename.contains("Amendment").isTruthy()
+  uncreated links: file.links.filter(!value.asFile().isTruthy())
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - formula.Amendment
+    order:
+      - file.name
+      - formula.uncreated links
+      - formula.Amendment

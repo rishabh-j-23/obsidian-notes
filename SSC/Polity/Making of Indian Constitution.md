@@ -5,10 +5,16 @@
 - 165 days of discussions
 - 2000 Amendments made before finalization
 
+- **26 January 1930** marked the **“[[Poorna Swarajya]]“ resolution of Indian National Congress under Jawahar Lal Nehru** and so the date was chosen in **1950 to be our republic day.**
+- It **must be noted that the idea of the constituent assembly** was not of congress.
+- The idea was put forward by **MN Roy in 1934.**
+- The **idea put forward by MN Roy** was officially raised by **Congress in 1935 and the British Government** accepted this demand.
+- This **demand of constituent assembly** was accepted in the **August offer of 1940.**
+
 - [[Sept 2nd, 1946]]
     - [[Interim Government]]
         - [[President (IN)]]: [[Lord Mountbatten]]
-        - [[Vice-President]]: [[Jawahar Lal Nehru]]
+        - [[Vice-President (IN)]]: [[Jawahar Lal Nehru]]
         - [[Home Minister]]: [[Sardar Patel]]
         - [[Defense Minister]]: [[Baldev Singh]]
         - [[Agriculture Minister]]: [[Dr. Rajendra Prasad]]

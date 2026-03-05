@@ -1,0 +1,5 @@
+- The President of India referred to the Ayodhya issue to the Supreme Court under **[[Article 143]].**
+- The first Ayodhya dispute dates back to **[[1858]]**.
+- The President comes in **[[Article 52 to 78]] [[PART 5: ARTICLE 51-151]].**
+- The **[[President (IN)]]** is **_De Jure_** Head of the Government.
+- The **[[Prime Minister (IN)]]** is a **_De Facto_** head of Government.

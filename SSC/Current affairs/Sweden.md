@@ -1,0 +1,4 @@
+- It is a country in Europe.
+- Sweden is a constitutional monarchy with a parliamentary democracy.
+- Stockholm is the capital of Sweden.
+- [[Ulf Kristersson]] is the current PM of Sweden as of 2026.

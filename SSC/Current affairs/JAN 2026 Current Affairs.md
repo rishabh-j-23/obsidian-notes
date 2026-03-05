@@ -113,7 +113,7 @@ tags:
 ![[Pasted image 20260304114035.png]]
 
 ### Fishing Harbor [[Andaman & Nicobar Islands]]
-- [[Government of India]] approved 200cr project
+- [[Government of India (GOI)]] approved 200cr project
 - To Develop Smart and integrated Fishing Harbor
 - at [[Mayabundar, Andaman & Nicobar Islands]] 
 - Funded by Centre under [[Pradhan Mantri Matsya Sampada Yojana]]

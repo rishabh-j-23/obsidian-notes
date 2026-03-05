@@ -21,7 +21,7 @@
         - [[Concurrent List Subjects]]
         - [[Residuary List]]
             - Not included in other 3
-            - [[Parliament]] has power to legislate over this %%> legislate: to make a law or laws%%
+            - [[Parliament (Sansad)]] has power to legislate over this %%> legislate: to make a law or laws%%
     - Subjects transferred from [[State List Subjects]] to [[Concurrent List Subjects]]
         - Education, Forests, Weights and Measures, Protection of wild animals and birds, Administration of justice
             - Justice Educated himself with WM to protect Animals and Birds
@@ -37,7 +37,7 @@
 > [!FACT]
  [[Amendment]] - A formal change to law, contract, constitution or other legal document
 
-## [[Schedule 8: Official Languages]]
+## [[Schedule 8 - Official Languages]]
 - Deals with official Languages
 - Original - 14
 - Now - 22

@@ -1,1 +1,3 @@
 - Flag Unfurling
+- India became a Republic on [[Jan 26, 1950]]
+- On this day the Constitution of India came into effect, replacing the **Government of India Act (1935),** which made India a Republic.

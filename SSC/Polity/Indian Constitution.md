@@ -19,3 +19,9 @@ tags:
             - Part IV-A, IX-B and XIV-A added
         - Preamble
 
+- The main source of the Indian Constitution is the [[Government of India Act, 1935]].
+- The Constitution of [[1950]] was a by-product of the legacy started by the Government of India Act 1935. 
+- Government of India Act 1935 **abolished the system of provincial dyarchy** and established dyarchy at the centre.
+- It also established a **Federation of India consisting of the provinces of British India and most of the princely states.**
+- Indian Constitution came into existence on **26th November 1949.**
+- The Constituent Assembly of **299 members drafted the constitution** considering features of constitutions of the other countries as well as from the Government of India Act 1935.

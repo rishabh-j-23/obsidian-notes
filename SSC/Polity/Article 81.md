@@ -1,0 +1,11 @@
+- [[House of People (Lok Sabha)]]
+- Theme: Peacock
+- Total 550
+    - 530 Elected
+        - State
+    - 20 Elected
+        - UT
+    - Directly voted by people -> Direct Election
+    - [[First Past The Post System]] -> Winner takes all
+- Current membership -> 548
+

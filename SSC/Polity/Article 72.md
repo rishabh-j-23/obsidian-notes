@@ -1,0 +1,3 @@
+- **The [[President (IN)]]** has the power to pardon the death penalty.
+- Article 72 of the Indian Constitution gives him such powers.
+- President can also grant pardons, reprieve, respite the punishment.

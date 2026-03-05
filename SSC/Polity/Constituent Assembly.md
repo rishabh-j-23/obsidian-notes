@@ -60,7 +60,7 @@
 | ---------------------------------------------- | ----------------------------------------------------------------------------- |
 | [[President of the Executive Council]]         | 1. [[Viscount Wavell]] till Feb 1947<br>2. [[Lord Mountbatten]] from Feb 1947 |
 | [[Commander-in-Chief]]                         | [[Sir Claude Auchinleck]]                                                     |
-| [[Vice-President]]                             | [[Jawahar Lal Nehru]]                                                         |
+| [[Vice-President (IN)]]                             | [[Jawahar Lal Nehru]]                                                         |
 | [[Home Affairs, Information and Broadcasting]] | [[Sardar Patel]]                                                              |
 | [[Agriculture Minister]]                       | [[Dr. Rajendra Prasad]]                                                       |
 | [[Commerce]]                                   | [[Ibrahim Ismail Chundrigar]] ([[Muslim League]])                             |

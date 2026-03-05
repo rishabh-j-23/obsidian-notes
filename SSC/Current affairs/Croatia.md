@@ -1,4 +1,4 @@
 • [[President (IN)]] = [[Zoran Milanovic]]
-• [[Prime Minister]] = [[Andrej Plenkovic]]
+• [[Prime Minister (IN)]] = [[Andrej Plenkovic]]
 • [[Currency]] = [[Euros]]
 • [[Capital]] = [[Zagreb]]

@@ -7,7 +7,7 @@
 ### Nature of Constitution
 - [[Sovereign]]
     - People have right to take decision on internal as well as external matters
-    - No External Power can dictate [[Government of India]]
+    - No External Power can dictate [[Government of India (GOI)]]
 - [[Socialist]]
     - Wealth is generated socially and should be shared equally
     - Government should take care of ownership of land to reduce socio economic inequalities

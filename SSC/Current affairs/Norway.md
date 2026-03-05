@@ -1,0 +1,4 @@
+- It is located in Northwestern Europe.
+- It is a constitutional **monarchy**.
+- [[Jonas Gahr Støre]] is the current Prime Minister of Norway as of 2026.
+- [[Oslo]] is the capital city of Norway.

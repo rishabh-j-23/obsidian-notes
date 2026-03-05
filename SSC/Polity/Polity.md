@@ -129,7 +129,7 @@ refer: https://www.youtube.com/live/8PMDYIdqjwE?si=RHHbYxaqqdHsDVv3
 - Discharge of President's functions in other contingencies
 ## [[Article 71]]
 - Matters relating to or connected with the election of Vice-President
-- For both [[President (IN)]] and [[Vice-President]] -> [[Supreme Court]] has final say
+- For both [[President (IN)]] and [[Vice-President (IN)]] -> [[Supreme Court]] has final say
 ## [[Vice-Presidents of India]]
 ![[Pasted image 20260122170140.png]]
 
@@ -156,17 +156,17 @@ refer: https://www.youtube.com/live/8PMDYIdqjwE?si=RHHbYxaqqdHsDVv3
 - Extent of Executive Power of union
 
 ## [[Article 74]]
-- There shall be [[Council of Ministers]] headed by [[Prime Minister]] to aid and advise [[President (IN)]]
-- Read Head -> [[Prime Minister]]
+- There shall be [[Council of Ministers]] headed by [[Prime Minister (IN)]] to aid and advise [[President (IN)]]
+- Read Head -> [[Prime Minister (IN)]]
 - Nominal Head -> [[President (IN)]]
 - [[42nd CAA (Amendment) 1976]] -> binding (president has to approve)
 - [[44nd Amendment]] -> Can be rejected once
 
 ## [[Article 75]]
-**Clause 1** - The [[Prime Minister]] shall be appointed by the [[President (IN)]] and the other Ministers shall be appointed by the [[President (IN)]] on the advice of the [[Prime Minister]]
+**Clause 1** - The [[Prime Minister (IN)]] shall be appointed by the [[President (IN)]] and the other Ministers shall be appointed by the [[President (IN)]] on the advice of the [[Prime Minister (IN)]]
 
 **Clause 1A** - Added in [[91st Amendment]] in 2003
-- Total # of Ministers, including [[Prime Minister]], in [[Council of Ministers]] shall not exceed 15% of total number of members of the [[House of the People (Lok Sabha)]]
+- Total # of Ministers, including [[Prime Minister (IN)]], in [[Council of Ministers]] shall not exceed 15% of total number of members of the [[House of the People (Lok Sabha)]]
 
 **Clause 1B** - Added in [[91st Amendment]] in 2003
 - A member if either [[Houses of Parliament]] belonging to any political party who is disqualified for being a member of that House under paragraph 2 of the [[Tenth Schedule]] shall also be disqualified to be appointed as a Minister under clause (1) for the duration of the period commencing from the date of his disqualification till the date
@@ -194,12 +194,12 @@ Schedule.
     - advices government in legal matters
     
 Clause 1) - Appointment by [[President (IN)]]
-Clause 2) - Advise the [[Government of India]]
+Clause 2) - Advise the [[Government of India (GOI)]]
 Clause 3) - Right to Audience in all the courts
 Clause 4) - Pleasure of President
 
-- Not a full time advisor of [[Government of India]]
-- They can take private cases only if they are not against [[Government of India]]
+- Not a full time advisor of [[Government of India (GOI)]]
+- They can take private cases only if they are not against [[Government of India (GOI)]]
 
 > [!FACTS]
 > - 1st [[Attorney-General of India]] - MC Setavad
@@ -211,11 +211,11 @@ Clause 4) - Pleasure of President
 
 
 ## [[Article 77]]
-- Conduct of business of the [[Government of India]] transacts under [[President (IN)]]
+- Conduct of business of the [[Government of India (GOI)]] transacts under [[President (IN)]]
 
 ## [[Article 78]]
-- Duties of [[Prime Minister]] as respect to the furnishing of information to the [[President (IN)]], etc.
-- [[Prime Minister]] is [[Linchpin of the Government]]
+- Duties of [[Prime Minister (IN)]] as respect to the furnishing of information to the [[President (IN)]], etc.
+- [[Prime Minister (IN)]] is [[Linchpin of the Government]]
 
 # [[Part 5 - Chapter 2: Parliament of India]]
 
@@ -266,7 +266,7 @@ Clause 4) - Pleasure of President
 - Current membership -> 548
 
 > [!FACT]
-> - [[Uttar Pradesh]] -> Most Representation
+> - [[Uttar Pradesh (UP)]] -> Most Representation
 ### [[Delimitation Commission]]
 - Happened in 
     - [[1952]]
@@ -291,11 +291,11 @@ Clause 4) - Pleasure of President
 - Citizen of India
 - [[House of People (Lok Sabha)]] -> 25 year old
 - [[Council of States (Rajya Sabha)]] -> 30 year year old
-- Other qualification can be prescribed by the [[Parliament]]
+- Other qualification can be prescribed by the [[Parliament (Sansad)]]
 
 ## [[Article 85]]
-- Sessions of [[Parliament]], prorogation and dissolution
-- Max 3 session, Min 2
+- Sessions of [[Parliament (Sansad)]], prorogation and dissolution
+- Max 3 session, Min 2 - [[Sessions of Parliament]]
     - Gap between two sessions -> [[Resses]]
     - [[Budget Session]] -> February to May.
     - [[Monsoon Session]] -> July to September.
@@ -328,7 +328,7 @@ Clause 4) - Pleasure of President
 *Officers of parliament*
 ## [[Article 89]]
 - The Chairman and Deputy Chairman of Council of States
-- [[Vice-President]] is chairman
+- [[Vice-President (IN)]] is chairman
 - [[Deputy Chairman]] -> elected from member of [[Council of States (Rajya Sabha)]]
 
 ## [[Article 90]]
@@ -367,7 +367,7 @@ Clause 4) - Pleasure of President
 - Salaries and allowances of the [[Chairman]] and he [[Deputy Chairman]] and the [[Speaker]] and [[Deputy Speaker]] is determined by themselves
 
 ## [[Article 98]]
-- Secretariat of the [[Parliament]]
+- Secretariat of the [[Parliament (Sansad)]]
 
 ## [[Article 99]]
 - Oath or affirmation by members
@@ -384,7 +384,7 @@ Clause 4) - Pleasure of President
 ## [[Article 101]]
 - Vacation of seats
 - Both shall not be members of both houses
-- not from [[State Legislature]] and [[Parliament]]
+- not from [[State Legislature]] and [[Parliament (Sansad)]]
 
 ## [[Article 102]]
 - Disqualification for membership
@@ -392,7 +392,7 @@ Clause 4) - Pleasure of President
     - office of profit (nowhere defined)
     - Undischarged Insolent
     - Unsound Mind
-    - Any other law created by [[Parliament]]
+    - Any other law created by [[Parliament (Sansad)]]
         - e.g. RIA 1957
 - Decided by
     - [[President (IN)]]
@@ -420,10 +420,10 @@ Clause 4) - Pleasure of President
 - Powers, privileges, etc. of the [[Houses of Parliament]] and of the members and committees
 - No liabilities in Houses
     - Punishment decided by [[Speaker]]
-- Cannot be arrested in civil matter if [[Parliament]] in session and 40 days before and after
+- Cannot be arrested in civil matter if [[Parliament (Sansad)]] in session and 40 days before and after
 
 ## [[Article 106]]
-- Allowances decided by [[Parliament]]
+- Allowances decided by [[Parliament (Sansad)]]
 
 ## [[Article 107]]
 - Provisions as to introducing and passing of Bills
@@ -516,7 +516,7 @@ Clause 4) - Pleasure of President
     - [[Finance Bill]]
 - 
 ## [[Article 113]]
-- Procedure in [[Parliament]] with respect to estimates
+- Procedure in [[Parliament (Sansad)]] with respect to estimates
 - Estimate of Expenditures
     - Charged Expenditure 
         - Not Votable
@@ -557,13 +557,13 @@ Clause 4) - Pleasure of President
 - Restriction on discussion in Parliaments by Courts
 
 ## [[Article 122]]
-- Courts not to inquire into proceedings of [[Parliament]]
+- Courts not to inquire into proceedings of [[Parliament (Sansad)]]
 
 
 # [[Part 5 - Chapter 3: Ordinance]]
 
 ## [[Article 123]]
-- Power of [[President (IN)]] to promulgate [[Ordinance]] during recess of [[Parliament]]
+- Power of [[President (IN)]] to promulgate [[Ordinance]] during recess of [[Parliament (Sansad)]]
 - DC Wadwa vs State of Bihar case
 
 # [[Part 5 - Chapter 4: Supreme Court]]
@@ -651,14 +651,14 @@ Clause 4) - Pleasure of President
     - Judicial Independence from USA as well
     
 ## [[Article 138]]
-- Enlargement of the jurisdiction of the [[Supreme Court]] by [[Parliament]]
+- Enlargement of the jurisdiction of the [[Supreme Court]] by [[Parliament (Sansad)]]
 
 ## [[Article 139]]
 - Conferment on the Supreme Court of powers to issue certain writs
 
 ## [[Article 140]]
 - [[Ancillary Powers]] - extra powers
-- given by [[Parliament]]
+- given by [[Parliament (Sansad)]]
 
 ## [[Article 141]]
 - Law declared by [[Supreme Court]] to be binding on all courts
@@ -706,7 +706,7 @@ Clause 4) - Pleasure of President
 ![[Pasted image 20260208154830.png]]
 #### Similarity
 - [[President (IN)]] == [[Governor of the State]]
-- [[Prime Minister]] == [[Chief Minister]]
+- [[Prime Minister (IN)]] == [[Chief Minister]]
 - [[Attorney-General of India]] == [[Advocate General]]
 -  89 and 90
     - Article 74 to 111 + 89 
@@ -714,14 +714,14 @@ Clause 4) - Pleasure of President
 ![[Pasted image 20260208154955.png]]
 - Above six states have a [[Bicameral Legislature]]
 
-- Out of 8 [[Union Territory]], 3 [[Union Territory]] have [[Legislative Assembly]]
+- Out of 8 [[Union Territories (UTs) (IN)]], 3 [[Union Territories (UTs) (IN)]] have [[Legislative Assembly]]
     - Delhi
     - Pondicherry
     - Jammu and Kashmir
 
 ## [[Article 169]]
 - Abolition and Creation of [[Legislative Council]]
-- [[Parliament]] can do it anytime
+- [[Parliament (Sansad)]] can do it anytime
     - needs [[Simple Majority]]
     
 ## [[Article 170]]

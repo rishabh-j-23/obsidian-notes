@@ -1,0 +1,6 @@
+ - [[G. V. Mavalankar]] was the First Speaker of Independent India's Lok Sabha.
+- Indian System of Governance follows the **[[Westminster Model]]** hence the Parliamentary proceedings of the country are headed by a presiding officer, who is known as the Speaker.
+- The **office of the Speaker** of Lok Sabha and Rajya Sabha is a **Constitutional Office**. 
+- The Speaker is placed at **rank 6** of **[[Warrant of Precedence]]** in the country.
+- Constitution has given **no specific qualifications** are prescribed for being elected as the speaker.
+- **Speaker decides whether a bill is a money bill or not**.
