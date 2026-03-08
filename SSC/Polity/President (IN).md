@@ -7,3 +7,13 @@
 - The President's seat can be left vacant for **6 months (i.e.Not for more than 6 months)**.
 - [[Vice President of India]] takes over to perform the duties of President meanwhile until a new President enters his office since the seat cannot be left vacant.
 - The new President then elected holds the office for the full term of 5 years from the date of his entering the office.
+
+## Powers and Functions of the President
+- The powers enjoyed and the functions performed by the President can be studied under the following heads.
+    - Executive powers
+    - Legislative powers
+    - Financial powers
+    - Judicial powers
+    - Diplomatic powers
+    - Military powers
+    - **Emergency powers**

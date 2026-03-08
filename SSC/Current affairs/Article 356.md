@@ -1,0 +1,1 @@
+Article 356 deals with the [[President’s rule]] in a state.

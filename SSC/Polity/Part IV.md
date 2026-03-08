@@ -1,0 +1,6 @@
+- **Part IV** of the Indian constitution is related to the **[[Directive Principles of State Policy (DPSP)]].** 
+- **Directive Principles of State Policy(Article 36 to 51):** 
+    - **Dr B.R. Ambedkar** who is the father of the constitution said that the **Directive Principles of State Policy** is a **‘novel feature’** of our Constitution.
+    - It was **classified** into **three major segments**.that are **Gandhian, Socialistic, & liberal intellectual**.
+    - **DPSP** were basically introduced to **establish a ‘welfare state’** in India.
+    - Its vision was to **promote** the **idea** of **economic** & **social** democracy.

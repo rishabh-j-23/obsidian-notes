@@ -1,0 +1,4 @@
+- The **first National Emergency** was declared in India on **26 October 1962** during the India-China war.
+- National Emergency in India has been declared **3 times** - **1962 (China war)**, **1971 (Pakistan war)**, and **1975 (Internal Disturbances)**.
+- National Emergency can be proclaimed by the President when he/she perceives threats to the nation from internal and external sources or from financial situations of crisis.
+- National Emergency is mentioned in **[[Article 352]]**.

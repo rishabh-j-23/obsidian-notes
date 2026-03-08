@@ -1,5 +1,15 @@
 - Modified version of the [[Objective Resolution]] passed by [[Jawahar Lal Nehru]]
+- **The preamble** taken from the **[[US constitution]].**
+- Jawaharlal Nehru is the architect of the preamble.
+- The only date mentioned in the Preamble is 26th November 1949.
 
+| **Authors**           | **Termed Preamble As**                |     |
+| --------------------- | ------------------------------------- | --- |
+| [[K.M. Munshi]]       | [[Political Horoscope]]               | KP  |
+| [[Earnest Barker]]    | [[Key to the Constitution]]           | EK  |
+| [[Thakurdas Bhargav]] | [[Soul of the constitution]]          | TS  |
+| [[N.A. Palkhiwala]]   | [[Identity card of the constitution]] | NI  |
+***NPEKTSNI***
 ## Understanding the Preamble
 ### Source of power of Constitution
     - **WE, THE PEOPLE OF INDIA.....**

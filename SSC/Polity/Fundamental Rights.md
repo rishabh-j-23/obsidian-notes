@@ -11,6 +11,10 @@
     - Currently in article 300A -> Legal Right
 7. Right to Constitutional Remedies - Article 32 
 
+- **Fundamental rights** are enshrined in the constitution of India in [[PART III]].
+- [[Sardar Vallabhbhai Patel]] is considered as the father of fundamental rights in India.
+- The idea of fundamental rights is taken from the **[[US constitution]].**
+- Fundamental rights are justiciable.
 
 # Are fundamental rights Justiciable
 - Citizen can move to Supreme Courts and other courts for rights

@@ -2,7 +2,14 @@
 - Power of [[Parliament (Sansad)]] to amend the [[Constitution Day of India]]
 - This procedure preserves the sanctity of India's Constitution and holds a check on the Indian Parliament's arbitrary power.
 - Article 368 does not set down the legislative process to be followed at various points of the amendment.
-
+- Parliament **cannot amend those provisions which form the 'basic structure of the Constitution'**. ([[Kesavananda Bharti Case]])
+- The amendment of Constitution can be initiated by the **introduction of a bill in either house of the Parliament**. (does not in the legislature)
+- The bill can be introduced **either by a minister or by a private member**. (does not require prior permission of the President)
+- It must be passed in each house by a **special majority**. (the majority of the total membership of the house and a majority of 2/3rd of the members of house present and voting)
+- Each house must **pass the bill separately**. (no provision for joint sittings)
+- If the bill is for amending the **federal structure of the Constitution**, then it must be ratified by the legislature of half of the states by a simple majority. (the majority of the members of house present and voting)
+- **President must give his assent** to the bill. (neither withhold his assent nor return the bill)
+- After the assent of the President, the bill becomes an Act.
 ## [[Amendments]]
 
 ### [[1st CA (Amendment), 1951]]

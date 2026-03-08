@@ -1,0 +1,4 @@
+- The political map of North-East India underwent a major change in [[1972]] by the enactment of the [[North-Eastern Areas (Reorganization) Act, 1971]].
+    - Thus, the two union territories of [[Manipur]] and [[Tripura]] and the sub-state of [[Meghalaya]] got statehood and the two union territories of [[Mizoram]] and [[Arunachal Pradesh]] (originally known as North-East Frontier Agency, NEFA) came into being.
+- The union territory of [[Mizoram]] was conferred the status of a full state as a sequel to the signing of a memorandum of settlement ([[Mizoram Peace Accord]]) in [[1986]] between the Central government and the [[Mizo National Front]], ending the two-decade-old insurgency.
+- Mizoram attained statehood on **[[Feb 20, 1987]]** with the enactment of [[The State of Mizoram Act, 1986]].

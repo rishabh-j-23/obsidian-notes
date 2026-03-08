@@ -1,0 +1,2 @@
+- **Name and territory of the union.**
+- **Describes India that is Bharat is a "union of states" rather than a "federation of states". This provision deals with two things one, the name of the country, and two, types of the polity.**

@@ -1,0 +1,5 @@
+- **[[Article 352]]** empowers the [[President (IN)]] to impose a national emergency.
+- It can be imposed on grounds of War, External Aggression or Armed rebellion.
+- A national emergency can be imposed when the entire cabinet minister gives the proposal in writing to the president.
+- The proclamation of emergency must be approved by both houses within one month from the date of its issue.
+- After approval, the Emergency can continue for 6 month period and can be extended to an indefinite period with the approval of parliament every 6 months.

@@ -1,0 +1,2 @@
+- This Amendment Act is formally known as [[The Constitution Act, 1976]].
+- This Act changed the age of retirement of the Chairman and members of the State Public Service Commission from 60 to 62 years

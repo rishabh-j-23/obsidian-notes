@@ -1,1 +1,5 @@
-Nov 26, 1949 -> First [[President (IN)]]
+- Nov 26, 1949 -> First [[President (IN)]]
+- [[Committee on the Rules of Procedure]]
+- [[Steering Committee]]
+- [[Finance and Staff Committee]]
+- [[Ad hoc Committee on the National Flag]]

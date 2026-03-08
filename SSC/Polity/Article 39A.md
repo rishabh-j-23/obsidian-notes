@@ -1,0 +1,3 @@
+- **Article 39-A** included in **[[Part IV]]** of the Indian Constitution.
+- It provides an idea of **equal justice and free legal aid for all citizens.**
+- [[Part IV]] of the Indian Constitution deals with the **[[Directive Principles of State Policy]].**

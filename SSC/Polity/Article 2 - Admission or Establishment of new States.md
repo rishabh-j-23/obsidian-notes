@@ -1,0 +1,2 @@
+- admission or establishment of the new state.
+- empowers the parliament to admit into the union of India or establish new states on such terms and conditions as it thinks fit.

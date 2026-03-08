@@ -1,0 +1,3 @@
+The imposition of direct [[Central Government rule]] in a state, in case of inability of a state government to function according to constitutional provisions, is known as President Rule.
+    - When a state government is functioning in accordance with the [[Constitutional Provisions]], it is run by an elected council of Ministers who are responsible for the state's legislative assembly. In this case, the council is led by the [[Chief Minister]] is the chief executive of the state and the [[Governor]] is only a constitutional head.
+    - When the President's rule is imposed on a state, the Council of Ministers is dissolved and the office of Chief Minister is vacated.

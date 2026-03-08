@@ -1,0 +1,2 @@
+- This Act omitted many articles inserted by the 42nd Amendment Act.
+- It restored the Jurisdiction of the Supreme Court and High Courts, which had been curtailed under the 42nd Amendment Act.

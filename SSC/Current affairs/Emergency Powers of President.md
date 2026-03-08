@@ -1,0 +1,10 @@
+- **Emergency Powers:-** The Constitution confers extraordinary powers on the President to deal with the following three types of emergencies:
+    - [[National Emergency]] ([[Article 352]])
+    - [[President's Rule]] ([[Article 356]] and [[Article 365]])
+    - Financial Emergency (Article 360)
+- **Article 365**- "where any State has failed to comply with, or to give effect to, any directions given in the exercise of the executive power of the Union under any of the provisions of this Constitution, it shall be lawful for the President to hold that a situation has arisen in which the Government of the State cannot be carried on in accordance with the provisions of this Constitution". 
+- **President Rule in India**: 
+    - The imposition of direct Central Government rule in a state, in case of inability of a state government to function according to constitutional provisions, is known as President Rule.
+    - When a state government is functioning in accordance with the Constitutional Provisions, it is run by an elected council of Ministers who are responsible for the state's legislative assembly. In this case, the council is led by the Chief Minister is the chief executive of the state and the Governor is only a constitutional head.
+    - When the President's rule is imposed on a state, the Council of Ministers is dissolved and the office of Chief Minister is vacated.
+- 

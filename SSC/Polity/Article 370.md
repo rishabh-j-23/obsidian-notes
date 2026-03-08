@@ -5,6 +5,3 @@
 - The resolution passed in both houses of India's parliament with a 2/3 majority.
 - The [[Jammu and Kashmir Reorganization Act, 2019]] was passed by the parliament to split it as the Union Territory of Jammu and Kashmir and Union Territory of Ladakh.
 - The reorganization took place on **31 October 2019** [[Oct 31, 2019]].
-- **[[Article 100]]**: Voting in Houses, power of Houses to act notwithstanding vacancies and quorum.
-- **[[Article 111]]**: Veto power of the President.
-- **[[Article 12]]** defines ‘State’ and includes the Government of India, Parliament, State Governments, State Legislatures, local authorities, and other authorities under government control.

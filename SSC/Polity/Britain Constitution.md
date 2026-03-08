@@ -1,0 +1,7 @@
+- The important provisions borrowed from **Britain** are:
+    - [[Parliamentary form of government]]
+    - [[Rule of Law]].
+    - [[Single Citizenship]].
+    - [[Office of Comptroller and Auditor General of India]].
+    - [[Bicameralism]].
+    - [[Writs]].

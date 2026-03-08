@@ -1,0 +1,4 @@
+- This Act made fundamental changes in the constitutional structure.
+- It incorporated the words 'Socialist', 'Secular', and 'Integrity' in the Preamble.
+- [[Fundamental Duties]] were added in [[Part IVA]].
+- Directive Principles were given precedence over Fundamental Rights and any law made to this effect by the Parliament was kept beyond the scope of judicial review by the court.

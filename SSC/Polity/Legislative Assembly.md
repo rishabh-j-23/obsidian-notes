@@ -1,0 +1,5 @@
+- The legislative assembly is the lower house of the [[State Legislature]] in the different states and two union territories, Delhi and Pondicherry.
+- Members of a Legislative assembly are the direct representative of the people of the state as they are directly elected.
+- **Term** of the legislative assembly is **five years**.
+- **The maximum size of the legislative assembly is not more than 500** and **not less than 60**.
+- In the states of Goa, Mizoram and Sikkim the members of the legislative assembly can be less than 60.

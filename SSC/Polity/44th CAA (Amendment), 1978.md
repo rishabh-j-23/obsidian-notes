@@ -1,0 +1,4 @@
+- 44th Constitutional Amendment Act, [[1978]] came into effect from **June-September 1979**.
+- This Amendment was brought by the **Janata Party Government**.
+- This Amendment repealed some of the changes effected by the [[42nd CAA (Amendment), 1976]], omitted a few, and provided alterations.
+- Right to property was taken away from the list of Fundamental Rights and placed in a new **Art**. **300A** as an ordinary legal right.

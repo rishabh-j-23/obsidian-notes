@@ -160,7 +160,7 @@ refer: https://www.youtube.com/live/8PMDYIdqjwE?si=RHHbYxaqqdHsDVv3
 - Read Head -> [[Prime Minister (IN)]]
 - Nominal Head -> [[President (IN)]]
 - [[42nd CAA (Amendment) 1976]] -> binding (president has to approve)
-- [[44nd Amendment]] -> Can be rejected once
+- [[44th CAA (Amendment), 1978]] -> Can be rejected once
 
 ## [[Article 75]]
 **Clause 1** - The [[Prime Minister (IN)]] shall be appointed by the [[President (IN)]] and the other Ministers shall be appointed by the [[President (IN)]] on the advice of the [[Prime Minister (IN)]]
