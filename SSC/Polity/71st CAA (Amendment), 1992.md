@@ -1,0 +1,1 @@
+- Its included [[Manipuri]], [[Konkani]] & [[Nepalese]] language in the [[Schedule 8 - Official Languages]] of the constitution

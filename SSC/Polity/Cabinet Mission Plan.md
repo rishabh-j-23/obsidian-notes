@@ -1,7 +1,22 @@
-- [[1946]]
 - Lead by
     - [[Pethick Lawrence]] - Chairman
     - [[Stafford Cripps]]
     - [[A.V. Alexander]]
 - Accepted by both [[Indian National Congress (INC)]] and [[Muslim League]]
 - [[Constituent Assembly]] formed according to this
+
+- The Cabinet Mission Plan was set up in [[1946]].
+- Cabinet Mission: 
+    - In 1946, [[Lord Attlee]] sent a Cabinet Mission to India consisting of three cabinet ministers, namely 
+        - Lord Pethick-Lawrence, Secretary of State for India
+        - A.V Alexander, First Lord of Admiralty
+        - Sir Stafford Cripps, President of the Board of Trade. 
+- Objectives: 
+    - The main objective of the Mission came to India to **discuss the transfer of ownership from the British to the Indian leadership**, with the aim of preserving India's unity and granting the independence of India. 
+    - Basically The Cabinet Mission wants to help India to achieve independence of India as early as possible & to **set up a Constitutional assembly**. 
+    - **One of the motives was to suggest measures to set up the Interim Government.**
+- Major Keypoints: 
+    - According to the Cabinet Mission plan, there was a Union of India, comprising of both British India & states. 
+    - The Mission also having Jurisdiction over the subjects of Foreign affairs, Defence & communication.
+    - Except these, all other residuary powers vested in the provinces & states. 
+    - The Union had consisted of an executive and legislative representatives of the provinces and the states.

@@ -1,0 +1,1 @@
+- **Shri K. Sanjay Murthy** **is the Present [[Comptroller and Auditor General (CAG) of India]].** as of 2026

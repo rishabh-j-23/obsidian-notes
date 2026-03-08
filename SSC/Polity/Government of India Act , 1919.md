@@ -1,0 +1,12 @@
+Government of India Act of 1919:
+- This Act is also known as [[Montagu-Chelmsford Reforms]] (Montagu was the Secretary of State for India and Lord Chelmsford was the Viceroy of India).
+- It further divided the provincial subjects into two parts– **transferred and reserved.**
+    - The transferred subjects were to be administered by the Governor with the aid of Ministers responsible to the legislative council.
+    - The reserved subjects were to be administered by the Governor and his executive council without being responsible to the legislative council.
+- It introduced **[[Bicameralism]] and [[Direct Elections]] in the country.**
+- It required that the **three of the six members of the Viceroy’s Executive Council were to be Indian.**
+- It extended the principle of communal representation by providing separate electorates for Sikhs, Indian Christians, Anglo-Indians, and Europeans.
+- It provided for the establishment of a public service commission.
+    - Hence, a [[Central Public Service Commission]] was set up in [[1926]] for recruiting civil servants.
+- It separated, for the first time, provincial budgets from the Central budget and authorized the provincial legislatures to enact their budgets.
+- It provided for the appointment of a statutory commission to inquire into and report on its working after ten years of its coming into force.

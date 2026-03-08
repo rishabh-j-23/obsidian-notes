@@ -2,3 +2,12 @@
 - aka [[Guardian of Constitution]]
 - replace the [[Federal Court]]
     - Established in 1937
+- Supreme Court of India consists of the Chief Justice of India and a maximum of **34 judges**.
+    - It was established in the year **1950**.
+    - The seat of the Supreme Court is declared as **[[Delhi]]** by the Constitution of India.
+    - **65 years** is the age of retirement for the judge of the supreme court.
+    - **[[Harilal J. Kania]]** was the first Chief Justice of India.
+    - The 52nd Chief Justice is [[Bhushan Gavai]]. Sworn in on 14 May, 2025, he became the first Buddhist to hold this post. He will have a 6-month term which is due to end on November 23, 2025.
+    - [[Surya Kant]] is the incumbent and 53rd chief justice of India, and was appointed on 24th November 2025.
+- **[[Article 348]]** contained in **Chapter-III of [[Part-XVII]]** of the Constitution of India, makes a provision for **[[English]]** to be the **official language** for the Supreme Court of India and the High Courts and for Acts, Bills, etc.
+- As per the case-law of [[Balraj Misra And Another vs Hon'ble Chief Justice Of High court, 1999]], the state HC and the SC are flexible enough to admit a plea in Hindi or any other official state languages based on merit. Yet, the proceedings and rulings thereafter will be in English.

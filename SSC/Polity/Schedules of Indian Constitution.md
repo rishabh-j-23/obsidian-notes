@@ -69,7 +69,7 @@
 - added though [[73rd CA (Amendment), 1992]] - 29 functional matters
 ## [[Schedule 12]]
 - Provisions related to [[Municipalities]]
-- added though [[74rd CA (Amendment), 1992]] - 18 functional matters
+- added though [[74th CA (Amendment), 1992]] - 18 functional matters
 
 ==TRICK TO REMEBER SCHEDULES==
 **TEARS OF OLD PM**

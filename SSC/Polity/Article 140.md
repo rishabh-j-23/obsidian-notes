@@ -1,0 +1,2 @@
+- **Article 140** deals with the [[Ancillary powers]] of the [[Supreme Court]].
+-

@@ -1,0 +1,3 @@
+- Bicameralism in India refers to a two-house legislature at the Union level (Parliament) and in select states, designed to ensure thorough legislative scrutiny and represent diverse interests.
+- The Parliament consists of the [[House of People (Lok Sabha)|Lok Sabha]] and [[Council of States (Rajya Sabha)|Rajya Sabha]]. Six states have a bicameral setup with a [[Legislative Assembly]] and [[Legislative Council]]
+    - [[Andhra Pradesh]], [[Bihar]], [[Karnataka]], [[Maharashtra]], [[Telangana]], and [[Uttar Pradesh (UP)]]

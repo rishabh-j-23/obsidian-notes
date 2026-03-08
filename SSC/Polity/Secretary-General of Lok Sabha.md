@@ -1,0 +1,6 @@
+- **The Lok Sabha function is coordinated** by the ​**Secretary-General of [[House of People (Lok Sabha)|Lok Sabha]].**
+- The secretary-general of Lok Sabha is the **administrative head of Lok Sabha's secretariat.**
+- He/she is appointed by the **Lok Sabha Speaker.**
+- **The Secretary General's position** is the rank of the Indian government's Cabinet Secretary, who is the Indian government's senior-most civil servant.
+- The first Secretary-General of Lok Sabha was **M. N. Kaul.**
+- The current Secretary-General of Lok Sabha is **Utpal Kumar Singh.** as of 2026

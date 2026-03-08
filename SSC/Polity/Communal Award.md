@@ -1,0 +1,5 @@
+- In **August [[1932]], [[Ramsay MacDonald]]**(the then British Prime Minister) announced a scheme of representation of the minorities, which came to be known as the **Communal Award**.
+- The award not only continued separate electorates for the **Muslims, Sikhs, Indian Christians, Anglo-Indians, and Europeans** but also extended it to the **depressed classes (Scheduled Castes)**.
+- [[Mahatma Gandhi|Gandhiji]] was distressed over this extension of the **principle of communal representation to the depressed classes** and undertook fast unto death in **[[Yerawada Jail (Poona)]]** to get the award modified.
+- At last, there was an agreement between the **leaders of the Congress and the depressed classes**.
+- The agreement, **known as [[Poona Pact]]**, retained the Hindu joint electorate and gave **reserved seats** to the depressed classes.

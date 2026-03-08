@@ -1,0 +1,1 @@
+Altered [[Article 54]] and [[Article 368]] to include members of Legislative Assemblies of UT of [[Delhi]] & [[Puducherry]]

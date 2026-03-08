@@ -678,7 +678,7 @@ Clause 4) - Pleasure of President
 # [[Part 5 - Chapter 5 Controller and Auditor-General]]
 - Article 148 to 151
 
-## [[Controller and Auditor General of India (CAG)]]
+## [[Comptroller and Auditor General of India (CAG)]]
 - Guardian of public purse
 - guide and philosopher of [[Public Accounts Committee (PAC)]]
 - Term: 6yrs / 65yrs of age
@@ -686,12 +686,12 @@ Clause 4) - Pleasure of President
 - [[Single Membered Body]]
 
 ## [[Article 148]]
-- There shall be [[Controller and Auditor General of India (CAG)]] who shall be appointed by the [[President (IN)]] by warrant under his hand and seal and shall only be removed from office in like manner and on like grounds as a Judge of [[Supreme Court]]
+- There shall be [[Comptroller and Auditor General of India (CAG)]] who shall be appointed by the [[President (IN)]] by warrant under his hand and seal and shall only be removed from office in like manner and on like grounds as a Judge of [[Supreme Court]]
 
 ## [[Article 149]]
-- [[Controller and Auditor General of India (CAG)]] shall perform such duties and exercise such powers in relation to the accounts of the Union and of the States and of any other authority or body as may be prescribed by or under any law made by parliament
+- [[Comptroller and Auditor General of India (CAG)]] shall perform such duties and exercise such powers in relation to the accounts of the Union and of the States and of any other authority or body as may be prescribed by or under any law made by parliament
 ## [[Article 150]]
-- Accounts of the Union and of the States shall be kept in such form as the [[President (IN)]] may on the advice of the [[Controller and Auditor General of India (CAG)]] prescribe
+- Accounts of the Union and of the States shall be kept in such form as the [[President (IN)]] may on the advice of the [[Comptroller and Auditor General of India (CAG)]] prescribe
 ## [[Article 151]]
 - Reports relating to the accounts of the Union shall be kept in such form as the [[President (IN)]] 
 - Reports relating to the accounts of a state shall be submitted to the [[Governor of the State]]

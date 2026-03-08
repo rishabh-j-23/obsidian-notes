@@ -1,0 +1,3 @@
+- Senior Advocate R Venkataramani is the [[16th Attorney General for India]].
+- Venkataramani's appointment is for a period of three years.
+- Venkataramani enrolled as a lawyer in the Bar Council of Tamil Nadu in July 1977
