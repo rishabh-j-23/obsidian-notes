@@ -1,0 +1,2 @@
+- According to **Article 343** of the constitution, Hindi written in Devanagari script is the **official language** of India and English is the **associate official language**.
+- Initially, English was given this status for **15 years** but in **1963** it was permanently made the associate official language under the **[[Official Language Act]].**

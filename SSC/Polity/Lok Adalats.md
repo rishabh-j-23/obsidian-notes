@@ -1,0 +1,1 @@
+- [[NALSA(National Legal Services Authority)]] conducts **Lok Adalats** with statutory backing from the [[Legal Services Authority Act 1987]]. The Legal Services Act stipulates free legal aid should be provided to the weaker sections of the society.

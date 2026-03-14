@@ -1,0 +1,8 @@
+- **Article 345 asked each state to legally adopt one or more languages spoken in their state or Hindi as their official languages.**
+- Hindi was declared to be the official language of Uttar Pradesh, Madhya Pradesh, Bihar, Rajasthan, Haryana, Himachal Pradesh and Delhi.
+- Punjabi was declared the official language in Punjab, Marathi in Maharashtra and Gujarati and Hindi in Gujarat.
+- Tamil, Telugu, Kannada, Malayalam, Oriya, Assamese and Bengali were declared official languages in Tamil Nadu, Andhra Pradesh, Karnataka, Kerala, Orissa, Assam and West Bengal respectively.
+- Sikkim declared Nepali, Lepcha, and Bhutia as their official languages. Nagaland declared English as their official language.
+- Arunachal Pradesh, Mizoram and Meghalaya did not adopt any official language and for purposes of government work, English is used here.
+- The official languages of the centre are used in the union territories - Chandigarh, Andaman and Nicobar Islands and Daman and Diu and in Pondicherry the official language is Tamil. 
+- It is important to remember that the Constitution of India says nothing about the **existence of a national language**. At the same time, **Article 351** does state that the union must promote the spread of Hindi and develop Hindi as the medium of expression

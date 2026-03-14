@@ -1,0 +1,1 @@
+- [[Article 56]] of the constitution of India states that the president shall hold the office for the term of **5 Years** from the date he enters the office.

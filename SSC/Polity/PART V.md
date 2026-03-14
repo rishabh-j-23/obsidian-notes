@@ -1,0 +1,6 @@
+- **Articles 52 to 78** in **Part V** of constitution of India deals with union executive.
+-[[ Union executive]] consists of [[President]], [[Vice President]], [[Prime Minister]], [[Council of Ministers]] and [[Attorney-General of India]]
+- The president is the head of Indian state.
+- He is the first citizen of India.
+- He acts as the symbol of unity, integrity, and solidarity of the nation.
+- [[Article 56]] of the constitution of India states that the president shall hold the office for the term of **5 Years** from the date he enters the office.

@@ -1,0 +1,1 @@
+- The **[[61st Amendment Act, 1988]]** lowered the voting age from 21 to 18 years in India.

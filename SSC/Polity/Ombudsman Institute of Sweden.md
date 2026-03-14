@@ -1,0 +1,1 @@
+- **Sweden** was the first country to start the Ombudsman Institute in its present form in the year 1809.

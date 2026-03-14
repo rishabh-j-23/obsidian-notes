@@ -1,0 +1,1 @@
+- Elaborate provisions regarding the composition, appointment and removal of members along with the independence, powers and functions of the [[UPSC]] is mentioned in [[Articles 315 to 323]] in [[Part XIV]].

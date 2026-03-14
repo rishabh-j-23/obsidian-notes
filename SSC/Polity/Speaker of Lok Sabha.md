@@ -14,4 +14,4 @@
 - Lok Sabha is **not permanent chamber** and it is also known as ‘**temporary house**'.
 - **Om Birla** is the current speaker of the Lok Sabha (2019).
 - The age of voting is different in different countries, In Denmark and Japan one can vote after attaining the age of 25 years while in Norway, the age limit is 23 and in Britain, the United States, Russia, and Turkey it is 18. 
-- The **[[61st Amendment Act]]** lowered the voting age from 21 to 18 years in India.
+- The **[[61st Amendment Act, 1988]]** lowered the voting age from 21 to 18 years in India.
