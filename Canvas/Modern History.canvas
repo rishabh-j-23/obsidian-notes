@@ -1,0 +1,10 @@
+{
+	"nodes":[
+		{"id":"0b3522dbb8c48850","type":"text","text":"Short forms\n\nEIC - East India Company","x":-180,"y":-520,"width":300,"height":100},
+		{"id":"f6504e0c4f8b1e47","type":"text","text":"[[Dutch EIC]]\nFirst company\n[[Masulipatnam, AP]]","x":-980,"y":-220,"width":180,"height":120},
+		{"id":"a9d709b834bf8f52","type":"text","text":"Year 1605","x":-780,"y":-420,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"6239969194491632","fromNode":"a9d709b834bf8f52","fromSide":"bottom","toNode":"f6504e0c4f8b1e47","toSide":"top"}
+	]
+}
